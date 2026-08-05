@@ -4,15 +4,15 @@ import shutil
 import subprocess
 
 staging_dir = "data/staging"
-hdfs_base = "/cinema"
+hdfs_base = "/ticket_system/raw"
 
 files = {
-    "events.csv": f"{hdfs_base}/csv/events/events.csv",
-    "events.json": f"{hdfs_base}/json/events/events.json",
-    "seats.csv": f"{hdfs_base}/csv/seats/seats.csv",
-    "seats.json": f"{hdfs_base}/json/seats/seats.json",
-    "users.csv": f"{hdfs_base}/csv/users/users.csv",
-    "users.json": f"{hdfs_base}/json/users/users.json"
+    "events.csv": f"{hdfs_base}/events/csv/events.csv",
+    "events.json": f"{hdfs_base}/events/json/events.json",
+    "seats.csv": f"{hdfs_base}/seats/csv/seats.csv",
+    "seats.json": f"{hdfs_base}/seats/json/seats.json",
+    "users.csv": f"{hdfs_base}/users/csv/users.csv",
+    "users.json": f"{hdfs_base}/users/json/users.json"
 }
 
 def count_local_lines(filepath):
@@ -22,7 +22,12 @@ def count_local_lines(filepath):
         return sum(1 for _ in f)
 
 def read_hdfs_file(hdfs_path):
-    cmd = f"hdfs dfs -cat {hdfs_path}"
+    # Use local hdfs if available, otherwise execute via Docker namenode container
+    if shutil.which("hdfs"):
+        cmd = f"hdfs dfs -cat {hdfs_path}"
+    else:
+        cmd = f"docker exec namenode hdfs dfs -cat {hdfs_path}"
+
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
     if result.returncode != 0:
         return None
@@ -31,11 +36,6 @@ def read_hdfs_file(hdfs_path):
 
 def verify():
     print("Starting verification of HDFS dataset files...\n")
-
-    if shutil.which("hdfs") is None:
-        print("[NOTICE] 'hdfs' command not found on this machine.")
-        print("Make sure Hadoop is installed and in PATH, or run this script on the Hadoop Master Node / Docker container.")
-        return
 
     for filename, hdfs_path in files.items():
         print(f"--- Verifying {filename} ---")
