@@ -6,20 +6,20 @@ This repository manages the distributed storage and processing layer for a cinem
 
 ## 📌 Storage & Cluster Specification
 
-* **Topology:** 1 NameNode (Master) + 1 YARN ResourceManager + 10 DataNodes (Workers)
-* **Storage Layer:** Hadoop Distributed File System (HDFS)
-* **Replication Factor:** `3` (Data blocks are mirrored across 3 DataNodes for fault tolerance)
-* **HDFS Root Directory:** `/ticket_system/`
+- **Topology:** 1 NameNode (Master) + 1 YARN ResourceManager + 10 DataNodes (Workers)
+- **Storage Layer:** Hadoop Distributed File System (HDFS)
+- **Replication Factor:** `3` (Data blocks are mirrored across 3 DataNodes for fault tolerance)
+- **HDFS Root Directory:** `/ticket_system/`
 
 ---
 
 ## 🛠️ Tech Stack Overview
 
-* **Storage Engine:** Apache Hadoop HDFS (v3.2.1)
-* **Resource Management:** Apache Hadoop YARN
-* **Containerization:** Docker & Docker Compose
-* **Ingestion & Verification:** Python 3 (`subprocess`, `json`, `os`)
-* **Analytics Engine (Upcoming):** Apache Spark / PySpark
+- **Storage Engine:** Apache Hadoop HDFS (v3.2.1)
+- **Resource Management:** Apache Hadoop YARN
+- **Containerization:** Docker & Docker Compose
+- **Ingestion & Verification:** Python 3 (`subprocess`, `json`, `os`)
+- **Analytics Engine (Upcoming):** Apache Spark / PySpark
 
 ---
 
@@ -52,11 +52,12 @@ The system categorizes raw incoming data under `/ticket_system/raw/`, structured
 ## 📊 Dataset Descriptions & Schemas
 
 ### 1. 🎬 Events Dataset
+
 Contains screening schedules, movie information, hall assignments, and capacity.
 
-* **CSV Location:** `/ticket_system/raw/events/csv/events.csv`
-* **JSON Location:** `/ticket_system/raw/events/json/events.json`
-* **Schema:**
+- **CSV Location:** `/ticket_system/raw/events/csv/events.csv`
+- **JSON Location:** `/ticket_system/raw/events/json/events.json`
+- **Schema:**
   | Field Name | Data Type | Description |
   | :--- | :--- | :--- |
   | `event_id` | Integer | Unique identifier for the screening event |
@@ -70,11 +71,12 @@ Contains screening schedules, movie information, hall assignments, and capacity.
 ---
 
 ### 2. 💺 Seats Dataset
+
 Tracks individual seat allocations, ticket pricing, and user booking reservations per event.
 
-* **CSV Location:** `/ticket_system/raw/seats/csv/seats.csv`
-* **JSON Location:** `/ticket_system/raw/seats/json/seats.json`
-* **Schema:**
+- **CSV Location:** `/ticket_system/raw/seats/csv/seats.csv`
+- **JSON Location:** `/ticket_system/raw/seats/json/seats.json`
+- **Schema:**
   | Field Name | Data Type | Description |
   | :--- | :--- | :--- |
   | `seat_id` | Integer | Primary transaction/seat record identifier |
@@ -86,11 +88,12 @@ Tracks individual seat allocations, ticket pricing, and user booking reservation
 ---
 
 ### 3. 👤 Users Dataset
+
 Stores customer profiles and loyalty reward point tracking.
 
-* **CSV Location:** `/ticket_system/raw/users/csv/users.csv`
-* **JSON Location:** `/ticket_system/raw/users/json/users.json`
-* **Schema:**
+- **CSV Location:** `/ticket_system/raw/users/csv/users.csv`
+- **JSON Location:** `/ticket_system/raw/users/json/users.json`
+- **Schema:**
   | Field Name | Data Type | Description |
   | :--- | :--- | :--- |
   | `user_id` | Integer | Unique identifier for registered customer |
@@ -102,19 +105,21 @@ Stores customer profiles and loyalty reward point tracking.
 
 ## 🌐 Cluster Web Dashboards
 
-* **HDFS NameNode UI:** `http://localhost:9870` (Cluster Health, DataNodes, HDFS File Explorer)
-* **YARN ResourceManager UI:** `http://localhost:8088` (Node Managers, Memory/vCore Allocation, Running Jobs)
+- **HDFS NameNode UI:** `http://localhost:9870` (Cluster Health, DataNodes, HDFS File Explorer)
+- **YARN ResourceManager UI:** `http://localhost:8088` (Node Managers, Memory/vCore Allocation, Running Jobs)
 
 ---
 
 ## 🚀 Deployment & Operations Quickstart
 
 1. **Spin up the 11-node cluster:**
+
    ```bash
    docker compose up -d
    ```
 
 2. **Fetch and ingest dataset files into HDFS:**
+
    ```bash
    python3 scripts/fetch_and_prepare_data.py
    python3 scripts/ingest_data.py
@@ -130,6 +135,7 @@ Stores customer profiles and loyalty reward point tracking.
 ## 🔍 Data Verification & Integrity Checks
 
 Data integrity between local staging (`data/staging/`) and HDFS paths is validated using `scripts/verify_data.py`. The verification step enforces:
+
 1. **Line Count Matching:** 100% parity between local source files and HDFS files.
 2. **Schema & Syntax Validation:** Proper header alignment for CSV files and valid JSON object parsing.
 
@@ -137,6 +143,72 @@ Data integrity between local staging (`data/staging/`) and HDFS paths is validat
 
 ## 🔮 Next Phase: Distributed Processing (Part 2)
 
-* Read raw CSV and JSON datasets directly from HDFS into PySpark DataFrames.
-* Execute distributed SQL joins, aggregations, and data cleaning.
-* Output analytical reports back to HDFS under `/ticket_system/processed/`.
+- Read raw CSV and JSON datasets directly from HDFS into PySpark DataFrames.
+- Execute distributed SQL joins, aggregations, and data cleaning.
+- Output analytical reports back to HDFS under `/ticket_system/processed/`.
+
+## 🚀 Part 2: Distributed Batch Analytics (PySpark & YARN)
+
+The second phase of this project involves processing the raw HDFS data using **Apache Spark** running on a **10-Node YARN Cluster**.
+
+### 🏗️ Architecture
+
+- **Storage:** Hadoop Distributed File System (HDFS)
+- **Compute:** YARN (1 ResourceManager, 10 NodeManagers)
+- **Engine:** PySpark 3.2.4 (Python 3.8 via Miniconda)
+- **Execution:** Client mode submission from the NameNode
+
+### 📊 Analytical Jobs
+
+The batch analytics pipeline is defined in `jobs/batch_analytics.py` and is divided into 8 distinct analytical jobs.
+
+**Completed Jobs (Odd):**
+
+- **Job 1:** Total Bookings per Event (Aggregating seat counts).
+- **Job 3:** Total Revenue per Event (Summing ticket prices).
+- **Job 5:** Top 5 Most-Booked Events (Sorting and limiting Job 1).
+- **Job 7:** Booking Statistics by Date (Time-series aggregation of revenue and tickets).
+
+**Pending Jobs (Even - Assigned to Omar):**
+
+- **Job 2:** Seat Occupancy Percentage per Event.
+- **Job 4:** Number of Available Seats per Event.
+- **Job 6:** Booking Statistics by Event Category.
+- **Job 8:** Top 5 Users by Number of Bookings.
+
+### ⚙️ How to Run the Pipeline
+
+Ensure your Docker cluster is running, and the DataNodes have been initialized as YARN NodeManagers.
+
+```bash
+# Submit the PySpark job to the YARN cluster
+./scripts/run_part2.sh
+```
+
+The results are saved immutably back into HDFS at `/ticket_system/processed/` in compressed Parquet format.
+
+## 📈 Data Visualization
+
+To make the batch analytics accessible to stakeholders, the processed Parquet files are extracted from HDFS to the local machine and visualized using Pandas, Matplotlib, and Seaborn.
+
+### Generating Charts Locally
+
+**1. Extract the processed data from HDFS:**
+
+```bash
+docker exec namenode hdfs dfs -get /ticket_system/processed /tmp/processed_data
+docker cp namenode:/tmp/processed_data ./my_analytics_results
+```
+
+**2. Run the visualization script:**
+
+```bash
+python3 visualize.py
+```
+
+This generates high-resolution `.png` charts in the project root, including:
+
+- `chart_job1_booking_distribution.png` — Histogram of booking frequencies.
+- `chart_job3_top10_revenue.png` — Horizontal bar chart of highest-grossing movies.
+- `chart_job5_top_events.png` — Bar chart of the top 5 most-booked movies.
+- `chart_job7_revenue_by_date.png` — Line graph of daily revenue over time.
