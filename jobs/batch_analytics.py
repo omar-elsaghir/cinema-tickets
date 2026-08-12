@@ -101,7 +101,24 @@ def main():
     # JOB 3 (User - Odd): Total Revenue per Event
     # -------------------------------------------------------------------------
     print("▶ Running Job 3: Total Revenue per Event...")
-    pass
+    
+    # Aggregate total revenue per event
+    revenue_per_event = seats_df.groupBy("event_id") \
+        .agg(_round(_sum("price"), 2).alias("total_revenue"))
+
+    # Join with events metadata
+    job3_df = events_df.join(revenue_per_event, "event_id", "left") \
+        .select("event_id", "movie_title", "total_revenue") \
+        .na.fill({"total_revenue": 0.0})
+
+    # Display evidence snippet in cluster logs
+    print("📊 [Job 3 Sample Output]:")
+    job3_df.show(5, truncate=False)
+
+    # Write output to HDFS
+    job3_output_path = HDFS_PROCESSED + "/total_revenue_per_event"
+    job3_df.write.mode("overwrite").parquet(job3_output_path)
+    print("✅ Job 3 completed! Written to HDFS: " + job3_output_path + "\n")
 
     # -------------------------------------------------------------------------
     # JOB 4 (Omar - Even): Number of Available Seats per Event
