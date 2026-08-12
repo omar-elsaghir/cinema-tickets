@@ -55,16 +55,23 @@ echo "✅ Script copied to $CONTAINER_TARGET_PATH inside $NAMENODE_CONTAINER."
 echo ""
 echo "⚡ Step 3: Submitting PySpark job to YARN Cluster..."
 echo "------------------------------------------------------------------"
-docker exec -it "$NAMENODE_CONTAINER" spark-submit \
-    --master yarn \
-    --deploy-mode client \
-    --num-executors 4 \
-    --executor-cores 2 \
-    --executor-memory 1G \
-    "$CONTAINER_TARGET_PATH"
+docker exec -it "$NAMENODE_CONTAINER" bash -c "
+    export PYSPARK_PYTHON=/opt/conda/bin/python
+    export PYSPARK_DRIVER_PYTHON=/opt/conda/bin/python
+    export HADOOP_CONF_DIR=/etc/hadoop
+    
+    /opt/spark/bin/spark-submit \
+        --master yarn \
+        --deploy-mode client \
+        --conf spark.hadoop.yarn.resourcemanager.address=resourcemanager:8032 \
+        --conf spark.hadoop.yarn.resourcemanager.scheduler.address=resourcemanager:8030 \
+        --conf spark.hadoop.fs.defaultFS=hdfs://namenode:9000 \
+        --executor-memory 512M \
+        --driver-memory 512M \
+        $CONTAINER_TARGET_PATH
+"
 echo "------------------------------------------------------------------"
 echo "✅ PySpark execution completed!"
-
 # -------------------------------------------------------------------------------
 # STEP 4: VERIFY HDFS OUTPUTS (TEAM CHECKLIST)
 # -------------------------------------------------------------------------------
