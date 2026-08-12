@@ -58,7 +58,7 @@ echo "------------------------------------------------------------------"
 docker exec -it "$NAMENODE_CONTAINER" bash -c "
     export PYSPARK_PYTHON=/opt/conda/bin/python
     export PYSPARK_DRIVER_PYTHON=/opt/conda/bin/python
-    export HADOOP_CONF_DIR=/etc/hadoop
+    export HADOOP_CONF_DIR=/opt/hadoop-3.2.1/etc/hadoop
     
     /opt/spark/bin/spark-submit \
         --master yarn \
@@ -66,13 +66,13 @@ docker exec -it "$NAMENODE_CONTAINER" bash -c "
         --conf spark.hadoop.yarn.resourcemanager.address=resourcemanager:8032 \
         --conf spark.hadoop.yarn.resourcemanager.scheduler.address=resourcemanager:8030 \
         --conf spark.hadoop.fs.defaultFS=hdfs://namenode:9000 \
+        --conf spark.driver.host=namenode \
         --executor-memory 512M \
         --driver-memory 512M \
         $CONTAINER_TARGET_PATH
 "
 echo "------------------------------------------------------------------"
-echo "✅ PySpark execution completed!"
-# -------------------------------------------------------------------------------
+echo "✅ PySpark execution completed!"# -------------------------------------------------------------------------------
 # STEP 4: VERIFY HDFS OUTPUTS (TEAM CHECKLIST)
 # -------------------------------------------------------------------------------
 echo ""

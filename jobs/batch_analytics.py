@@ -98,10 +98,27 @@ def main():
     pass
 
     # -------------------------------------------------------------------------
-    # JOB 3 (User - Odd): Total Revenue per Event
+    # JOB 3: Total Revenue per Event
     # -------------------------------------------------------------------------
     print("▶ Running Job 3: Total Revenue per Event...")
-    pass
+    
+    # Aggregate total revenue per event
+    revenue_per_event = seats_df.groupBy("event_id") \
+        .agg(_round(_sum("price"), 2).alias("total_revenue"))
+
+    # Join with events metadata
+    job3_df = events_df.join(revenue_per_event, "event_id", "left") \
+        .select("event_id", "movie_title", "total_revenue") \
+        .na.fill({"total_revenue": 0.0})
+
+    # Display evidence snippet in cluster logs
+    print("📊 [Job 3 Sample Output]:")
+    job3_df.show(5, truncate=False)
+
+    # Write output to HDFS
+    job3_output_path = HDFS_PROCESSED + "/total_revenue_per_event"
+    job3_df.write.mode("overwrite").parquet(job3_output_path)
+    print("✅ Job 3 completed! Written to HDFS: " + job3_output_path + "\n")
 
     # -------------------------------------------------------------------------
     # JOB 4 (Omar - Even): Number of Available Seats per Event
@@ -110,10 +127,21 @@ def main():
     pass
 
     # -------------------------------------------------------------------------
-    # JOB 5 (User - Odd): Top 5 Most-Booked Events
+    # JOB 5: Top 5 Most-Booked Events
     # -------------------------------------------------------------------------
     print("▶ Running Job 5: Top 5 Most-Booked Events...")
-    pass
+    
+    # Reuse job1_df, sort descending by total_bookings, and take top 5
+    job5_df = job1_df.orderBy(desc("total_bookings")).limit(5)
+
+    # Display evidence snippet in cluster logs
+    print("📊 [Job 5 Sample Output]:")
+    job5_df.show(truncate=False)
+
+    # Write output to HDFS
+    job5_output_path = HDFS_PROCESSED + "/top5_events"
+    job5_df.write.mode("overwrite").parquet(job5_output_path)
+    print("✅ Job 5 completed! Written to HDFS: " + job5_output_path + "\n")
 
     # -------------------------------------------------------------------------
     # JOB 6 (Omar - Even): Booking Statistics by Event Category
@@ -122,10 +150,31 @@ def main():
     pass
 
     # -------------------------------------------------------------------------
-    # JOB 7 (User - Odd): Booking Statistics by Date
+    # JOB 7: Booking Statistics by Date
     # -------------------------------------------------------------------------
     print("▶ Running Job 7: Booking Statistics by Date...")
-    pass
+    
+    # 1. Convert screen_time to standard Date format
+    events_with_date = events_df.withColumn("event_date", to_date(col("screen_time")))
+
+    # 2. Join with seats, group by date, and aggregate
+    job7_df = events_with_date.join(seats_df, "event_id", "left") \
+        .groupBy("event_date") \
+        .agg(
+            count("seat_id").alias("total_bookings"),
+            _round(_sum("price"), 2).alias("daily_revenue")
+        ) \
+        .na.fill({"daily_revenue": 0.0}) \
+        .orderBy("event_date")
+
+    # Display evidence snippet in cluster logs
+    print("📊 [Job 7 Sample Output]:")
+    job7_df.show(5, truncate=False)
+
+    # Write output to HDFS
+    job7_output_path = HDFS_PROCESSED + "/bookings_by_date"
+    job7_df.write.mode("overwrite").parquet(job7_output_path)
+    print("✅ Job 7 completed! Written to HDFS: " + job7_output_path + "\n")
 
     # -------------------------------------------------------------------------
     # JOB 8 (Omar - Even): Top 5 Users by Number of Bookings
