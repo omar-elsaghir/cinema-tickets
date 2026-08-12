@@ -130,7 +130,18 @@ def main():
     # JOB 5 (User - Odd): Top 5 Most-Booked Events
     # -------------------------------------------------------------------------
     print("▶ Running Job 5: Top 5 Most-Booked Events...")
-    pass
+    
+    # Reuse job1_df, sort descending by total_bookings, and take top 5
+    job5_df = job1_df.orderBy(desc("total_bookings")).limit(5)
+
+    # Display evidence snippet in cluster logs
+    print("📊 [Job 5 Sample Output]:")
+    job5_df.show(truncate=False)
+
+    # Write output to HDFS
+    job5_output_path = HDFS_PROCESSED + "/top5_events"
+    job5_df.write.mode("overwrite").parquet(job5_output_path)
+    print("✅ Job 5 completed! Written to HDFS: " + job5_output_path + "\n")
 
     # -------------------------------------------------------------------------
     # JOB 6 (Omar - Even): Booking Statistics by Event Category
