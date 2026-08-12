@@ -1,8 +1,3 @@
-### 📝 2. Create the new `jobs/README.md`
-
-Create a new file at `jobs/README.md` and paste this extensive documentation into it. This will serve as a technical guide for anyone interacting with the PySpark code.
-
-```markdown
 # ⚙️ Cinema Tickets - Batch Analytics Jobs
 
 This directory contains the PySpark application responsible for transforming raw cinema system data into actionable business intelligence.
@@ -22,9 +17,9 @@ The application is designed to run on a distributed Hadoop YARN cluster. The `Sp
 Data is ingested directly from HDFS (`hdfs://namenode:9000/ticket_system/raw/`).
 The raw data consists of three relational entities stored as CSVs:
 
-1.  **`events.csv`**: Contains `event_id`, `movie_title`, `screen_time`, and category metadata.
-2.  **`seats.csv`**: Contains `seat_id`, `event_id`, booking status, and ticket `price`.
-3.  **`users.csv`**: Contains `user_id` and demographic data.
+1. **`events.csv`** — Contains `event_id`, `movie_title`, `screen_time`, and category metadata.
+2. **`seats.csv`** — Contains `seat_id`, `event_id`, booking status, and ticket `price`.
+3. **`users.csv`** — Contains `user_id` and demographic data.
 
 ### 3. Output Format
 
@@ -64,4 +59,3 @@ The analytics pipeline requires executing 8 specific business queries. The workl
 
 - **Missing NodeManagers:** The default `bde2020/hadoop-datanode` images do _not_ start the YARN NodeManager by default. If the job hangs in the `ACCEPTED` state, you must start the NodeManagers manually: `yarn --daemon start nodemanager`.
 - **Python Version Mismatch:** The default Debian Stretch images contain Python 3.5. PySpark requires >= 3.6. Ensure Miniconda (Python 3.8) is distributed to `/opt/conda` on all worker nodes prior to running this script.
-```
