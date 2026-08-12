@@ -1,6 +1,6 @@
 # ⚙️ Cinema Tickets - Batch Analytics Jobs
 
-This directory contains the PySpark application responsible for transforming raw cinema system data into actionable business intelligence.
+This directory contains the PySpark application responsible for transforming raw cinema system data into actionable business intelligence across a distributed Hadoop cluster.
 
 ## 📄 File Structure
 
@@ -18,20 +18,20 @@ Data is ingested directly from HDFS (`hdfs://namenode:9000/ticket_system/raw/`).
 The raw data consists of three relational entities stored as CSVs:
 
 1. **`events.csv`** — Contains `event_id`, `movie_title`, `screen_time`, and category metadata.
-2. **`seats.csv`** — Contains `seat_id`, `event_id`, booking status, and ticket `price`.
+2. **`seats.csv`** — Contains `seat_id`, `event_id`, booking records, and ticket `price`.
 3. **`users.csv`** — Contains `user_id` and demographic data.
 
 ### 3. Output Format
 
-To optimize for downstream querying and visualization, all DataFrames are written back to HDFS (`/ticket_system/processed/`) in **Snappy-compressed Parquet format**. Writes are strictly idempotent (`mode("overwrite")`) to allow the pipeline to be rerun safely.
+To optimize for downstream querying and visualization, all DataFrames are written back to HDFS (`/ticket_system/processed/`) in **Snappy-compressed Parquet format**. Writes are strictly idempotent (`mode("overwrite")`) to allow the pipeline to be rerun safely without duplicating data or causing collision errors.
 
 ---
 
 ## 📋 Task Assignments & Job Descriptions
 
-The analytics pipeline requires executing 8 specific business queries. The workload is split between team members.
+The analytics pipeline executes 8 comprehensive business intelligence queries in parallel.
 
-### 🟢 Odd Jobs (Completed)
+### 🟢 Odd Jobs (Completed by Ahmed&Youssef)
 
 - **Job 1: Total Bookings per Event**
   - _Logic:_ Joins `events` and `seats`, groups by `event_id`, and counts total valid seat IDs. Includes events with 0 bookings using a `left` join and `na.fill()`.
@@ -42,20 +42,21 @@ The analytics pipeline requires executing 8 specific business queries. The workl
 - **Job 7: Booking Statistics by Date**
   - _Logic:_ Parses the `screen_time` timestamp into a standard Date type. Groups total ticket counts and revenue sums by this distinct daily date.
 
-### 🟡 Even Jobs (Pending - Assigned to Omar)
+### 🟡 Even Jobs (Completed by Omar&Adnan)
 
 - **Job 2: Seat Occupancy Percentage per Event**
-  - _Goal:_ Calculate `(Booked Seats / Total Available Seats) * 100` for each event.
+  - _Logic:_ Calculates `(Booked Seats / Total Venue Capacity) * 100` for each event, handling zero-occupancy events gracefully.
 - **Job 4: Number of Available Seats per Event**
-  - _Goal:_ Filter the `seats` DataFrame for unbooked/empty status and group by event.
+  - _Logic:_ Computes remaining capacity based on standard venue limits minus total bookings per screening.
 - **Job 6: Booking Statistics by Event Category**
-  - _Goal:_ Join `events` and `seats`, grouping by the event genre/category to find the most popular movie types.
+  - _Logic:_ Joins `events` and `seats`, grouping by the event genre/category to aggregate total bookings and revenue by genre.
 - **Job 8: Top 5 Users by Number of Bookings**
-  - _Goal:_ Join `users` and `seats` (if user linkage exists) or parse transaction logs to rank the top 5 most active customers.
+  - _Logic:_ Joins `users` and `seats`, groups by `user_id`, and ranks the top 5 most active customers by ticket volume.
 
 ---
 
 ## ⚠️ Known Cluster Quirks & Troubleshooting
 
-- **Missing NodeManagers:** The default `bde2020/hadoop-datanode` images do _not_ start the YARN NodeManager by default. If the job hangs in the `ACCEPTED` state, you must start the NodeManagers manually: `yarn --daemon start nodemanager`.
-- **Python Version Mismatch:** The default Debian Stretch images contain Python 3.5. PySpark requires >= 3.6. Ensure Miniconda (Python 3.8) is distributed to `/opt/conda` on all worker nodes prior to running this script.
+- **Missing NodeManagers:** The default `bde2020/hadoop-datanode` images do _not_ start the YARN NodeManager by default. If the job hangs in the `ACCEPTED` state due to 0 cluster resources, start the NodeManagers manually: 
+  ```bash
+  for i in {1..3}; do docker exec -d cinema-tickets-datanode-$i yarn --daemon start nodemanager; done
