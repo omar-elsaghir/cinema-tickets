@@ -21,8 +21,24 @@ services:
     networks:
       - hadoop_net
 
-  datanode:
+  resourcemanager:
+    image: bde2020/hadoop-resourcemanager:2.0.0-hadoop3.2.1-java8
+    container_name: resourcemanager
+    hostname: resourcemanager
+    restart: always
+    ports:
+      - "8088:8088"
+    environment:
+      - SERVICE_PRECONDITION=namenode:9000
+    env_file:
+      - ./docker/hadoop.env
+    networks:
+      - hadoop_net
+
+  datanode1:
     image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode-1
+    hostname: datanode-1
     restart: always
     environment:
       - SERVICE_PRECONDITION=namenode:9000
@@ -31,13 +47,107 @@ services:
     networks:
       - hadoop_net
 
-  resourcemanager:
-    image: bde2020/hadoop-resourcemanager:2.0.0-hadoop3.2.1-java8
-    container_name: resourcemanager
-    hostname: resourcemanager
+  datanode2:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode-2
+    hostname: datanode-2
     restart: always
-    ports:
-      - "8088:8088"
+    environment:
+      - SERVICE_PRECONDITION=namenode:9000
+    env_file:
+      - ./docker/hadoop.env
+    networks:
+      - hadoop_net
+
+  datanode3:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode-3
+    hostname: datanode-3
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9000
+    env_file:
+      - ./docker/hadoop.env
+    networks:
+      - hadoop_net
+
+  datanode4:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode-4
+    hostname: datanode-4
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9000
+    env_file:
+      - ./docker/hadoop.env
+    networks:
+      - hadoop_net
+
+  datanode5:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode-5
+    hostname: datanode-5
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9000
+    env_file:
+      - ./docker/hadoop.env
+    networks:
+      - hadoop_net
+
+  datanode6:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode-6
+    hostname: datanode-6
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9000
+    env_file:
+      - ./docker/hadoop.env
+    networks:
+      - hadoop_net
+
+  datanode7:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode-7
+    hostname: datanode-7
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9000
+    env_file:
+      - ./docker/hadoop.env
+    networks:
+      - hadoop_net
+
+  datanode8:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode-8
+    hostname: datanode-8
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9000
+    env_file:
+      - ./docker/hadoop.env
+    networks:
+      - hadoop_net
+
+  datanode9:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode-9
+    hostname: datanode-9
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9000
+    env_file:
+      - ./docker/hadoop.env
+    networks:
+      - hadoop_net
+
+  datanode10:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode-10
+    hostname: datanode-10
+    restart: always
     environment:
       - SERVICE_PRECONDITION=namenode:9000
     env_file:
