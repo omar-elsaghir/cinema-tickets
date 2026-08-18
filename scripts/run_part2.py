@@ -1,14 +1,4 @@
-"""
-===============================================================================
-🎟️ Cinema Ticket Reservation System - Part 2 Runner (Cross-Platform Python)
-===============================================================================
-Executes the PySpark Batch Analytics pipeline entirely inside Docker containers
-without requiring virtual machines (VMs) or local Hadoop/Spark installations.
 
-Usage:
-    python scripts/run_part2.py
-===============================================================================
-"""
 
 import subprocess
 import sys
@@ -73,17 +63,21 @@ def submit_pyspark_job(master, network):
     print("\n>>> Submitting PySpark Batch Analytics across the Cluster...")
     print("=" * 66)
 
-    # Mount jobs directory into spark container
-    jobs_mount = JOBS_DIR.replace("\\", "/")
-    spark_cmd = (
-        f"docker run --rm --network {network} "
-        f"-e PYSPARK_PYTHON=python3 -e PYSPARK_DRIVER_PYTHON=python3 "
-        f"-v \"{jobs_mount}:/jobs\" "
-        f"bde2020/spark-master:3.0.0-hadoop3.2 "
-        f"/spark/bin/spark-submit --master local[*] "
-        f"--conf spark.hadoop.fs.defaultFS=hdfs://{master}:9000 "
-        f"/jobs/batch_analytics.py"
-    )
+    # Check if spark-master container is already active
+    ps_res = run_cmd("docker ps --format \"{{.Names}}\"", check=False)
+    if "spark-master" in ps_res.stdout:
+        spark_cmd = "docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7077 /jobs/batch_analytics.py"
+    else:
+        jobs_mount = JOBS_DIR.replace("\\", "/")
+        spark_cmd = (
+            f"docker run --rm --network {network} "
+            f"-e PYSPARK_PYTHON=python3 -e PYSPARK_DRIVER_PYTHON=python3 "
+            f"-v \"{jobs_mount}:/jobs\" "
+            f"bde2020/spark-master:3.0.0-hadoop3.2 "
+            f"/spark/bin/spark-submit --master local[*] "
+            f"--conf spark.hadoop.fs.defaultFS=hdfs://{master}:9000 "
+            f"/jobs/batch_analytics.py"
+        )
 
     proc = subprocess.Popen(spark_cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     for line in iter(proc.stdout.readline, ""):

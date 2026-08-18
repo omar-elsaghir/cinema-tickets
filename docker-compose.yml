@@ -18,6 +18,7 @@ services:
     volumes:
       - ./data:/ticket_system_local
       - ./scripts:/scripts
+      - ./jobs:/jobs
     networks:
       - hadoop_net
 
@@ -154,3 +155,69 @@ services:
       - ./docker/hadoop.env
     networks:
       - hadoop_net
+  nodemanager:
+    image: bde2020/hadoop-nodemanager:2.0.0-hadoop3.2.1-java8
+    container_name: nodemanager
+    hostname: nodemanager
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9000 resourcemanager:8088
+    env_file:
+      - ./docker/hadoop.env
+    ports:
+      - "8042:8042"
+    networks:
+      - hadoop_net
+
+  historyserver:
+    image: bde2020/hadoop-historyserver:2.0.0-hadoop3.2.1-java8
+    container_name: historyserver
+    hostname: historyserver
+    restart: always
+    ports:
+      - "8188:8188"
+    environment:
+      - SERVICE_PRECONDITION=namenode:9000 resourcemanager:8088
+    env_file:
+      - ./docker/hadoop.env
+    networks:
+      - hadoop_net
+
+
+  spark-master:
+    image: bde2020/spark-master:3.0.0-hadoop3.2
+    container_name: spark-master
+    hostname: spark-master
+    restart: always
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    environment:
+      - INIT_DAEMON_STEP=setup_spark
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    env_file:
+      - ./docker/hadoop.env
+    volumes:
+      - ./jobs:/jobs
+      - ./scripts:/scripts
+      - ./data:/data
+    networks:
+      - hadoop_net
+
+  spark-worker:
+    image: bde2020/spark-worker:3.0.0-hadoop3.2
+    container_name: spark-worker
+    hostname: spark-worker
+    restart: always
+    environment:
+      - "SPARK_MASTER=spark://spark-master:7077"
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    env_file:
+      - ./docker/hadoop.env
+    volumes:
+      - ./jobs:/jobs
+      - ./scripts:/scripts
+      - ./data:/data
+    networks:
+      - hadoop_net
+
