@@ -1,0 +1,1202 @@
+[
+  {
+    "event_id": "53",
+    "movie_title": "Bohemian Rhapsody",
+    "screen_time": "2026-05-26 11:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 88,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "92",
+    "movie_title": "The Lion King",
+    "screen_time": "2026-05-26 11:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 138,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "74",
+    "movie_title": "Star Wars: Episode VI - Return of the Jedi",
+    "screen_time": "2026-05-26 11:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 29,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "129",
+    "movie_title": "Big Hero 6",
+    "screen_time": "2026-05-26 11:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 76,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "56",
+    "movie_title": "Star Wars: Episode VII - The Force Awakens",
+    "screen_time": "2026-05-26 13:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 4,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "137",
+    "movie_title": "Ratatouille",
+    "screen_time": "2026-05-26 14:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 65,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "91",
+    "movie_title": "Back to the Future",
+    "screen_time": "2026-05-26 16:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 146,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "70",
+    "movie_title": "Harry Potter and the Half-Blood Prince",
+    "screen_time": "2026-05-26 19:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 150,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "90",
+    "movie_title": "The Exorcist",
+    "screen_time": "2026-05-26 20:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 27,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "33",
+    "movie_title": "The Lion King",
+    "screen_time": "2026-05-26 20:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": 0,
+    "availability_status": "SOLD OUT"
+  },
+  {
+    "event_id": "103",
+    "movie_title": "The Martian",
+    "screen_time": "2026-05-27 13:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 59,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "85",
+    "movie_title": "Zootopia",
+    "screen_time": "2026-05-27 13:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 146,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "26",
+    "movie_title": "Toy Story 3",
+    "screen_time": "2026-05-27 14:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 103,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "116",
+    "movie_title": "Gladiator",
+    "screen_time": "2026-05-27 14:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 120,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "52",
+    "movie_title": "Inception",
+    "screen_time": "2026-05-27 16:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 83,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "20",
+    "movie_title": "Ghostbusters",
+    "screen_time": "2026-05-27 17:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 44,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "7",
+    "movie_title": "Iron Man",
+    "screen_time": "2026-05-27 19:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 117,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "58",
+    "movie_title": "Shrek",
+    "screen_time": "2026-05-27 22:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 149,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "139",
+    "movie_title": "Ocean's Eleven",
+    "screen_time": "2026-05-28 11:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 137,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "101",
+    "movie_title": "Coco",
+    "screen_time": "2026-05-28 13:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 58,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "34",
+    "movie_title": "Zootopia",
+    "screen_time": "2026-05-28 17:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 64,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "37",
+    "movie_title": "Thor: Ragnarok",
+    "screen_time": "2026-05-28 20:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 11,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "31",
+    "movie_title": "Big Hero 6",
+    "screen_time": "2026-05-28 22:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 53,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "65",
+    "movie_title": "Star Trek Into Darkness",
+    "screen_time": "2026-05-28 22:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": 103,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "112",
+    "movie_title": "X-Men: Days of Future Past",
+    "screen_time": "2026-05-28 22:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 2,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "68",
+    "movie_title": "Inception",
+    "screen_time": "2026-05-29 11:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 118,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "150",
+    "movie_title": "The Lego Movie",
+    "screen_time": "2026-05-29 11:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 103,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "54",
+    "movie_title": "The Lord of the Rings: The Return of the King",
+    "screen_time": "2026-05-29 14:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 24,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "62",
+    "movie_title": "Mission: Impossible - Fallout",
+    "screen_time": "2026-05-29 16:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 94,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "3",
+    "movie_title": "Dunkirk",
+    "screen_time": "2026-05-29 16:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 30,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "89",
+    "movie_title": "Guardians of the Galaxy",
+    "screen_time": "2026-05-29 16:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 103,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "42",
+    "movie_title": "Skyfall",
+    "screen_time": "2026-05-29 16:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 2,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "104",
+    "movie_title": "Incredibles 2",
+    "screen_time": "2026-05-29 17:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 86,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "17",
+    "movie_title": "Despicable Me",
+    "screen_time": "2026-05-29 19:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 48,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "24",
+    "movie_title": "Zootopia",
+    "screen_time": "2026-05-29 19:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 71,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "144",
+    "movie_title": "The Fugitive",
+    "screen_time": "2026-05-29 20:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 24,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "32",
+    "movie_title": "Gladiator",
+    "screen_time": "2026-05-29 20:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 109,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "121",
+    "movie_title": "Harry Potter and the Half-Blood Prince",
+    "screen_time": "2026-05-30 16:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 12,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "99",
+    "movie_title": "Aladdin",
+    "screen_time": "2026-05-30 20:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 97,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "5",
+    "movie_title": "X-Men: Days of Future Past",
+    "screen_time": "2026-05-31 11:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 51,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "30",
+    "movie_title": "Aladdin",
+    "screen_time": "2026-05-31 13:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 56,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "148",
+    "movie_title": "Star Trek",
+    "screen_time": "2026-05-31 14:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 138,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "97",
+    "movie_title": "Toy Story",
+    "screen_time": "2026-05-31 16:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 49,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "22",
+    "movie_title": "Toy Story 4",
+    "screen_time": "2026-05-31 17:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 62,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "145",
+    "movie_title": "Sherlock Holmes",
+    "screen_time": "2026-05-31 20:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 133,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "12",
+    "movie_title": "Incredibles 2",
+    "screen_time": "2026-05-31 20:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 121,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "72",
+    "movie_title": "Mission: Impossible - Fallout",
+    "screen_time": "2026-05-31 22:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 139,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "119",
+    "movie_title": "The Revenant",
+    "screen_time": "2026-06-01 13:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": 61,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "79",
+    "movie_title": "Thor: Ragnarok",
+    "screen_time": "2026-06-01 14:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 58,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "149",
+    "movie_title": "Despicable Me",
+    "screen_time": "2026-06-01 14:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 121,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "10",
+    "movie_title": "Star Trek",
+    "screen_time": "2026-06-01 14:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 25,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "47",
+    "movie_title": "Batman Begins",
+    "screen_time": "2026-06-01 16:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 104,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "73",
+    "movie_title": "Aladdin",
+    "screen_time": "2026-06-01 16:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 80,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "87",
+    "movie_title": "Harry Potter and the Deathly Hallows: Part 2",
+    "screen_time": "2026-06-01 16:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": 89,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "2",
+    "movie_title": "Sherlock Holmes",
+    "screen_time": "2026-06-01 17:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 40,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "107",
+    "movie_title": "Dances with Wolves",
+    "screen_time": "2026-06-01 20:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 47,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "18",
+    "movie_title": "Spider-Man: Into the Spider-Verse",
+    "screen_time": "2026-06-01 20:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 104,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "96",
+    "movie_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "screen_time": "2026-06-01 22:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 139,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "126",
+    "movie_title": "Indiana Jones and the Last Crusade",
+    "screen_time": "2026-06-01 22:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 105,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "50",
+    "movie_title": "Gravity",
+    "screen_time": "2026-06-02 17:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 17,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "105",
+    "movie_title": "Iron Man",
+    "screen_time": "2026-06-02 19:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 15,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "100",
+    "movie_title": "X-Men: Days of Future Past",
+    "screen_time": "2026-06-02 22:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 83,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "29",
+    "movie_title": "Inception",
+    "screen_time": "2026-06-03 11:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 128,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "28",
+    "movie_title": "Terminator 2: Judgment Day",
+    "screen_time": "2026-06-03 11:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 119,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "141",
+    "movie_title": "The Exorcist",
+    "screen_time": "2026-06-03 13:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 100,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "143",
+    "movie_title": "Titanic",
+    "screen_time": "2026-06-03 13:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 111,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "48",
+    "movie_title": "Iron Man",
+    "screen_time": "2026-06-03 13:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 75,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "77",
+    "movie_title": "Star Wars: Episode VII - The Force Awakens",
+    "screen_time": "2026-06-03 14:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 93,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "98",
+    "movie_title": "Rain Man",
+    "screen_time": "2026-06-03 16:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 62,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "83",
+    "movie_title": "The Lord of the Rings: The Return of the King",
+    "screen_time": "2026-06-03 16:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 87,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "124",
+    "movie_title": "Indiana Jones and the Last Crusade",
+    "screen_time": "2026-06-03 19:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 24,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "40",
+    "movie_title": "Coco",
+    "screen_time": "2026-06-03 19:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 48,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "81",
+    "movie_title": "The Exorcist",
+    "screen_time": "2026-06-03 20:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 40,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "13",
+    "movie_title": "Wreck-It Ralph",
+    "screen_time": "2026-06-03 20:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 68,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "131",
+    "movie_title": "E.T. the Extra-Terrestrial",
+    "screen_time": "2026-06-04 11:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 43,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "43",
+    "movie_title": "The Exorcist",
+    "screen_time": "2026-06-04 11:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 140,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "130",
+    "movie_title": "The Lord of the Rings: The Return of the King",
+    "screen_time": "2026-06-04 13:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 11,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "49",
+    "movie_title": "The Lord of the Rings: The Two Towers",
+    "screen_time": "2026-06-04 13:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 91,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "123",
+    "movie_title": "Inception",
+    "screen_time": "2026-06-04 13:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 37,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "80",
+    "movie_title": "Interstellar",
+    "screen_time": "2026-06-04 13:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 17,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "108",
+    "movie_title": "Iron Man",
+    "screen_time": "2026-06-04 13:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 5,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "147",
+    "movie_title": "Deadpool",
+    "screen_time": "2026-06-04 14:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 131,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "86",
+    "movie_title": "Tangled",
+    "screen_time": "2026-06-04 14:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 104,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "67",
+    "movie_title": "The Lord of the Rings: The Two Towers",
+    "screen_time": "2026-06-04 14:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": 88,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "6",
+    "movie_title": "Home Alone",
+    "screen_time": "2026-06-04 14:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 71,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "110",
+    "movie_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "screen_time": "2026-06-04 16:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 33,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "64",
+    "movie_title": "Iron Man",
+    "screen_time": "2026-06-04 17:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 140,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "38",
+    "movie_title": "Batman Begins",
+    "screen_time": "2026-06-04 17:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 81,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "44",
+    "movie_title": "Shrek",
+    "screen_time": "2026-06-04 17:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 74,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "21",
+    "movie_title": "Sherlock Holmes",
+    "screen_time": "2026-06-04 17:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 119,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "60",
+    "movie_title": "Harry Potter and the Prisoner of Azkaban",
+    "screen_time": "2026-06-04 19:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 85,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "75",
+    "movie_title": "Inception",
+    "screen_time": "2026-06-04 20:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 88,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "4",
+    "movie_title": "Terminator 2: Judgment Day",
+    "screen_time": "2026-06-04 22:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 131,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "36",
+    "movie_title": "The Sixth Sense",
+    "screen_time": "2026-06-05 14:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": 119,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "25",
+    "movie_title": "The Hangover",
+    "screen_time": "2026-06-05 14:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 31,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "122",
+    "movie_title": "Star Wars: Episode VII - The Force Awakens",
+    "screen_time": "2026-06-05 17:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 24,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "109",
+    "movie_title": "The Exorcist",
+    "screen_time": "2026-06-05 19:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 5,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "111",
+    "movie_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "screen_time": "2026-06-05 19:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 127,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "142",
+    "movie_title": "Gladiator",
+    "screen_time": "2026-06-05 19:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 145,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "93",
+    "movie_title": "Dances with Wolves",
+    "screen_time": "2026-06-05 19:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 70,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "51",
+    "movie_title": "Toy Story 2",
+    "screen_time": "2026-06-06 11:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 69,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "102",
+    "movie_title": "Jurassic Park",
+    "screen_time": "2026-06-06 11:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 15,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "125",
+    "movie_title": "The Fugitive",
+    "screen_time": "2026-06-06 13:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 78,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "63",
+    "movie_title": "Ocean's Eleven",
+    "screen_time": "2026-06-06 13:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 86,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "78",
+    "movie_title": "Moana",
+    "screen_time": "2026-06-06 13:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 10,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "133",
+    "movie_title": "Toy Story",
+    "screen_time": "2026-06-06 13:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 90,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "82",
+    "movie_title": "Moana",
+    "screen_time": "2026-06-06 14:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 144,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "55",
+    "movie_title": "Captain America: Civil War",
+    "screen_time": "2026-06-06 14:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": 102,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "134",
+    "movie_title": "Tangled",
+    "screen_time": "2026-06-06 16:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 43,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "61",
+    "movie_title": "Inside Out",
+    "screen_time": "2026-06-06 19:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 5,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "114",
+    "movie_title": "Dawn of the Planet of the Apes",
+    "screen_time": "2026-06-06 19:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 75,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "146",
+    "movie_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "screen_time": "2026-06-06 19:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 9,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "8",
+    "movie_title": "A Star Is Born",
+    "screen_time": "2026-06-06 19:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 2,
+    "availability_status": "LIMITED AVAILABILITY"
+  },
+  {
+    "event_id": "140",
+    "movie_title": "Toy Story 3",
+    "screen_time": "2026-06-06 19:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 70,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "94",
+    "movie_title": "The Hobbit: An Unexpected Journey",
+    "screen_time": "2026-06-06 22:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 54,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "71",
+    "movie_title": "Titanic",
+    "screen_time": "2026-06-07 11:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 147,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "35",
+    "movie_title": "Inception",
+    "screen_time": "2026-06-07 14:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 28,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "106",
+    "movie_title": "Coco",
+    "screen_time": "2026-06-07 16:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": 139,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "113",
+    "movie_title": "Shrek",
+    "screen_time": "2026-06-07 17:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 94,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "59",
+    "movie_title": "Beauty and the Beast",
+    "screen_time": "2026-06-07 19:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 62,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "27",
+    "movie_title": "Captain America: Civil War",
+    "screen_time": "2026-06-07 19:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 33,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "39",
+    "movie_title": "Cast Away",
+    "screen_time": "2026-06-07 19:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 77,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "66",
+    "movie_title": "Star Wars: Episode VI - Return of the Jedi",
+    "screen_time": "2026-06-07 22:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 143,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "11",
+    "movie_title": "Ocean's Eleven",
+    "screen_time": "2026-06-08 11:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 38,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "16",
+    "movie_title": "Toy Story",
+    "screen_time": "2026-06-08 11:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 60,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "136",
+    "movie_title": "Star Wars: Episode V - The Empire Strikes Back",
+    "screen_time": "2026-06-08 11:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 127,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "41",
+    "movie_title": "Ocean's Eleven",
+    "screen_time": "2026-06-08 13:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 66,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "84",
+    "movie_title": "E.T. the Extra-Terrestrial",
+    "screen_time": "2026-06-08 13:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 45,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "115",
+    "movie_title": "Logan",
+    "screen_time": "2026-06-08 14:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 132,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "118",
+    "movie_title": "X-Men: Days of Future Past",
+    "screen_time": "2026-06-08 14:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": 87,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "46",
+    "movie_title": "Harry Potter and the Half-Blood Prince",
+    "screen_time": "2026-06-08 14:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": 89,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "14",
+    "movie_title": "Thor: Ragnarok",
+    "screen_time": "2026-06-08 14:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 21,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "76",
+    "movie_title": "Beauty and the Beast",
+    "screen_time": "2026-06-08 16:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 141,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "132",
+    "movie_title": "The Hangover",
+    "screen_time": "2026-06-08 16:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 122,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "117",
+    "movie_title": "Joker",
+    "screen_time": "2026-06-08 17:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": 113,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "19",
+    "movie_title": "The Hobbit: The Desolation of Smaug",
+    "screen_time": "2026-06-08 19:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 84,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "1",
+    "movie_title": "Star Trek Into Darkness",
+    "screen_time": "2026-06-08 19:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 72,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "95",
+    "movie_title": "Harry Potter and the Prisoner of Azkaban",
+    "screen_time": "2026-06-08 20:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 122,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "88",
+    "movie_title": "Gladiator",
+    "screen_time": "2026-06-08 20:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": 55,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "9",
+    "movie_title": "The Lion King",
+    "screen_time": "2026-06-09 11:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 54,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "138",
+    "movie_title": "How to Train Your Dragon",
+    "screen_time": "2026-06-09 13:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 137,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "127",
+    "movie_title": "The Lord of the Rings: The Two Towers",
+    "screen_time": "2026-06-09 14:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": 105,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "15",
+    "movie_title": "Saving Private Ryan",
+    "screen_time": "2026-06-09 16:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 130,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "69",
+    "movie_title": "The Dark Knight Rises",
+    "screen_time": "2026-06-09 17:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 64,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "128",
+    "movie_title": "The Avengers",
+    "screen_time": "2026-06-09 17:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": 88,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "45",
+    "movie_title": "The Lion King",
+    "screen_time": "2026-06-09 19:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 23,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "23",
+    "movie_title": "Star Trek",
+    "screen_time": "2026-06-09 19:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 26,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "57",
+    "movie_title": "Skyfall",
+    "screen_time": "2026-06-09 20:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 97,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "120",
+    "movie_title": "Dawn of the Planet of the Apes",
+    "screen_time": "2026-06-09 20:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": 29,
+    "availability_status": "AVAILABLE"
+  },
+  {
+    "event_id": "135",
+    "movie_title": "Back to the Future",
+    "screen_time": "2026-06-09 22:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": 25,
+    "availability_status": "AVAILABLE"
+  }
+]

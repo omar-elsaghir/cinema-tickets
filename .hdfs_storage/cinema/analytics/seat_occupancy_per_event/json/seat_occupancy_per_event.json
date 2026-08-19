@@ -1,0 +1,1502 @@
+[
+  {
+    "event_id": "53",
+    "movie_title": "Bohemian Rhapsody",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-26 11:00:00",
+    "booked_seats": 0,
+    "available_seats": 88,
+    "total_capacity": 88,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "92",
+    "movie_title": "The Lion King",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-05-26 11:30:00",
+    "booked_seats": 0,
+    "available_seats": 138,
+    "total_capacity": 138,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "74",
+    "movie_title": "Star Wars: Episode VI - Return of the Jedi",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-26 11:30:00",
+    "booked_seats": 1,
+    "available_seats": 29,
+    "total_capacity": 30,
+    "occupancy_percentage": 3.33
+  },
+  {
+    "event_id": "129",
+    "movie_title": "Big Hero 6",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-26 11:30:00",
+    "booked_seats": 1,
+    "available_seats": 76,
+    "total_capacity": 77,
+    "occupancy_percentage": 1.3
+  },
+  {
+    "event_id": "56",
+    "movie_title": "Star Wars: Episode VII - The Force Awakens",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-26 13:00:00",
+    "booked_seats": 3,
+    "available_seats": 4,
+    "total_capacity": 7,
+    "occupancy_percentage": 42.86
+  },
+  {
+    "event_id": "137",
+    "movie_title": "Ratatouille",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-05-26 14:30:00",
+    "booked_seats": 2,
+    "available_seats": 65,
+    "total_capacity": 67,
+    "occupancy_percentage": 2.99
+  },
+  {
+    "event_id": "91",
+    "movie_title": "Back to the Future",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-05-26 16:00:00",
+    "booked_seats": 1,
+    "available_seats": 146,
+    "total_capacity": 147,
+    "occupancy_percentage": 0.68
+  },
+  {
+    "event_id": "70",
+    "movie_title": "Harry Potter and the Half-Blood Prince",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-26 19:30:00",
+    "booked_seats": 1,
+    "available_seats": 150,
+    "total_capacity": 151,
+    "occupancy_percentage": 0.66
+  },
+  {
+    "event_id": "90",
+    "movie_title": "The Exorcist",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-26 20:00:00",
+    "booked_seats": 1,
+    "available_seats": 27,
+    "total_capacity": 28,
+    "occupancy_percentage": 3.57
+  },
+  {
+    "event_id": "33",
+    "movie_title": "The Lion King",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-05-26 20:30:00",
+    "booked_seats": 1,
+    "available_seats": 0,
+    "total_capacity": 1,
+    "occupancy_percentage": 100.0
+  },
+  {
+    "event_id": "103",
+    "movie_title": "The Martian",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-05-27 13:00:00",
+    "booked_seats": 1,
+    "available_seats": 59,
+    "total_capacity": 60,
+    "occupancy_percentage": 1.67
+  },
+  {
+    "event_id": "85",
+    "movie_title": "Zootopia",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-27 13:30:00",
+    "booked_seats": 2,
+    "available_seats": 146,
+    "total_capacity": 148,
+    "occupancy_percentage": 1.35
+  },
+  {
+    "event_id": "26",
+    "movie_title": "Toy Story 3",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-05-27 14:00:00",
+    "booked_seats": 1,
+    "available_seats": 103,
+    "total_capacity": 104,
+    "occupancy_percentage": 0.96
+  },
+  {
+    "event_id": "116",
+    "movie_title": "Gladiator",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-05-27 14:30:00",
+    "booked_seats": 4,
+    "available_seats": 120,
+    "total_capacity": 124,
+    "occupancy_percentage": 3.23
+  },
+  {
+    "event_id": "52",
+    "movie_title": "Inception",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-05-27 16:00:00",
+    "booked_seats": 1,
+    "available_seats": 83,
+    "total_capacity": 84,
+    "occupancy_percentage": 1.19
+  },
+  {
+    "event_id": "20",
+    "movie_title": "Ghostbusters",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-05-27 17:00:00",
+    "booked_seats": 0,
+    "available_seats": 44,
+    "total_capacity": 44,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "7",
+    "movie_title": "Iron Man",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-27 19:30:00",
+    "booked_seats": 1,
+    "available_seats": 117,
+    "total_capacity": 118,
+    "occupancy_percentage": 0.85
+  },
+  {
+    "event_id": "58",
+    "movie_title": "Shrek",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-05-27 22:30:00",
+    "booked_seats": 1,
+    "available_seats": 149,
+    "total_capacity": 150,
+    "occupancy_percentage": 0.67
+  },
+  {
+    "event_id": "139",
+    "movie_title": "Ocean's Eleven",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-28 11:00:00",
+    "booked_seats": 0,
+    "available_seats": 137,
+    "total_capacity": 137,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "101",
+    "movie_title": "Coco",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-05-28 13:00:00",
+    "booked_seats": 0,
+    "available_seats": 58,
+    "total_capacity": 58,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "34",
+    "movie_title": "Zootopia",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-28 17:30:00",
+    "booked_seats": 2,
+    "available_seats": 64,
+    "total_capacity": 66,
+    "occupancy_percentage": 3.03
+  },
+  {
+    "event_id": "37",
+    "movie_title": "Thor: Ragnarok",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-05-28 20:00:00",
+    "booked_seats": 1,
+    "available_seats": 11,
+    "total_capacity": 12,
+    "occupancy_percentage": 8.33
+  },
+  {
+    "event_id": "31",
+    "movie_title": "Big Hero 6",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-05-28 22:00:00",
+    "booked_seats": 0,
+    "available_seats": 53,
+    "total_capacity": 53,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "65",
+    "movie_title": "Star Trek Into Darkness",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-05-28 22:30:00",
+    "booked_seats": 3,
+    "available_seats": 103,
+    "total_capacity": 106,
+    "occupancy_percentage": 2.83
+  },
+  {
+    "event_id": "112",
+    "movie_title": "X-Men: Days of Future Past",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-28 22:30:00",
+    "booked_seats": 1,
+    "available_seats": 2,
+    "total_capacity": 3,
+    "occupancy_percentage": 33.33
+  },
+  {
+    "event_id": "68",
+    "movie_title": "Inception",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-29 11:00:00",
+    "booked_seats": 1,
+    "available_seats": 118,
+    "total_capacity": 119,
+    "occupancy_percentage": 0.84
+  },
+  {
+    "event_id": "150",
+    "movie_title": "The Lego Movie",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-05-29 11:00:00",
+    "booked_seats": 1,
+    "available_seats": 103,
+    "total_capacity": 104,
+    "occupancy_percentage": 0.96
+  },
+  {
+    "event_id": "54",
+    "movie_title": "The Lord of the Rings: The Return of the King",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-29 14:30:00",
+    "booked_seats": 2,
+    "available_seats": 24,
+    "total_capacity": 26,
+    "occupancy_percentage": 7.69
+  },
+  {
+    "event_id": "62",
+    "movie_title": "Mission: Impossible - Fallout",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-05-29 16:00:00",
+    "booked_seats": 1,
+    "available_seats": 94,
+    "total_capacity": 95,
+    "occupancy_percentage": 1.05
+  },
+  {
+    "event_id": "3",
+    "movie_title": "Dunkirk",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-05-29 16:00:00",
+    "booked_seats": 2,
+    "available_seats": 30,
+    "total_capacity": 32,
+    "occupancy_percentage": 6.25
+  },
+  {
+    "event_id": "89",
+    "movie_title": "Guardians of the Galaxy",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-29 16:00:00",
+    "booked_seats": 1,
+    "available_seats": 103,
+    "total_capacity": 104,
+    "occupancy_percentage": 0.96
+  },
+  {
+    "event_id": "42",
+    "movie_title": "Skyfall",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-29 16:00:00",
+    "booked_seats": 2,
+    "available_seats": 2,
+    "total_capacity": 4,
+    "occupancy_percentage": 50.0
+  },
+  {
+    "event_id": "104",
+    "movie_title": "Incredibles 2",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-29 17:00:00",
+    "booked_seats": 2,
+    "available_seats": 86,
+    "total_capacity": 88,
+    "occupancy_percentage": 2.27
+  },
+  {
+    "event_id": "17",
+    "movie_title": "Despicable Me",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-29 19:30:00",
+    "booked_seats": 3,
+    "available_seats": 48,
+    "total_capacity": 51,
+    "occupancy_percentage": 5.88
+  },
+  {
+    "event_id": "24",
+    "movie_title": "Zootopia",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-29 19:30:00",
+    "booked_seats": 1,
+    "available_seats": 71,
+    "total_capacity": 72,
+    "occupancy_percentage": 1.39
+  },
+  {
+    "event_id": "144",
+    "movie_title": "The Fugitive",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-05-29 20:00:00",
+    "booked_seats": 3,
+    "available_seats": 24,
+    "total_capacity": 27,
+    "occupancy_percentage": 11.11
+  },
+  {
+    "event_id": "32",
+    "movie_title": "Gladiator",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-29 20:00:00",
+    "booked_seats": 1,
+    "available_seats": 109,
+    "total_capacity": 110,
+    "occupancy_percentage": 0.91
+  },
+  {
+    "event_id": "121",
+    "movie_title": "Harry Potter and the Half-Blood Prince",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-30 16:30:00",
+    "booked_seats": 0,
+    "available_seats": 12,
+    "total_capacity": 12,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "99",
+    "movie_title": "Aladdin",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-30 20:00:00",
+    "booked_seats": 3,
+    "available_seats": 97,
+    "total_capacity": 100,
+    "occupancy_percentage": 3.0
+  },
+  {
+    "event_id": "5",
+    "movie_title": "X-Men: Days of Future Past",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-31 11:00:00",
+    "booked_seats": 2,
+    "available_seats": 51,
+    "total_capacity": 53,
+    "occupancy_percentage": 3.77
+  },
+  {
+    "event_id": "30",
+    "movie_title": "Aladdin",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-31 13:30:00",
+    "booked_seats": 5,
+    "available_seats": 56,
+    "total_capacity": 61,
+    "occupancy_percentage": 8.2
+  },
+  {
+    "event_id": "148",
+    "movie_title": "Star Trek",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-05-31 14:00:00",
+    "booked_seats": 2,
+    "available_seats": 138,
+    "total_capacity": 140,
+    "occupancy_percentage": 1.43
+  },
+  {
+    "event_id": "97",
+    "movie_title": "Toy Story",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-05-31 16:30:00",
+    "booked_seats": 1,
+    "available_seats": 49,
+    "total_capacity": 50,
+    "occupancy_percentage": 2.0
+  },
+  {
+    "event_id": "22",
+    "movie_title": "Toy Story 4",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-05-31 17:00:00",
+    "booked_seats": 1,
+    "available_seats": 62,
+    "total_capacity": 63,
+    "occupancy_percentage": 1.59
+  },
+  {
+    "event_id": "145",
+    "movie_title": "Sherlock Holmes",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-05-31 20:30:00",
+    "booked_seats": 0,
+    "available_seats": 133,
+    "total_capacity": 133,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "12",
+    "movie_title": "Incredibles 2",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-05-31 20:30:00",
+    "booked_seats": 1,
+    "available_seats": 121,
+    "total_capacity": 122,
+    "occupancy_percentage": 0.82
+  },
+  {
+    "event_id": "72",
+    "movie_title": "Mission: Impossible - Fallout",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-31 22:00:00",
+    "booked_seats": 2,
+    "available_seats": 139,
+    "total_capacity": 141,
+    "occupancy_percentage": 1.42
+  },
+  {
+    "event_id": "119",
+    "movie_title": "The Revenant",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-01 13:30:00",
+    "booked_seats": 1,
+    "available_seats": 61,
+    "total_capacity": 62,
+    "occupancy_percentage": 1.61
+  },
+  {
+    "event_id": "79",
+    "movie_title": "Thor: Ragnarok",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-01 14:00:00",
+    "booked_seats": 3,
+    "available_seats": 58,
+    "total_capacity": 61,
+    "occupancy_percentage": 4.92
+  },
+  {
+    "event_id": "149",
+    "movie_title": "Despicable Me",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-01 14:30:00",
+    "booked_seats": 1,
+    "available_seats": 121,
+    "total_capacity": 122,
+    "occupancy_percentage": 0.82
+  },
+  {
+    "event_id": "10",
+    "movie_title": "Star Trek",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-01 14:30:00",
+    "booked_seats": 1,
+    "available_seats": 25,
+    "total_capacity": 26,
+    "occupancy_percentage": 3.85
+  },
+  {
+    "event_id": "47",
+    "movie_title": "Batman Begins",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-01 16:00:00",
+    "booked_seats": 1,
+    "available_seats": 104,
+    "total_capacity": 105,
+    "occupancy_percentage": 0.95
+  },
+  {
+    "event_id": "73",
+    "movie_title": "Aladdin",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-01 16:00:00",
+    "booked_seats": 2,
+    "available_seats": 80,
+    "total_capacity": 82,
+    "occupancy_percentage": 2.44
+  },
+  {
+    "event_id": "87",
+    "movie_title": "Harry Potter and the Deathly Hallows: Part 2",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-01 16:30:00",
+    "booked_seats": 3,
+    "available_seats": 89,
+    "total_capacity": 92,
+    "occupancy_percentage": 3.26
+  },
+  {
+    "event_id": "2",
+    "movie_title": "Sherlock Holmes",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-01 17:30:00",
+    "booked_seats": 1,
+    "available_seats": 40,
+    "total_capacity": 41,
+    "occupancy_percentage": 2.44
+  },
+  {
+    "event_id": "107",
+    "movie_title": "Dances with Wolves",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-01 20:00:00",
+    "booked_seats": 2,
+    "available_seats": 47,
+    "total_capacity": 49,
+    "occupancy_percentage": 4.08
+  },
+  {
+    "event_id": "18",
+    "movie_title": "Spider-Man: Into the Spider-Verse",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-01 20:30:00",
+    "booked_seats": 5,
+    "available_seats": 104,
+    "total_capacity": 109,
+    "occupancy_percentage": 4.59
+  },
+  {
+    "event_id": "96",
+    "movie_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-01 22:00:00",
+    "booked_seats": 3,
+    "available_seats": 139,
+    "total_capacity": 142,
+    "occupancy_percentage": 2.11
+  },
+  {
+    "event_id": "126",
+    "movie_title": "Indiana Jones and the Last Crusade",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-01 22:30:00",
+    "booked_seats": 1,
+    "available_seats": 105,
+    "total_capacity": 106,
+    "occupancy_percentage": 0.94
+  },
+  {
+    "event_id": "50",
+    "movie_title": "Gravity",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-02 17:30:00",
+    "booked_seats": 1,
+    "available_seats": 17,
+    "total_capacity": 18,
+    "occupancy_percentage": 5.56
+  },
+  {
+    "event_id": "105",
+    "movie_title": "Iron Man",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-02 19:30:00",
+    "booked_seats": 2,
+    "available_seats": 15,
+    "total_capacity": 17,
+    "occupancy_percentage": 11.76
+  },
+  {
+    "event_id": "100",
+    "movie_title": "X-Men: Days of Future Past",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-02 22:00:00",
+    "booked_seats": 1,
+    "available_seats": 83,
+    "total_capacity": 84,
+    "occupancy_percentage": 1.19
+  },
+  {
+    "event_id": "29",
+    "movie_title": "Inception",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-03 11:00:00",
+    "booked_seats": 4,
+    "available_seats": 128,
+    "total_capacity": 132,
+    "occupancy_percentage": 3.03
+  },
+  {
+    "event_id": "28",
+    "movie_title": "Terminator 2: Judgment Day",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-03 11:00:00",
+    "booked_seats": 1,
+    "available_seats": 119,
+    "total_capacity": 120,
+    "occupancy_percentage": 0.83
+  },
+  {
+    "event_id": "141",
+    "movie_title": "The Exorcist",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-03 13:00:00",
+    "booked_seats": 3,
+    "available_seats": 100,
+    "total_capacity": 103,
+    "occupancy_percentage": 2.91
+  },
+  {
+    "event_id": "143",
+    "movie_title": "Titanic",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-03 13:00:00",
+    "booked_seats": 0,
+    "available_seats": 111,
+    "total_capacity": 111,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "48",
+    "movie_title": "Iron Man",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-03 13:30:00",
+    "booked_seats": 5,
+    "available_seats": 75,
+    "total_capacity": 80,
+    "occupancy_percentage": 6.25
+  },
+  {
+    "event_id": "77",
+    "movie_title": "Star Wars: Episode VII - The Force Awakens",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-03 14:30:00",
+    "booked_seats": 2,
+    "available_seats": 93,
+    "total_capacity": 95,
+    "occupancy_percentage": 2.11
+  },
+  {
+    "event_id": "98",
+    "movie_title": "Rain Man",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-03 16:30:00",
+    "booked_seats": 1,
+    "available_seats": 62,
+    "total_capacity": 63,
+    "occupancy_percentage": 1.59
+  },
+  {
+    "event_id": "83",
+    "movie_title": "The Lord of the Rings: The Return of the King",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-03 16:30:00",
+    "booked_seats": 6,
+    "available_seats": 87,
+    "total_capacity": 93,
+    "occupancy_percentage": 6.45
+  },
+  {
+    "event_id": "124",
+    "movie_title": "Indiana Jones and the Last Crusade",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-03 19:30:00",
+    "booked_seats": 2,
+    "available_seats": 24,
+    "total_capacity": 26,
+    "occupancy_percentage": 7.69
+  },
+  {
+    "event_id": "40",
+    "movie_title": "Coco",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-03 19:30:00",
+    "booked_seats": 0,
+    "available_seats": 48,
+    "total_capacity": 48,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "81",
+    "movie_title": "The Exorcist",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-03 20:00:00",
+    "booked_seats": 2,
+    "available_seats": 40,
+    "total_capacity": 42,
+    "occupancy_percentage": 4.76
+  },
+  {
+    "event_id": "13",
+    "movie_title": "Wreck-It Ralph",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-03 20:30:00",
+    "booked_seats": 2,
+    "available_seats": 68,
+    "total_capacity": 70,
+    "occupancy_percentage": 2.86
+  },
+  {
+    "event_id": "131",
+    "movie_title": "E.T. the Extra-Terrestrial",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-04 11:00:00",
+    "booked_seats": 2,
+    "available_seats": 43,
+    "total_capacity": 45,
+    "occupancy_percentage": 4.44
+  },
+  {
+    "event_id": "43",
+    "movie_title": "The Exorcist",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-04 11:30:00",
+    "booked_seats": 3,
+    "available_seats": 140,
+    "total_capacity": 143,
+    "occupancy_percentage": 2.1
+  },
+  {
+    "event_id": "130",
+    "movie_title": "The Lord of the Rings: The Return of the King",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-04 13:00:00",
+    "booked_seats": 0,
+    "available_seats": 11,
+    "total_capacity": 11,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "49",
+    "movie_title": "The Lord of the Rings: The Two Towers",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-04 13:00:00",
+    "booked_seats": 1,
+    "available_seats": 91,
+    "total_capacity": 92,
+    "occupancy_percentage": 1.09
+  },
+  {
+    "event_id": "123",
+    "movie_title": "Inception",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-04 13:00:00",
+    "booked_seats": 2,
+    "available_seats": 37,
+    "total_capacity": 39,
+    "occupancy_percentage": 5.13
+  },
+  {
+    "event_id": "80",
+    "movie_title": "Interstellar",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-04 13:00:00",
+    "booked_seats": 1,
+    "available_seats": 17,
+    "total_capacity": 18,
+    "occupancy_percentage": 5.56
+  },
+  {
+    "event_id": "108",
+    "movie_title": "Iron Man",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-04 13:30:00",
+    "booked_seats": 0,
+    "available_seats": 5,
+    "total_capacity": 5,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "147",
+    "movie_title": "Deadpool",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-04 14:00:00",
+    "booked_seats": 3,
+    "available_seats": 131,
+    "total_capacity": 134,
+    "occupancy_percentage": 2.24
+  },
+  {
+    "event_id": "86",
+    "movie_title": "Tangled",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-04 14:30:00",
+    "booked_seats": 3,
+    "available_seats": 104,
+    "total_capacity": 107,
+    "occupancy_percentage": 2.8
+  },
+  {
+    "event_id": "67",
+    "movie_title": "The Lord of the Rings: The Two Towers",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-04 14:30:00",
+    "booked_seats": 1,
+    "available_seats": 88,
+    "total_capacity": 89,
+    "occupancy_percentage": 1.12
+  },
+  {
+    "event_id": "6",
+    "movie_title": "Home Alone",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-04 14:30:00",
+    "booked_seats": 4,
+    "available_seats": 71,
+    "total_capacity": 75,
+    "occupancy_percentage": 5.33
+  },
+  {
+    "event_id": "110",
+    "movie_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-04 16:00:00",
+    "booked_seats": 1,
+    "available_seats": 33,
+    "total_capacity": 34,
+    "occupancy_percentage": 2.94
+  },
+  {
+    "event_id": "64",
+    "movie_title": "Iron Man",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-04 17:00:00",
+    "booked_seats": 3,
+    "available_seats": 140,
+    "total_capacity": 143,
+    "occupancy_percentage": 2.1
+  },
+  {
+    "event_id": "38",
+    "movie_title": "Batman Begins",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-04 17:00:00",
+    "booked_seats": 1,
+    "available_seats": 81,
+    "total_capacity": 82,
+    "occupancy_percentage": 1.22
+  },
+  {
+    "event_id": "44",
+    "movie_title": "Shrek",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-04 17:30:00",
+    "booked_seats": 1,
+    "available_seats": 74,
+    "total_capacity": 75,
+    "occupancy_percentage": 1.33
+  },
+  {
+    "event_id": "21",
+    "movie_title": "Sherlock Holmes",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-04 17:30:00",
+    "booked_seats": 1,
+    "available_seats": 119,
+    "total_capacity": 120,
+    "occupancy_percentage": 0.83
+  },
+  {
+    "event_id": "60",
+    "movie_title": "Harry Potter and the Prisoner of Azkaban",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-04 19:30:00",
+    "booked_seats": 0,
+    "available_seats": 85,
+    "total_capacity": 85,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "75",
+    "movie_title": "Inception",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-04 20:00:00",
+    "booked_seats": 2,
+    "available_seats": 88,
+    "total_capacity": 90,
+    "occupancy_percentage": 2.22
+  },
+  {
+    "event_id": "4",
+    "movie_title": "Terminator 2: Judgment Day",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-04 22:00:00",
+    "booked_seats": 3,
+    "available_seats": 131,
+    "total_capacity": 134,
+    "occupancy_percentage": 2.24
+  },
+  {
+    "event_id": "36",
+    "movie_title": "The Sixth Sense",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-05 14:30:00",
+    "booked_seats": 2,
+    "available_seats": 119,
+    "total_capacity": 121,
+    "occupancy_percentage": 1.65
+  },
+  {
+    "event_id": "25",
+    "movie_title": "The Hangover",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-05 14:30:00",
+    "booked_seats": 3,
+    "available_seats": 31,
+    "total_capacity": 34,
+    "occupancy_percentage": 8.82
+  },
+  {
+    "event_id": "122",
+    "movie_title": "Star Wars: Episode VII - The Force Awakens",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-05 17:00:00",
+    "booked_seats": 1,
+    "available_seats": 24,
+    "total_capacity": 25,
+    "occupancy_percentage": 4.0
+  },
+  {
+    "event_id": "109",
+    "movie_title": "The Exorcist",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-05 19:00:00",
+    "booked_seats": 3,
+    "available_seats": 5,
+    "total_capacity": 8,
+    "occupancy_percentage": 37.5
+  },
+  {
+    "event_id": "111",
+    "movie_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-05 19:00:00",
+    "booked_seats": 3,
+    "available_seats": 127,
+    "total_capacity": 130,
+    "occupancy_percentage": 2.31
+  },
+  {
+    "event_id": "142",
+    "movie_title": "Gladiator",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-05 19:00:00",
+    "booked_seats": 3,
+    "available_seats": 145,
+    "total_capacity": 148,
+    "occupancy_percentage": 2.03
+  },
+  {
+    "event_id": "93",
+    "movie_title": "Dances with Wolves",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-05 19:30:00",
+    "booked_seats": 1,
+    "available_seats": 70,
+    "total_capacity": 71,
+    "occupancy_percentage": 1.41
+  },
+  {
+    "event_id": "51",
+    "movie_title": "Toy Story 2",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-06 11:00:00",
+    "booked_seats": 2,
+    "available_seats": 69,
+    "total_capacity": 71,
+    "occupancy_percentage": 2.82
+  },
+  {
+    "event_id": "102",
+    "movie_title": "Jurassic Park",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-06 11:30:00",
+    "booked_seats": 2,
+    "available_seats": 15,
+    "total_capacity": 17,
+    "occupancy_percentage": 11.76
+  },
+  {
+    "event_id": "125",
+    "movie_title": "The Fugitive",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-06 13:00:00",
+    "booked_seats": 1,
+    "available_seats": 78,
+    "total_capacity": 79,
+    "occupancy_percentage": 1.27
+  },
+  {
+    "event_id": "63",
+    "movie_title": "Ocean's Eleven",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-06 13:00:00",
+    "booked_seats": 2,
+    "available_seats": 86,
+    "total_capacity": 88,
+    "occupancy_percentage": 2.27
+  },
+  {
+    "event_id": "78",
+    "movie_title": "Moana",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-06 13:00:00",
+    "booked_seats": 4,
+    "available_seats": 10,
+    "total_capacity": 14,
+    "occupancy_percentage": 28.57
+  },
+  {
+    "event_id": "133",
+    "movie_title": "Toy Story",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-06 13:30:00",
+    "booked_seats": 3,
+    "available_seats": 90,
+    "total_capacity": 93,
+    "occupancy_percentage": 3.23
+  },
+  {
+    "event_id": "82",
+    "movie_title": "Moana",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-06 14:00:00",
+    "booked_seats": 1,
+    "available_seats": 144,
+    "total_capacity": 145,
+    "occupancy_percentage": 0.69
+  },
+  {
+    "event_id": "55",
+    "movie_title": "Captain America: Civil War",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-06 14:30:00",
+    "booked_seats": 1,
+    "available_seats": 102,
+    "total_capacity": 103,
+    "occupancy_percentage": 0.97
+  },
+  {
+    "event_id": "134",
+    "movie_title": "Tangled",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-06 16:00:00",
+    "booked_seats": 4,
+    "available_seats": 43,
+    "total_capacity": 47,
+    "occupancy_percentage": 8.51
+  },
+  {
+    "event_id": "61",
+    "movie_title": "Inside Out",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-06 19:00:00",
+    "booked_seats": 2,
+    "available_seats": 5,
+    "total_capacity": 7,
+    "occupancy_percentage": 28.57
+  },
+  {
+    "event_id": "114",
+    "movie_title": "Dawn of the Planet of the Apes",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-06 19:00:00",
+    "booked_seats": 0,
+    "available_seats": 75,
+    "total_capacity": 75,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "146",
+    "movie_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-06 19:00:00",
+    "booked_seats": 2,
+    "available_seats": 9,
+    "total_capacity": 11,
+    "occupancy_percentage": 18.18
+  },
+  {
+    "event_id": "8",
+    "movie_title": "A Star Is Born",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-06 19:30:00",
+    "booked_seats": 1,
+    "available_seats": 2,
+    "total_capacity": 3,
+    "occupancy_percentage": 33.33
+  },
+  {
+    "event_id": "140",
+    "movie_title": "Toy Story 3",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-06 19:30:00",
+    "booked_seats": 1,
+    "available_seats": 70,
+    "total_capacity": 71,
+    "occupancy_percentage": 1.41
+  },
+  {
+    "event_id": "94",
+    "movie_title": "The Hobbit: An Unexpected Journey",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-06 22:30:00",
+    "booked_seats": 2,
+    "available_seats": 54,
+    "total_capacity": 56,
+    "occupancy_percentage": 3.57
+  },
+  {
+    "event_id": "71",
+    "movie_title": "Titanic",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-07 11:00:00",
+    "booked_seats": 2,
+    "available_seats": 147,
+    "total_capacity": 149,
+    "occupancy_percentage": 1.34
+  },
+  {
+    "event_id": "35",
+    "movie_title": "Inception",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-07 14:30:00",
+    "booked_seats": 1,
+    "available_seats": 28,
+    "total_capacity": 29,
+    "occupancy_percentage": 3.45
+  },
+  {
+    "event_id": "106",
+    "movie_title": "Coco",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-07 16:30:00",
+    "booked_seats": 1,
+    "available_seats": 139,
+    "total_capacity": 140,
+    "occupancy_percentage": 0.71
+  },
+  {
+    "event_id": "113",
+    "movie_title": "Shrek",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-07 17:00:00",
+    "booked_seats": 1,
+    "available_seats": 94,
+    "total_capacity": 95,
+    "occupancy_percentage": 1.05
+  },
+  {
+    "event_id": "59",
+    "movie_title": "Beauty and the Beast",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-07 19:00:00",
+    "booked_seats": 1,
+    "available_seats": 62,
+    "total_capacity": 63,
+    "occupancy_percentage": 1.59
+  },
+  {
+    "event_id": "27",
+    "movie_title": "Captain America: Civil War",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-07 19:30:00",
+    "booked_seats": 2,
+    "available_seats": 33,
+    "total_capacity": 35,
+    "occupancy_percentage": 5.71
+  },
+  {
+    "event_id": "39",
+    "movie_title": "Cast Away",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-07 19:30:00",
+    "booked_seats": 0,
+    "available_seats": 77,
+    "total_capacity": 77,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "66",
+    "movie_title": "Star Wars: Episode VI - Return of the Jedi",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-07 22:00:00",
+    "booked_seats": 1,
+    "available_seats": 143,
+    "total_capacity": 144,
+    "occupancy_percentage": 0.69
+  },
+  {
+    "event_id": "11",
+    "movie_title": "Ocean's Eleven",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-08 11:00:00",
+    "booked_seats": 2,
+    "available_seats": 38,
+    "total_capacity": 40,
+    "occupancy_percentage": 5.0
+  },
+  {
+    "event_id": "16",
+    "movie_title": "Toy Story",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-08 11:30:00",
+    "booked_seats": 2,
+    "available_seats": 60,
+    "total_capacity": 62,
+    "occupancy_percentage": 3.23
+  },
+  {
+    "event_id": "136",
+    "movie_title": "Star Wars: Episode V - The Empire Strikes Back",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-08 11:30:00",
+    "booked_seats": 3,
+    "available_seats": 127,
+    "total_capacity": 130,
+    "occupancy_percentage": 2.31
+  },
+  {
+    "event_id": "41",
+    "movie_title": "Ocean's Eleven",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-08 13:00:00",
+    "booked_seats": 4,
+    "available_seats": 66,
+    "total_capacity": 70,
+    "occupancy_percentage": 5.71
+  },
+  {
+    "event_id": "84",
+    "movie_title": "E.T. the Extra-Terrestrial",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-08 13:30:00",
+    "booked_seats": 1,
+    "available_seats": 45,
+    "total_capacity": 46,
+    "occupancy_percentage": 2.17
+  },
+  {
+    "event_id": "115",
+    "movie_title": "Logan",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-08 14:00:00",
+    "booked_seats": 4,
+    "available_seats": 132,
+    "total_capacity": 136,
+    "occupancy_percentage": 2.94
+  },
+  {
+    "event_id": "118",
+    "movie_title": "X-Men: Days of Future Past",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-06-08 14:00:00",
+    "booked_seats": 2,
+    "available_seats": 87,
+    "total_capacity": 89,
+    "occupancy_percentage": 2.25
+  },
+  {
+    "event_id": "46",
+    "movie_title": "Harry Potter and the Half-Blood Prince",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-08 14:30:00",
+    "booked_seats": 0,
+    "available_seats": 89,
+    "total_capacity": 89,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "14",
+    "movie_title": "Thor: Ragnarok",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-08 14:30:00",
+    "booked_seats": 1,
+    "available_seats": 21,
+    "total_capacity": 22,
+    "occupancy_percentage": 4.55
+  },
+  {
+    "event_id": "76",
+    "movie_title": "Beauty and the Beast",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-08 16:00:00",
+    "booked_seats": 0,
+    "available_seats": 141,
+    "total_capacity": 141,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "132",
+    "movie_title": "The Hangover",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-08 16:00:00",
+    "booked_seats": 2,
+    "available_seats": 122,
+    "total_capacity": 124,
+    "occupancy_percentage": 1.61
+  },
+  {
+    "event_id": "117",
+    "movie_title": "Joker",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-08 17:00:00",
+    "booked_seats": 2,
+    "available_seats": 113,
+    "total_capacity": 115,
+    "occupancy_percentage": 1.74
+  },
+  {
+    "event_id": "19",
+    "movie_title": "The Hobbit: The Desolation of Smaug",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-08 19:00:00",
+    "booked_seats": 1,
+    "available_seats": 84,
+    "total_capacity": 85,
+    "occupancy_percentage": 1.18
+  },
+  {
+    "event_id": "1",
+    "movie_title": "Star Trek Into Darkness",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-08 19:30:00",
+    "booked_seats": 1,
+    "available_seats": 72,
+    "total_capacity": 73,
+    "occupancy_percentage": 1.37
+  },
+  {
+    "event_id": "95",
+    "movie_title": "Harry Potter and the Prisoner of Azkaban",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-08 20:00:00",
+    "booked_seats": 2,
+    "available_seats": 122,
+    "total_capacity": 124,
+    "occupancy_percentage": 1.61
+  },
+  {
+    "event_id": "88",
+    "movie_title": "Gladiator",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-08 20:30:00",
+    "booked_seats": 2,
+    "available_seats": 55,
+    "total_capacity": 57,
+    "occupancy_percentage": 3.51
+  },
+  {
+    "event_id": "9",
+    "movie_title": "The Lion King",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-09 11:00:00",
+    "booked_seats": 1,
+    "available_seats": 54,
+    "total_capacity": 55,
+    "occupancy_percentage": 1.82
+  },
+  {
+    "event_id": "138",
+    "movie_title": "How to Train Your Dragon",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-09 13:00:00",
+    "booked_seats": 1,
+    "available_seats": 137,
+    "total_capacity": 138,
+    "occupancy_percentage": 0.72
+  },
+  {
+    "event_id": "127",
+    "movie_title": "The Lord of the Rings: The Two Towers",
+    "hall_name": "Hall 3",
+    "screen_time": "2026-06-09 14:00:00",
+    "booked_seats": 1,
+    "available_seats": 105,
+    "total_capacity": 106,
+    "occupancy_percentage": 0.94
+  },
+  {
+    "event_id": "15",
+    "movie_title": "Saving Private Ryan",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-09 16:00:00",
+    "booked_seats": 0,
+    "available_seats": 130,
+    "total_capacity": 130,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "69",
+    "movie_title": "The Dark Knight Rises",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-09 17:00:00",
+    "booked_seats": 2,
+    "available_seats": 64,
+    "total_capacity": 66,
+    "occupancy_percentage": 3.03
+  },
+  {
+    "event_id": "128",
+    "movie_title": "The Avengers",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-09 17:30:00",
+    "booked_seats": 2,
+    "available_seats": 88,
+    "total_capacity": 90,
+    "occupancy_percentage": 2.22
+  },
+  {
+    "event_id": "45",
+    "movie_title": "The Lion King",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-09 19:00:00",
+    "booked_seats": 3,
+    "available_seats": 23,
+    "total_capacity": 26,
+    "occupancy_percentage": 11.54
+  },
+  {
+    "event_id": "23",
+    "movie_title": "Star Trek",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-09 19:30:00",
+    "booked_seats": 1,
+    "available_seats": 26,
+    "total_capacity": 27,
+    "occupancy_percentage": 3.7
+  },
+  {
+    "event_id": "57",
+    "movie_title": "Skyfall",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-09 20:30:00",
+    "booked_seats": 2,
+    "available_seats": 97,
+    "total_capacity": 99,
+    "occupancy_percentage": 2.02
+  },
+  {
+    "event_id": "120",
+    "movie_title": "Dawn of the Planet of the Apes",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-09 20:30:00",
+    "booked_seats": 0,
+    "available_seats": 29,
+    "total_capacity": 29,
+    "occupancy_percentage": 0.0
+  },
+  {
+    "event_id": "135",
+    "movie_title": "Back to the Future",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-09 22:30:00",
+    "booked_seats": 1,
+    "available_seats": 25,
+    "total_capacity": 26,
+    "occupancy_percentage": 3.85
+  }
+]

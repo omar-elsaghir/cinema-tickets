@@ -1,0 +1,1052 @@
+[
+  {
+    "session_id": "53",
+    "movie_id": "77",
+    "screen_time": "2026-05-26 11:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "88"
+  },
+  {
+    "session_id": "92",
+    "movie_id": "13",
+    "screen_time": "2026-05-26 11:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "138"
+  },
+  {
+    "session_id": "74",
+    "movie_id": "34",
+    "screen_time": "2026-05-26 11:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "29"
+  },
+  {
+    "session_id": "129",
+    "movie_id": "71",
+    "screen_time": "2026-05-26 11:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "76"
+  },
+  {
+    "session_id": "56",
+    "movie_id": "1",
+    "screen_time": "2026-05-26 13:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "4"
+  },
+  {
+    "session_id": "137",
+    "movie_id": "85",
+    "screen_time": "2026-05-26 14:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "65"
+  },
+  {
+    "session_id": "91",
+    "movie_id": "80",
+    "screen_time": "2026-05-26 16:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "146"
+  },
+  {
+    "session_id": "70",
+    "movie_id": "38",
+    "screen_time": "2026-05-26 19:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "150"
+  },
+  {
+    "session_id": "90",
+    "movie_id": "65",
+    "screen_time": "2026-05-26 20:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "27"
+  },
+  {
+    "session_id": "33",
+    "movie_id": "13",
+    "screen_time": "2026-05-26 20:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": "0"
+  },
+  {
+    "session_id": "103",
+    "movie_id": "67",
+    "screen_time": "2026-05-27 13:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "59"
+  },
+  {
+    "session_id": "85",
+    "movie_id": "24",
+    "screen_time": "2026-05-27 13:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "146"
+  },
+  {
+    "session_id": "26",
+    "movie_id": "14",
+    "screen_time": "2026-05-27 14:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "103"
+  },
+  {
+    "session_id": "116",
+    "movie_id": "95",
+    "screen_time": "2026-05-27 14:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "120"
+  },
+  {
+    "session_id": "52",
+    "movie_id": "42",
+    "screen_time": "2026-05-27 16:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "83"
+  },
+  {
+    "session_id": "20",
+    "movie_id": "62",
+    "screen_time": "2026-05-27 17:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "44"
+  },
+  {
+    "session_id": "7",
+    "movie_id": "30",
+    "screen_time": "2026-05-27 19:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "117"
+  },
+  {
+    "session_id": "58",
+    "movie_id": "49",
+    "screen_time": "2026-05-27 22:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "149"
+  },
+  {
+    "session_id": "139",
+    "movie_id": "99",
+    "screen_time": "2026-05-28 11:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "137"
+  },
+  {
+    "session_id": "101",
+    "movie_id": "81",
+    "screen_time": "2026-05-28 13:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "58"
+  },
+  {
+    "session_id": "34",
+    "movie_id": "24",
+    "screen_time": "2026-05-28 17:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "64"
+  },
+  {
+    "session_id": "37",
+    "movie_id": "33",
+    "screen_time": "2026-05-28 20:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "11"
+  },
+  {
+    "session_id": "31",
+    "movie_id": "71",
+    "screen_time": "2026-05-28 22:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "53"
+  },
+  {
+    "session_id": "65",
+    "movie_id": "66",
+    "screen_time": "2026-05-28 22:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": "103"
+  },
+  {
+    "session_id": "112",
+    "movie_id": "63",
+    "screen_time": "2026-05-28 22:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "2"
+  },
+  {
+    "session_id": "68",
+    "movie_id": "42",
+    "screen_time": "2026-05-29 11:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "118"
+  },
+  {
+    "session_id": "150",
+    "movie_id": "54",
+    "screen_time": "2026-05-29 11:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "103"
+  },
+  {
+    "session_id": "54",
+    "movie_id": "20",
+    "screen_time": "2026-05-29 14:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "24"
+  },
+  {
+    "session_id": "62",
+    "movie_id": "72",
+    "screen_time": "2026-05-29 16:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "94"
+  },
+  {
+    "session_id": "3",
+    "movie_id": "93",
+    "screen_time": "2026-05-29 16:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "30"
+  },
+  {
+    "session_id": "89",
+    "movie_id": "26",
+    "screen_time": "2026-05-29 16:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "103"
+  },
+  {
+    "session_id": "42",
+    "movie_id": "36",
+    "screen_time": "2026-05-29 16:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "2"
+  },
+  {
+    "session_id": "104",
+    "movie_id": "7",
+    "screen_time": "2026-05-29 17:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "86"
+  },
+  {
+    "session_id": "17",
+    "movie_id": "57",
+    "screen_time": "2026-05-29 19:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "48"
+  },
+  {
+    "session_id": "24",
+    "movie_id": "24",
+    "screen_time": "2026-05-29 19:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "71"
+  },
+  {
+    "session_id": "144",
+    "movie_id": "97",
+    "screen_time": "2026-05-29 20:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "24"
+  },
+  {
+    "session_id": "32",
+    "movie_id": "95",
+    "screen_time": "2026-05-29 20:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "109"
+  },
+  {
+    "session_id": "121",
+    "movie_id": "38",
+    "screen_time": "2026-05-30 16:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "12"
+  },
+  {
+    "session_id": "99",
+    "movie_id": "75",
+    "screen_time": "2026-05-30 20:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "97"
+  },
+  {
+    "session_id": "5",
+    "movie_id": "63",
+    "screen_time": "2026-05-31 11:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "51"
+  },
+  {
+    "session_id": "30",
+    "movie_id": "75",
+    "screen_time": "2026-05-31 13:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "56"
+  },
+  {
+    "session_id": "148",
+    "movie_id": "55",
+    "screen_time": "2026-05-31 14:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "138"
+  },
+  {
+    "session_id": "97",
+    "movie_id": "90",
+    "screen_time": "2026-05-31 16:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "49"
+  },
+  {
+    "session_id": "22",
+    "movie_id": "12",
+    "screen_time": "2026-05-31 17:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "62"
+  },
+  {
+    "session_id": "145",
+    "movie_id": "82",
+    "screen_time": "2026-05-31 20:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "133"
+  },
+  {
+    "session_id": "12",
+    "movie_id": "7",
+    "screen_time": "2026-05-31 20:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "121"
+  },
+  {
+    "session_id": "72",
+    "movie_id": "72",
+    "screen_time": "2026-05-31 22:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "139"
+  },
+  {
+    "session_id": "119",
+    "movie_id": "98",
+    "screen_time": "2026-06-01 13:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": "61"
+  },
+  {
+    "session_id": "79",
+    "movie_id": "33",
+    "screen_time": "2026-06-01 14:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "58"
+  },
+  {
+    "session_id": "149",
+    "movie_id": "57",
+    "screen_time": "2026-06-01 14:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "121"
+  },
+  {
+    "session_id": "10",
+    "movie_id": "55",
+    "screen_time": "2026-06-01 14:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "25"
+  },
+  {
+    "session_id": "47",
+    "movie_id": "84",
+    "screen_time": "2026-06-01 16:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "104"
+  },
+  {
+    "session_id": "73",
+    "movie_id": "75",
+    "screen_time": "2026-06-01 16:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "80"
+  },
+  {
+    "session_id": "87",
+    "movie_id": "18",
+    "screen_time": "2026-06-01 16:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": "89"
+  },
+  {
+    "session_id": "2",
+    "movie_id": "82",
+    "screen_time": "2026-06-01 17:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "40"
+  },
+  {
+    "session_id": "107",
+    "movie_id": "96",
+    "screen_time": "2026-06-01 20:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "47"
+  },
+  {
+    "session_id": "18",
+    "movie_id": "91",
+    "screen_time": "2026-06-01 20:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "104"
+  },
+  {
+    "session_id": "96",
+    "movie_id": "35",
+    "screen_time": "2026-06-01 22:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "139"
+  },
+  {
+    "session_id": "126",
+    "movie_id": "89",
+    "screen_time": "2026-06-01 22:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "105"
+  },
+  {
+    "session_id": "50",
+    "movie_id": "48",
+    "screen_time": "2026-06-02 17:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "17"
+  },
+  {
+    "session_id": "105",
+    "movie_id": "30",
+    "screen_time": "2026-06-02 19:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "15"
+  },
+  {
+    "session_id": "100",
+    "movie_id": "63",
+    "screen_time": "2026-06-02 22:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "83"
+  },
+  {
+    "session_id": "29",
+    "movie_id": "42",
+    "screen_time": "2026-06-03 11:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "128"
+  },
+  {
+    "session_id": "28",
+    "movie_id": "86",
+    "screen_time": "2026-06-03 11:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "119"
+  },
+  {
+    "session_id": "141",
+    "movie_id": "65",
+    "screen_time": "2026-06-03 13:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "100"
+  },
+  {
+    "session_id": "143",
+    "movie_id": "5",
+    "screen_time": "2026-06-03 13:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "111"
+  },
+  {
+    "session_id": "48",
+    "movie_id": "30",
+    "screen_time": "2026-06-03 13:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "75"
+  },
+  {
+    "session_id": "77",
+    "movie_id": "1",
+    "screen_time": "2026-06-03 14:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "93"
+  },
+  {
+    "session_id": "98",
+    "movie_id": "100",
+    "screen_time": "2026-06-03 16:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "62"
+  },
+  {
+    "session_id": "83",
+    "movie_id": "20",
+    "screen_time": "2026-06-03 16:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "87"
+  },
+  {
+    "session_id": "124",
+    "movie_id": "89",
+    "screen_time": "2026-06-03 19:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "24"
+  },
+  {
+    "session_id": "40",
+    "movie_id": "81",
+    "screen_time": "2026-06-03 19:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "48"
+  },
+  {
+    "session_id": "81",
+    "movie_id": "65",
+    "screen_time": "2026-06-03 20:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "40"
+  },
+  {
+    "session_id": "13",
+    "movie_id": "92",
+    "screen_time": "2026-06-03 20:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "68"
+  },
+  {
+    "session_id": "131",
+    "movie_id": "11",
+    "screen_time": "2026-06-04 11:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "43"
+  },
+  {
+    "session_id": "43",
+    "movie_id": "65",
+    "screen_time": "2026-06-04 11:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "140"
+  },
+  {
+    "session_id": "130",
+    "movie_id": "20",
+    "screen_time": "2026-06-04 13:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "11"
+  },
+  {
+    "session_id": "49",
+    "movie_id": "23",
+    "screen_time": "2026-06-04 13:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "91"
+  },
+  {
+    "session_id": "123",
+    "movie_id": "42",
+    "screen_time": "2026-06-04 13:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "37"
+  },
+  {
+    "session_id": "80",
+    "movie_id": "94",
+    "screen_time": "2026-06-04 13:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "17"
+  },
+  {
+    "session_id": "108",
+    "movie_id": "30",
+    "screen_time": "2026-06-04 13:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "5"
+  },
+  {
+    "session_id": "147",
+    "movie_id": "21",
+    "screen_time": "2026-06-04 14:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "131"
+  },
+  {
+    "session_id": "86",
+    "movie_id": "87",
+    "screen_time": "2026-06-04 14:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "104"
+  },
+  {
+    "session_id": "67",
+    "movie_id": "23",
+    "screen_time": "2026-06-04 14:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": "88"
+  },
+  {
+    "session_id": "6",
+    "movie_id": "46",
+    "screen_time": "2026-06-04 14:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "71"
+  },
+  {
+    "session_id": "110",
+    "movie_id": "35",
+    "screen_time": "2026-06-04 16:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "33"
+  },
+  {
+    "session_id": "64",
+    "movie_id": "30",
+    "screen_time": "2026-06-04 17:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "140"
+  },
+  {
+    "session_id": "38",
+    "movie_id": "84",
+    "screen_time": "2026-06-04 17:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "81"
+  },
+  {
+    "session_id": "44",
+    "movie_id": "49",
+    "screen_time": "2026-06-04 17:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "74"
+  },
+  {
+    "session_id": "21",
+    "movie_id": "82",
+    "screen_time": "2026-06-04 17:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "119"
+  },
+  {
+    "session_id": "60",
+    "movie_id": "58",
+    "screen_time": "2026-06-04 19:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "85"
+  },
+  {
+    "session_id": "75",
+    "movie_id": "42",
+    "screen_time": "2026-06-04 20:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "88"
+  },
+  {
+    "session_id": "4",
+    "movie_id": "86",
+    "screen_time": "2026-06-04 22:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "131"
+  },
+  {
+    "session_id": "36",
+    "movie_id": "40",
+    "screen_time": "2026-06-05 14:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": "119"
+  },
+  {
+    "session_id": "25",
+    "movie_id": "47",
+    "screen_time": "2026-06-05 14:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "31"
+  },
+  {
+    "session_id": "122",
+    "movie_id": "1",
+    "screen_time": "2026-06-05 17:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "24"
+  },
+  {
+    "session_id": "109",
+    "movie_id": "65",
+    "screen_time": "2026-06-05 19:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "5"
+  },
+  {
+    "session_id": "111",
+    "movie_id": "35",
+    "screen_time": "2026-06-05 19:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "127"
+  },
+  {
+    "session_id": "142",
+    "movie_id": "95",
+    "screen_time": "2026-06-05 19:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "145"
+  },
+  {
+    "session_id": "93",
+    "movie_id": "96",
+    "screen_time": "2026-06-05 19:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "70"
+  },
+  {
+    "session_id": "51",
+    "movie_id": "61",
+    "screen_time": "2026-06-06 11:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "69"
+  },
+  {
+    "session_id": "102",
+    "movie_id": "16",
+    "screen_time": "2026-06-06 11:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "15"
+  },
+  {
+    "session_id": "125",
+    "movie_id": "97",
+    "screen_time": "2026-06-06 13:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "78"
+  },
+  {
+    "session_id": "63",
+    "movie_id": "99",
+    "screen_time": "2026-06-06 13:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "86"
+  },
+  {
+    "session_id": "78",
+    "movie_id": "59",
+    "screen_time": "2026-06-06 13:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "10"
+  },
+  {
+    "session_id": "133",
+    "movie_id": "90",
+    "screen_time": "2026-06-06 13:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "90"
+  },
+  {
+    "session_id": "82",
+    "movie_id": "59",
+    "screen_time": "2026-06-06 14:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "144"
+  },
+  {
+    "session_id": "55",
+    "movie_id": "15",
+    "screen_time": "2026-06-06 14:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": "102"
+  },
+  {
+    "session_id": "134",
+    "movie_id": "87",
+    "screen_time": "2026-06-06 16:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "43"
+  },
+  {
+    "session_id": "61",
+    "movie_id": "22",
+    "screen_time": "2026-06-06 19:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "5"
+  },
+  {
+    "session_id": "114",
+    "movie_id": "83",
+    "screen_time": "2026-06-06 19:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "75"
+  },
+  {
+    "session_id": "146",
+    "movie_id": "35",
+    "screen_time": "2026-06-06 19:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "9"
+  },
+  {
+    "session_id": "8",
+    "movie_id": "78",
+    "screen_time": "2026-06-06 19:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "2"
+  },
+  {
+    "session_id": "140",
+    "movie_id": "14",
+    "screen_time": "2026-06-06 19:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "70"
+  },
+  {
+    "session_id": "94",
+    "movie_id": "37",
+    "screen_time": "2026-06-06 22:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "54"
+  },
+  {
+    "session_id": "71",
+    "movie_id": "5",
+    "screen_time": "2026-06-07 11:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "147"
+  },
+  {
+    "session_id": "35",
+    "movie_id": "42",
+    "screen_time": "2026-06-07 14:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "28"
+  },
+  {
+    "session_id": "106",
+    "movie_id": "81",
+    "screen_time": "2026-06-07 16:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": "139"
+  },
+  {
+    "session_id": "113",
+    "movie_id": "49",
+    "screen_time": "2026-06-07 17:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "94"
+  },
+  {
+    "session_id": "59",
+    "movie_id": "73",
+    "screen_time": "2026-06-07 19:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "62"
+  },
+  {
+    "session_id": "27",
+    "movie_id": "15",
+    "screen_time": "2026-06-07 19:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "33"
+  },
+  {
+    "session_id": "39",
+    "movie_id": "64",
+    "screen_time": "2026-06-07 19:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "77"
+  },
+  {
+    "session_id": "66",
+    "movie_id": "34",
+    "screen_time": "2026-06-07 22:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "143"
+  },
+  {
+    "session_id": "11",
+    "movie_id": "99",
+    "screen_time": "2026-06-08 11:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "38"
+  },
+  {
+    "session_id": "16",
+    "movie_id": "90",
+    "screen_time": "2026-06-08 11:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "60"
+  },
+  {
+    "session_id": "136",
+    "movie_id": "43",
+    "screen_time": "2026-06-08 11:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "127"
+  },
+  {
+    "session_id": "41",
+    "movie_id": "99",
+    "screen_time": "2026-06-08 13:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "66"
+  },
+  {
+    "session_id": "84",
+    "movie_id": "11",
+    "screen_time": "2026-06-08 13:30:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "45"
+  },
+  {
+    "session_id": "115",
+    "movie_id": "69",
+    "screen_time": "2026-06-08 14:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "132"
+  },
+  {
+    "session_id": "118",
+    "movie_id": "63",
+    "screen_time": "2026-06-08 14:00:00",
+    "hall_name": "Hall 4 (VIP)",
+    "available_seats": "87"
+  },
+  {
+    "session_id": "46",
+    "movie_id": "38",
+    "screen_time": "2026-06-08 14:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": "89"
+  },
+  {
+    "session_id": "14",
+    "movie_id": "33",
+    "screen_time": "2026-06-08 14:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "21"
+  },
+  {
+    "session_id": "76",
+    "movie_id": "73",
+    "screen_time": "2026-06-08 16:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "141"
+  },
+  {
+    "session_id": "132",
+    "movie_id": "47",
+    "screen_time": "2026-06-08 16:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "122"
+  },
+  {
+    "session_id": "117",
+    "movie_id": "25",
+    "screen_time": "2026-06-08 17:00:00",
+    "hall_name": "Hall 2",
+    "available_seats": "113"
+  },
+  {
+    "session_id": "19",
+    "movie_id": "53",
+    "screen_time": "2026-06-08 19:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "84"
+  },
+  {
+    "session_id": "1",
+    "movie_id": "66",
+    "screen_time": "2026-06-08 19:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "72"
+  },
+  {
+    "session_id": "95",
+    "movie_id": "58",
+    "screen_time": "2026-06-08 20:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "122"
+  },
+  {
+    "session_id": "88",
+    "movie_id": "95",
+    "screen_time": "2026-06-08 20:30:00",
+    "hall_name": "Hall 3",
+    "available_seats": "55"
+  },
+  {
+    "session_id": "9",
+    "movie_id": "13",
+    "screen_time": "2026-06-09 11:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "54"
+  },
+  {
+    "session_id": "138",
+    "movie_id": "74",
+    "screen_time": "2026-06-09 13:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "137"
+  },
+  {
+    "session_id": "127",
+    "movie_id": "23",
+    "screen_time": "2026-06-09 14:00:00",
+    "hall_name": "Hall 3",
+    "available_seats": "105"
+  },
+  {
+    "session_id": "15",
+    "movie_id": "76",
+    "screen_time": "2026-06-09 16:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "130"
+  },
+  {
+    "session_id": "69",
+    "movie_id": "10",
+    "screen_time": "2026-06-09 17:00:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "64"
+  },
+  {
+    "session_id": "128",
+    "movie_id": "6",
+    "screen_time": "2026-06-09 17:30:00",
+    "hall_name": "Hall 2",
+    "available_seats": "88"
+  },
+  {
+    "session_id": "45",
+    "movie_id": "13",
+    "screen_time": "2026-06-09 19:00:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "23"
+  },
+  {
+    "session_id": "23",
+    "movie_id": "55",
+    "screen_time": "2026-06-09 19:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "26"
+  },
+  {
+    "session_id": "57",
+    "movie_id": "36",
+    "screen_time": "2026-06-09 20:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "97"
+  },
+  {
+    "session_id": "120",
+    "movie_id": "83",
+    "screen_time": "2026-06-09 20:30:00",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "available_seats": "29"
+  },
+  {
+    "session_id": "135",
+    "movie_id": "80",
+    "screen_time": "2026-06-09 22:30:00",
+    "hall_name": "IMAX Theatre",
+    "available_seats": "25"
+  }
+]

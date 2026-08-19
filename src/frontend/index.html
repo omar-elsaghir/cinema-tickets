@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinemaPass | Distributed Ticket Reservation UI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">🎟️</span>
+      <div class="logo-text-group">
+        <span class="logo-text">CinemaPass</span>
+        <span class="logo-sub">Distributed Reservation System • Part 4 UI</span>
+      </div>
+    </div>
+    <div class="header-status" id="cluster-status-badge">
+      <span class="status-dot" id="status-dot"></span>
+      <span id="status-text">Connecting to Backend API...</span>
+    </div>
+  </header>
+
+  <main class="main-container">
+    
+    <!-- Top Control Card: Event & User Selection -->
+    <section class="controls-card">
+      <div class="control-group">
+        <label for="event-select">🎬 1. Select Movie Screening:</label>
+        <select id="event-select" class="custom-select">
+          <option value="">Loading events from cluster...</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="user-select">👤 2. Select Active User (Customer):</label>
+        <select id="user-select" class="custom-select">
+          <option value="">Loading users...</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Movie Details & Live Capacity Banner -->
+    <section id="event-banner" class="event-banner">
+      <div class="banner-header">
+        <div>
+          <h2 id="movie-title">Loading movie screening details...</h2>
+          <p id="movie-genre" class="movie-genre">Genre: -- | Runtime: -- min</p>
+        </div>
+        <div class="occupancy-meter-box">
+          <span class="occupancy-label">Occupancy Rate</span>
+          <span id="occupancy-percent" class="occupancy-value">0.0%</span>
+        </div>
+      </div>
+
+      <div class="event-meta">
+        <span id="event-hall" class="badge hall-badge">🏛️ Hall: --</span>
+        <span id="event-time" class="badge time-badge">🕒 Time: --</span>
+        <span id="event-avail" class="badge avail-badge">🎟️ Available: -- seats</span>
+        <span id="event-booked" class="badge booked-badge">🔒 Booked: -- seats</span>
+      </div>
+    </section>
+
+    <!-- Interactive Seating Layout -->
+    <section class="seating-section">
+      
+      <!-- Seating Legend -->
+      <div class="seat-legend">
+        <div class="legend-item"><span class="seat-sample available"></span> Available ($15 / $25)</div>
+        <div class="legend-item"><span class="seat-sample selected"></span> Selected Seat</div>
+        <div class="legend-item"><span class="seat-sample booked"></span> Booked (Unavailable)</div>
+        <div class="legend-item"><span class="seat-sample my-booking"></span> My Active Booking (Click to Cancel)</div>
+      </div>
+
+      <!-- Theater Screen Visual -->
+      <div class="screen-container">
+        <div class="theater-screen"></div>
+        <p class="screen-label">🎬 AUDITORIUM SCREEN • FRONT OF HALL 🎬</p>
+      </div>
+
+      <!-- Seating Grid Container with Column Headers -->
+      <div class="grid-wrapper">
+        <div id="seat-grid" class="seat-grid">
+          <p class="loading-text">Loading auditorium seating chart...</p>
+        </div>
+      </div>
+
+      <!-- Real-Time Booking Action Panel -->
+      <div class="action-panel">
+        <div class="selection-info">
+          <div class="info-block">
+            <span class="info-label">Selected Seat:</span>
+            <span id="selected-seat-label" class="info-value">None</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label">Ticket Price:</span>
+            <span id="selected-seat-price" class="info-value">$0.00</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label">Current Action:</span>
+            <span id="action-mode-label" class="info-value action-mode">Select a seat</span>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button id="book-btn" class="btn btn-primary" disabled>
+            ✨ Book Seat
+          </button>
+          <button id="cancel-btn" class="btn btn-danger" disabled>
+            ❌ Cancel Booking
+          </button>
+          <button id="refresh-btn" class="btn btn-secondary">
+            🔄 Refresh Status
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Distributed Ticket Reservation System • Part 4 Web UI • Powered by Apache Hadoop & Spark Architecture</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
