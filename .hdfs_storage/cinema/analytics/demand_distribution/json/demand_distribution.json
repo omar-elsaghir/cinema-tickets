@@ -1,0 +1,58 @@
+[
+  {
+    "time_slot": "Afternoon (12:00-16:59)",
+    "screening_hour": "13:00",
+    "total_screenings": 21,
+    "total_tickets_sold": 40,
+    "slot_revenue": 615.5
+  },
+  {
+    "time_slot": "Afternoon (12:00-16:59)",
+    "screening_hour": "14:00",
+    "total_screenings": 23,
+    "total_tickets_sold": 45,
+    "slot_revenue": 709.5
+  },
+  {
+    "time_slot": "Afternoon (12:00-16:59)",
+    "screening_hour": "16:00",
+    "total_screenings": 19,
+    "total_tickets_sold": 30,
+    "slot_revenue": 442.0
+  },
+  {
+    "time_slot": "Evening (17:00-20:59)",
+    "screening_hour": "17:00",
+    "total_screenings": 15,
+    "total_tickets_sold": 21,
+    "slot_revenue": 336.5
+  },
+  {
+    "time_slot": "Evening (17:00-20:59)",
+    "screening_hour": "19:00",
+    "total_screenings": 24,
+    "total_tickets_sold": 35,
+    "slot_revenue": 549.0
+  },
+  {
+    "time_slot": "Evening (17:00-20:59)",
+    "screening_hour": "20:00",
+    "total_screenings": 17,
+    "total_tickets_sold": 30,
+    "slot_revenue": 453.0
+  },
+  {
+    "time_slot": "Late Night (21:00+)",
+    "screening_hour": "22:00",
+    "total_screenings": 12,
+    "total_tickets_sold": 19,
+    "slot_revenue": 307.5
+  },
+  {
+    "time_slot": "Morning (<12:00)",
+    "screening_hour": "11:00",
+    "total_screenings": 19,
+    "total_tickets_sold": 30,
+    "slot_revenue": 459.0
+  }
+]

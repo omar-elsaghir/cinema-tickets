@@ -1,0 +1,5 @@
+loyalty_tier,total_users_in_tier,total_bookings,total_revenue,avg_spend_per_user,avg_ticket_price
+Platinum (400+ pts),79,49,746.0,9.44,15.22
+Gold (250-399 pts),112,45,716.5,6.4,15.92
+Silver (100-249 pts),128,98,1497.5,11.7,15.28
+Bronze (<100 pts),81,58,912.0,11.26,15.72

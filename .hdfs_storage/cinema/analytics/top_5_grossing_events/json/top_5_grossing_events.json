@@ -1,0 +1,47 @@
+[
+  {
+    "rank": 1,
+    "event_id": "83",
+    "movie_title": "The Lord of the Rings: The Return of the King",
+    "hall_name": "Hall 2",
+    "screen_time": "2026-06-03 16:30:00",
+    "tickets_sold": 6,
+    "total_box_office_revenue": 93.0
+  },
+  {
+    "rank": 2,
+    "event_id": "48",
+    "movie_title": "Iron Man",
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "screen_time": "2026-06-03 13:30:00",
+    "tickets_sold": 5,
+    "total_box_office_revenue": 85.5
+  },
+  {
+    "rank": 3,
+    "event_id": "30",
+    "movie_title": "Aladdin",
+    "hall_name": "Hall 4 (VIP)",
+    "screen_time": "2026-05-31 13:30:00",
+    "tickets_sold": 5,
+    "total_box_office_revenue": 77.0
+  },
+  {
+    "rank": 4,
+    "event_id": "18",
+    "movie_title": "Spider-Man: Into the Spider-Verse",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-06-01 20:30:00",
+    "tickets_sold": 5,
+    "total_box_office_revenue": 77.0
+  },
+  {
+    "rank": 5,
+    "event_id": "116",
+    "movie_title": "Gladiator",
+    "hall_name": "IMAX Theatre",
+    "screen_time": "2026-05-27 14:30:00",
+    "tickets_sold": 4,
+    "total_box_office_revenue": 64.5
+  }
+]

@@ -1,0 +1,6 @@
+hall_name,total_screenings,total_tickets_sold,total_revenue,avg_revenue_per_screening
+Hall 1 (Dolby Atmos),33,56,874.0,26.48
+Hall 2,34,55,852.5,25.07
+Hall 3,27,43,659.0,24.41
+Hall 4 (VIP),26,50,775.5,29.83
+IMAX Theatre,30,46,711.0,23.7

@@ -1,0 +1,9 @@
+time_slot,screening_hour,total_screenings,total_tickets_sold,slot_revenue
+Afternoon (12:00-16:59),13:00,21,40,615.5
+Afternoon (12:00-16:59),14:00,23,45,709.5
+Afternoon (12:00-16:59),16:00,19,30,442.0
+Evening (17:00-20:59),17:00,15,21,336.5
+Evening (17:00-20:59),19:00,24,35,549.0
+Evening (17:00-20:59),20:00,17,30,453.0
+Late Night (21:00+),22:00,12,19,307.5
+Morning (<12:00),11:00,19,30,459.0

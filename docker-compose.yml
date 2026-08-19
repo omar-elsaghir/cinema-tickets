@@ -1,46 +1,194 @@
-networks:
-  hadoop_net:
-    driver: bridge
+version: '3.8'
 
 services:
+  # ==========================================
+  # MASTER NODE (HDFS Namenode / Spark Master)
+  # ==========================================
   namenode:
     image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
-    container_name: namenode
+    container_name: ticket-master-node
     hostname: namenode
     restart: always
     ports:
-      - "9870:9870"
-      - "9000:9000"
+      - "9870:9870"  # HDFS Namenode Web UI
+      - "9000:9000"  # HDFS RPC Port
     environment:
-      - CLUSTER_NAME=ticket_cluster
-    env_file:
-      - ./docker/hadoop.env
+      - CLUSTER_NAME=ticket-reservation-cluster
+      - HDFS_CONF_dfs_replication=3
+      - HDFS_CONF_dfs_permissions_enabled=false
     volumes:
-      - ./data:/ticket_system_local
-      - ./scripts:/scripts
+      - hadoop_namenode:/hadoop/dfs/name
+      - ./config/hdfs-site.xml:/etc/hadoop/hdfs-site.xml
+      - ./config/core-site.xml:/etc/hadoop/core-site.xml
     networks:
-      - hadoop_net
+      - ticket-cluster-net
 
-  datanode:
+  # ==========================================
+  # 10 WORKER NODES (HDFS Datanodes 1..10)
+  # ==========================================
+  datanode-1:
     image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: ticket-worker-node-1
+    hostname: datanode-1
     restart: always
     environment:
-      - SERVICE_PRECONDITION=namenode:9000
-    env_file:
-      - ./docker/hadoop.env
+      - SERVICE_PRECONDITION=namenode:9870
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes:
+      - hadoop_datanode_1:/hadoop/dfs/data
     networks:
-      - hadoop_net
+      - ticket-cluster-net
+    depends_on:
+      - namenode
 
-  resourcemanager:
-    image: bde2020/hadoop-resourcemanager:2.0.0-hadoop3.2.1-java8
-    container_name: resourcemanager
-    hostname: resourcemanager
+  datanode-2:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: ticket-worker-node-2
+    hostname: datanode-2
     restart: always
-    ports:
-      - "8088:8088"
     environment:
-      - SERVICE_PRECONDITION=namenode:9000
-    env_file:
-      - ./docker/hadoop.env
+      - SERVICE_PRECONDITION=namenode:9870
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes:
+      - hadoop_datanode_2:/hadoop/dfs/data
     networks:
-      - hadoop_net
+      - ticket-cluster-net
+    depends_on:
+      - namenode
+
+  datanode-3:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: ticket-worker-node-3
+    hostname: datanode-3
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes:
+      - hadoop_datanode_3:/hadoop/dfs/data
+    networks:
+      - ticket-cluster-net
+    depends_on:
+      - namenode
+
+  datanode-4:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: ticket-worker-node-4
+    hostname: datanode-4
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes:
+      - hadoop_datanode_4:/hadoop/dfs/data
+    networks:
+      - ticket-cluster-net
+    depends_on:
+      - namenode
+
+  datanode-5:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: ticket-worker-node-5
+    hostname: datanode-5
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes:
+      - hadoop_datanode_5:/hadoop/dfs/data
+    networks:
+      - ticket-cluster-net
+    depends_on:
+      - namenode
+
+  datanode-6:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: ticket-worker-node-6
+    hostname: datanode-6
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes:
+      - hadoop_datanode_6:/hadoop/dfs/data
+    networks:
+      - ticket-cluster-net
+    depends_on:
+      - namenode
+
+  datanode-7:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: ticket-worker-node-7
+    hostname: datanode-7
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes:
+      - hadoop_datanode_7:/hadoop/dfs/data
+    networks:
+      - ticket-cluster-net
+    depends_on:
+      - namenode
+
+  datanode-8:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: ticket-worker-node-8
+    hostname: datanode-8
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes:
+      - hadoop_datanode_8:/hadoop/dfs/data
+    networks:
+      - ticket-cluster-net
+    depends_on:
+      - namenode
+
+  datanode-9:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: ticket-worker-node-9
+    hostname: datanode-9
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes:
+      - hadoop_datanode_9:/hadoop/dfs/data
+    networks:
+      - ticket-cluster-net
+    depends_on:
+      - namenode
+
+  datanode-10:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: ticket-worker-node-10
+    hostname: datanode-10
+    restart: always
+    environment:
+      - SERVICE_PRECONDITION=namenode:9870
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    volumes:
+      - hadoop_datanode_10:/hadoop/dfs/data
+    networks:
+      - ticket-cluster-net
+    depends_on:
+      - namenode
+
+volumes:
+  hadoop_namenode:
+  hadoop_datanode_1:
+  hadoop_datanode_2:
+  hadoop_datanode_3:
+  hadoop_datanode_4:
+  hadoop_datanode_5:
+  hadoop_datanode_6:
+  hadoop_datanode_7:
+  hadoop_datanode_8:
+  hadoop_datanode_9:
+  hadoop_datanode_10:
+
+networks:
+  ticket-cluster-net:
+    driver: bridge

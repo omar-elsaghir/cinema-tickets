@@ -1,0 +1,6 @@
+rank,user_id,name,phone_number,loyalty_points,total_bookings,total_spent,avg_spend_per_ticket
+1,22,Ethan Martinez,+1-555-410-8990,115,9,134.5,14.94
+2,16,Bob Davis,+1-555-780-4859,100,6,101.5,16.92
+3,53,George Brown,+1-555-881-8001,109,6,94.5,15.75
+4,64,Julia Martinez,+1-555-732-9907,189,6,88.5,14.75
+5,96,Julia Jones,+1-555-953-1859,489,6,87.0,14.5
