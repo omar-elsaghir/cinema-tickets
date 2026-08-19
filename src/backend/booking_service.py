@@ -1,6 +1,6 @@
 """
-Core Booking Domain Service for Cinema Ticket Reservation System (Part 3).
-Handles movie events, seat reservations, cancellations, capacity tracking,
+Core Booking Domain Service for Cinema Ticket Reservation System (Part 3 & 4).
+Handles movie events, seat reservations, cancellations, real-time capacity tracking,
 and coordinates with the Concurrency Lock Manager and HDFS Sync Manager.
 """
 
@@ -17,19 +17,22 @@ from src.backend.hdfs_sync import hdfs_sync_manager
 
 logger = logging.getLogger("booking_service")
 
+AUDITORIUM_ROWS = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K"]  # 10 rows (A-K without I)
+SEATS_PER_ROW = 20  # 20 columns (1-20 matching Kaggle cinema layout)
+TOTAL_SEATS_PER_EVENT = len(AUDITORIUM_ROWS) * SEATS_PER_ROW  # 200 seats total
 
 class BookingService:
     """
     Core Domain Service managing booking transactions and seat inventory.
-    Enforces thread-safety, prevents double bookings, and maintains consistency.
+    Enforces thread-safety, prevents double bookings, and maintains accurate real-time seat counts.
     """
 
     def __init__(self, data_dir: Optional[str] = None):
         if data_dir is None:
             project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-            data_dir = os.path.join(project_root, "scripts", "data", "staging")
+            data_dir = os.path.join(project_root, "data", "staging")
             if not os.path.exists(data_dir):
-                data_dir = os.path.join(project_root, "data", "staging")
+                data_dir = os.path.join(project_root, "scripts", "data", "staging")
 
         self.data_dir = data_dir
         self._state_lock = threading.RLock()
@@ -62,8 +65,9 @@ class BookingService:
                         if line.strip():
                             ev = json.loads(line.strip())
                             ev["event_id"] = int(ev["event_id"])
-                            ev["available_seats"] = int(ev.get("available_seats", 100))
                             ev["runtime_in_min"] = int(ev.get("runtime_in_min", 120))
+                            ev["total_seats"] = TOTAL_SEATS_PER_EVENT
+                            ev["available_seats"] = TOTAL_SEATS_PER_EVENT
                             self._events[ev["event_id"]] = ev
             elif os.path.exists(events_file_csv):
                 with open(events_file_csv, "r", encoding="utf-8") as f:
@@ -75,9 +79,10 @@ class BookingService:
                             "movie_title": row.get("movie_title", ""),
                             "screen_time": row.get("screen_time", ""),
                             "hall_name": row.get("hall_name", "Hall 1"),
-                            "available_seats": int(row.get("available_seats", 100)),
                             "genre": row.get("genre", ""),
-                            "runtime_in_min": int(row.get("runtime_in_min", 120))
+                            "runtime_in_min": int(row.get("runtime_in_min", 120)),
+                            "total_seats": TOTAL_SEATS_PER_EVENT,
+                            "available_seats": TOTAL_SEATS_PER_EVENT
                         }
 
             # 2. Load Users
@@ -121,6 +126,7 @@ class BookingService:
                                 "event_id": eid,
                                 "seat_number": seat_num,
                                 "user_id": uid,
+                                "booked_by_user_id": uid,
                                 "price": price,
                                 "status": "booked",
                                 "ticket_id": ticket_id
@@ -149,6 +155,7 @@ class BookingService:
                             "event_id": eid,
                             "seat_number": seat_num,
                             "user_id": uid,
+                            "booked_by_user_id": uid,
                             "price": price,
                             "status": "booked",
                             "ticket_id": ticket_id
@@ -169,16 +176,42 @@ class BookingService:
         self._load_initial_data()
 
     def get_events(self) -> List[Dict[str, Any]]:
-        """Returns list of active movie events with up-to-date remaining seats."""
+        """Returns list of active movie events with TRUE calculated remaining seats."""
         with self._state_lock:
-            events_list = list(self._events.values())
-            # Return sorted by event_id
+            # Calculate real booked count per event
+            booked_counts = {}
+            for (eid, _), _ in self._booked_seats.items():
+                booked_counts[eid] = booked_counts.get(eid, 0) + 1
+
+            events_list = []
+            for ev in self._events.values():
+                eid = ev["event_id"]
+                booked = booked_counts.get(eid, 0)
+                real_avail = max(0, TOTAL_SEATS_PER_EVENT - booked)
+                
+                ev_copy = dict(ev)
+                ev_copy["total_seats"] = TOTAL_SEATS_PER_EVENT
+                ev_copy["booked_seats"] = booked
+                ev_copy["available_seats"] = real_avail
+                ev_copy["occupancy_rate"] = round((booked / TOTAL_SEATS_PER_EVENT * 100), 1)
+                events_list.append(ev_copy)
+
             return sorted(events_list, key=lambda x: x["event_id"])
 
     def get_event(self, event_id: int) -> Optional[Dict[str, Any]]:
         """Returns details for a single event."""
         with self._state_lock:
-            return self._events.get(int(event_id))
+            event = self._events.get(int(event_id))
+            if not event:
+                return None
+            
+            booked = sum(1 for (eid, _) in self._booked_seats if eid == int(event_id))
+            ev_copy = dict(event)
+            ev_copy["total_seats"] = TOTAL_SEATS_PER_EVENT
+            ev_copy["booked_seats"] = booked
+            ev_copy["available_seats"] = max(0, TOTAL_SEATS_PER_EVENT - booked)
+            ev_copy["occupancy_rate"] = round((booked / TOTAL_SEATS_PER_EVENT * 100), 1)
+            return ev_copy
 
     def get_users(self) -> List[Dict[str, Any]]:
         """Returns list of all registered users."""
@@ -187,18 +220,14 @@ class BookingService:
 
     def get_event_seats(self, event_id: int) -> Dict[str, Any]:
         """
-        Returns full auditorium seat matrix (e.g. Rows A-K, Seats 1-20)
-        and indicates which seats are Available vs Booked.
+        Returns full auditorium seat matrix (Rows A-K, Seats 1-20 = 200 seats)
+        with TRUE calculated Available and Booked counts matching every seat on the grid.
         """
         event_id = int(event_id)
         with self._state_lock:
             event = self._events.get(event_id)
             if not event:
                 return {"status": "error", "message": "Event not found.", "seats": []}
-
-            # Standard layout: Rows A through J (10 rows), 15 seats per row
-            rows = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K"]
-            seats_per_row = 15
 
             seat_map = []
             booked_count = 0
@@ -210,12 +239,13 @@ class BookingService:
                 if eid == event_id
             }
 
-            # 1. Generate full layout grid
-            for row in rows:
-                for col in range(1, seats_per_row + 1):
+            # Generate standard 10 x 20 grid (200 seats)
+            for row in AUDITORIUM_ROWS:
+                for col in range(1, SEATS_PER_ROW + 1):
                     seat_num = f"{row}{col}"
                     if seat_num in event_booked:
                         booked_info = event_booked[seat_num]
+                        uid = booked_info.get("user_id")
                         seat_map.append({
                             "seat_number": seat_num,
                             "row": row,
@@ -223,7 +253,8 @@ class BookingService:
                             "status": "booked",
                             "price": booked_info.get("price", 15.0),
                             "ticket_id": booked_info.get("ticket_id"),
-                            "user_id": booked_info.get("user_id")
+                            "user_id": uid,
+                            "booked_by_user_id": uid
                         })
                         booked_count += 1
                     else:
@@ -234,23 +265,13 @@ class BookingService:
                             "status": "available",
                             "price": 15.0,
                             "ticket_id": None,
-                            "user_id": None
+                            "user_id": None,
+                            "booked_by_user_id": None
                         })
 
-            # Also ensure any booked seat with non-standard seat_number is included
-            grid_seats = {s["seat_number"] for s in seat_map}
-            for seat_num, booked_info in event_booked.items():
-                if seat_num not in grid_seats:
-                    seat_map.append({
-                        "seat_number": seat_num,
-                        "row": seat_num[0] if seat_num else "A",
-                        "col": int(seat_num[1:]) if seat_num[1:].isdigit() else 1,
-                        "status": "booked",
-                        "price": booked_info.get("price", 15.0),
-                        "ticket_id": booked_info.get("ticket_id"),
-                        "user_id": booked_info.get("user_id")
-                    })
-                    booked_count += 1
+            total_seats = len(seat_map)
+            real_available_seats = max(0, total_seats - booked_count)
+            occ_rate = round((booked_count / total_seats * 100), 1) if total_seats > 0 else 0.0
 
             return {
                 "status": "success",
@@ -258,22 +279,16 @@ class BookingService:
                 "movie_title": event.get("movie_title"),
                 "screen_time": event.get("screen_time"),
                 "hall_name": event.get("hall_name"),
-                "available_seats": event.get("available_seats", 0),
-                "total_seats": len(seat_map),
+                "total_seats": total_seats,
                 "booked_seats_count": booked_count,
+                "available_seats": real_available_seats,
+                "occupancy_rate": occ_rate,
                 "seats": seat_map
             }
 
     def book_seat(self, user_id: Any, event_id: Any, seat_number: str, price: float = 15.0) -> Tuple[Dict[str, Any], int]:
         """
-        Thread-safe seat booking function.
-        Returns (result_dict, http_status_code).
-
-        Possible results:
-        - {"status": "success", "message": "Booking successful.", "ticket_id": ...}, 200
-        - {"status": "error", "message": "Seat already booked."}, 409
-        - {"status": "error", "message": "Seat unavailable."}, 400
-        - {"status": "error", "message": "Event not found."}, 404
+        Thread-safe seat booking function with dynamic inventory tracking.
         """
         try:
             event_id = int(event_id)
@@ -291,7 +306,6 @@ class BookingService:
 
         # Fine-grained lock per (event_id, seat_number)
         with seat_lock_manager.lock_seat(event_id, seat_number):
-            # Check event existence and availability under state lock
             with self._state_lock:
                 event = self._events.get(event_id)
                 if not event:
@@ -302,8 +316,9 @@ class BookingService:
                 if seat_key in self._booked_seats:
                     return {"status": "error", "message": "Seat already booked."}, 409
 
-                # Check if event has remaining capacity
-                if event.get("available_seats", 0) <= 0:
+                # Check total capacity
+                current_booked = sum(1 for (eid, _) in self._booked_seats if eid == event_id)
+                if current_booked >= TOTAL_SEATS_PER_EVENT:
                     return {"status": "error", "message": "Seat unavailable."}, 400
 
                 # Generate unique ticket ID
@@ -315,6 +330,7 @@ class BookingService:
                     "event_id": event_id,
                     "seat_number": seat_number,
                     "user_id": user_id,
+                    "booked_by_user_id": user_id,
                     "price": price,
                     "status": "booked",
                     "ticket_id": ticket_id
@@ -329,8 +345,7 @@ class BookingService:
                     "status": "ACTIVE"
                 }
 
-                # Decrement available seats for the event
-                event["available_seats"] -= 1
+                remaining_seats = max(0, TOTAL_SEATS_PER_EVENT - (current_booked + 1))
 
             # Log transaction to HDFS / audit store
             try:
@@ -352,7 +367,7 @@ class BookingService:
                 "seat_number": seat_number,
                 "user_id": user_id,
                 "price": price,
-                "remaining_seats": event["available_seats"]
+                "remaining_seats": remaining_seats
             }, 200
 
     def cancel_booking(
@@ -364,15 +379,7 @@ class BookingService:
     ) -> Tuple[Dict[str, Any], int]:
         """
         Thread-safe booking cancellation function.
-        Can cancel by ticket_id or by (event_id, seat_number, user_id).
-        Returns (result_dict, http_status_code).
-
-        Possible results:
-        - {"status": "success", "message": "Booking cancelled."}, 200
-        - {"status": "error", "message": "Booking not found or already cancelled."}, 404
-        - {"status": "error", "message": "Unauthorized cancellation."}, 403
         """
-        # Resolve target event_id and seat_number
         target_ticket_id = ticket_id
         target_event_id = int(event_id) if event_id is not None else None
         target_seat_num = str(seat_number).strip().upper() if seat_number else None
@@ -401,7 +408,7 @@ class BookingService:
 
                 seat_info = self._booked_seats[seat_key]
 
-                # Optional authorization check
+                # Authorization check
                 if target_user_id is not None and seat_info.get("user_id") is not None:
                     if str(seat_info.get("user_id")) != str(target_user_id):
                         return {"status": "error", "message": "Unauthorized: user does not own this ticket."}, 403
@@ -413,16 +420,10 @@ class BookingService:
                 if target_ticket_id and target_ticket_id in self._tickets:
                     self._tickets[target_ticket_id]["status"] = "CANCELLED"
 
-                # Increment available seats
-                event = self._events.get(target_event_id)
-                if event:
-                    event["available_seats"] += 1
-                    remaining = event["available_seats"]
-                else:
-                    remaining = 0
-
                 price = seat_info.get("price", 15.0)
                 active_ticket_id = target_ticket_id or seat_info.get("ticket_id") or "UNKNOWN"
+                current_booked = sum(1 for (eid, _) in self._booked_seats if eid == target_event_id)
+                remaining = max(0, TOTAL_SEATS_PER_EVENT - current_booked)
 
             # Log cancellation to HDFS / audit store
             try:
@@ -442,18 +443,16 @@ class BookingService:
                 "ticket_id": active_ticket_id,
                 "event_id": target_event_id,
                 "seat_number": target_seat_num,
+                "released_seat": target_seat_num,
                 "remaining_seats": remaining
             }, 200
 
     def get_tickets(self, user_id: Optional[Any] = None) -> List[Dict[str, Any]]:
-        """Returns list of tickets, optionally filtered by user_id."""
+        """Returns list of active/cancelled tickets."""
         with self._state_lock:
-            all_tickets = list(self._tickets.values())
             if user_id is not None:
-                uid_str = str(user_id)
-                all_tickets = [t for t in all_tickets if str(t.get("user_id")) == uid_str]
-            return all_tickets
+                uid = int(user_id) if str(user_id).isdigit() else user_id
+                return [t for t in self._tickets.values() if str(t.get("user_id")) == str(uid)]
+            return list(self._tickets.values())
 
-
-# Global shared instance
 booking_service = BookingService()

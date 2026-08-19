@@ -14,7 +14,36 @@
   <!-- Toast Notification Container -->
   <div id="toast-container" class="toast-container" aria-live="polite"></div>
 
-  <!-- Header -->
+  <!-- Login Modal Overlay (Required Before Choosing/Booking) -->
+  <div id="login-modal-overlay" class="login-modal-overlay">
+    <div class="login-modal-card">
+      <div class="login-header">
+        <span class="login-icon">🎟️</span>
+        <h2>CinemaPass Login</h2>
+        <p class="login-subtitle">Please authenticate to access the distributed booking system</p>
+      </div>
+
+      <form id="login-form" class="login-form">
+        <div class="form-group">
+          <label for="login-username">Username:</label>
+          <input type="text" id="login-username" class="form-input" placeholder="e.g. user1, user2, user42..." required autocomplete="username">
+          <small class="form-hint">Format: <code>user1</code> to <code>user400</code></small>
+        </div>
+
+        <div class="form-group">
+          <label for="login-password">Password:</label>
+          <input type="password" id="login-password" class="form-input" placeholder="Enter password (default: admin)" required autocomplete="current-password">
+          <small class="form-hint">Universal password: <code>admin</code></small>
+        </div>
+
+        <button type="submit" id="login-submit-btn" class="btn btn-primary btn-block">
+          🔐 Sign In to Booking System
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main Application Header -->
   <header class="header">
     <div class="logo">
       <span class="logo-icon">🎟️</span>
@@ -23,15 +52,30 @@
         <span class="logo-sub">Distributed Reservation System • Part 4 UI</span>
       </div>
     </div>
-    <div class="header-status" id="cluster-status-badge">
-      <span class="status-dot" id="status-dot"></span>
-      <span id="status-text">Connecting to Backend API...</span>
+
+    <!-- User Profile & Cluster Status -->
+    <div class="header-right">
+      <div class="user-profile-badge" id="user-profile-badge">
+        <span class="user-avatar">👤</span>
+        <div class="user-info-text">
+          <span id="header-username" class="header-user-name">user1</span>
+          <span id="header-user-loyalty" class="header-user-points">Loyalty: -- pts</span>
+        </div>
+        <button id="logout-btn" class="btn btn-xs btn-logout" title="Switch User / Sign Out">
+          🚪 Logout
+        </button>
+      </div>
+
+      <div class="header-status" id="cluster-status-badge">
+        <span class="status-dot" id="status-dot"></span>
+        <span id="status-text">Connected</span>
+      </div>
     </div>
   </header>
 
-  <main class="main-container">
+  <main class="main-container" id="app-main-content">
     
-    <!-- Top Control Card: Event & User Selection -->
+    <!-- Top Control Card: Event Selection -->
     <section class="controls-card">
       <div class="control-group">
         <label for="event-select">🎬 1. Select Movie Screening:</label>
@@ -41,10 +85,11 @@
       </div>
 
       <div class="control-group">
-        <label for="user-select">👤 2. Select Active User (Customer):</label>
-        <select id="user-select" class="custom-select">
-          <option value="">Loading users...</option>
-        </select>
+        <label>👤 Active Customer Account:</label>
+        <div class="active-user-display" id="active-user-display">
+          <span id="display-user-name">user1 (Alice Martinez)</span>
+          <button id="switch-user-btn" class="btn btn-xs btn-secondary">Switch Account</button>
+        </div>
       </div>
     </section>
 
@@ -76,8 +121,8 @@
       <div class="seat-legend">
         <div class="legend-item"><span class="seat-sample available"></span> Available ($15 / $25)</div>
         <div class="legend-item"><span class="seat-sample selected"></span> Selected Seat</div>
-        <div class="legend-item"><span class="seat-sample booked"></span> Booked (Unavailable)</div>
         <div class="legend-item"><span class="seat-sample my-booking"></span> My Active Booking (Click to Cancel)</div>
+        <div class="legend-item"><span class="seat-sample booked"></span> Booked by Others</div>
       </div>
 
       <!-- Theater Screen Visual -->
@@ -86,7 +131,7 @@
         <p class="screen-label">🎬 AUDITORIUM SCREEN • FRONT OF HALL 🎬</p>
       </div>
 
-      <!-- Seating Grid Container with Column Headers -->
+      <!-- Seating Grid Container -->
       <div class="grid-wrapper">
         <div id="seat-grid" class="seat-grid">
           <p class="loading-text">Loading auditorium seating chart...</p>

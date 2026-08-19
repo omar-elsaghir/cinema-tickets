@@ -1,6 +1,6 @@
 // ==============================================================================
 // PERSON B FRONTEND LOGIC (Part 4: Real-Time Booking Web UI)
-// Integrates seamlessly with Person A's REST API contract
+// Integrates seamlessly with Person A's REST API contract & Authentication
 // ==============================================================================
 
 // Resolve API base URL dynamically
@@ -9,15 +9,33 @@ const API_BASE = (window.location.protocol === "http:" || window.location.protoc
   : "http://127.0.0.1:5000";
 
 let currentEventId = null;
-let currentUserId = 1;
+let currentUserId = null;
+let currentUsername = null;
+let currentUserName = null;
+let currentUserLoyalty = 0;
+
 let selectedSeat = null;
+let selectedSeatTicketId = null;
 let selectedSeatPrice = 0.0;
+let isSelectedSeatMyBooking = false;
+
 let currentEventSeats = [];
 let allEventsCache = [];
+let allUsersCache = [];
 
 // DOM Elements
+const loginModalOverlay = document.getElementById("login-modal-overlay");
+const loginForm = document.getElementById("login-form");
+const loginUsernameInput = document.getElementById("login-username");
+const loginPasswordInput = document.getElementById("login-password");
+
+const headerUsername = document.getElementById("header-username");
+const headerUserLoyalty = document.getElementById("header-user-loyalty");
+const displayUserName = document.getElementById("display-user-name");
+const logoutBtn = document.getElementById("logout-btn");
+const switchUserBtn = document.getElementById("switch-user-btn");
+
 const eventSelect = document.getElementById("event-select");
-const userSelect = document.getElementById("user-select");
 const movieTitle = document.getElementById("movie-title");
 const movieGenre = document.getElementById("movie-genre");
 const eventHall = document.getElementById("event-hall");
@@ -26,6 +44,7 @@ const eventAvail = document.getElementById("event-avail");
 const eventBooked = document.getElementById("event-booked");
 const occupancyPercent = document.getElementById("occupancy-percent");
 const seatGrid = document.getElementById("seat-grid");
+
 const selectedSeatLabel = document.getElementById("selected-seat-label");
 const selectedSeatPriceLabel = document.getElementById("selected-seat-price");
 const actionModeLabel = document.getElementById("action-mode-label");
@@ -36,7 +55,9 @@ const toastContainer = document.getElementById("toast-container");
 const clusterStatusBadge = document.getElementById("cluster-status-badge");
 const statusText = document.getElementById("status-text");
 
-// Toast Notification Manager
+// ==============================================================================
+// TOAST NOTIFICATIONS & STATUS
+// ==============================================================================
 function showToast(message, type = "success") {
   const toast = document.createElement("div");
   toast.className = `toast ${type}`;
@@ -55,28 +76,159 @@ function showToast(message, type = "success") {
 function updateConnectionStatus(online = true) {
   if (online) {
     clusterStatusBadge.classList.remove("offline");
-    statusText.textContent = "HDFS Multi-Node Cluster Connected";
+    statusText.textContent = "HDFS Cluster Connected";
   } else {
     clusterStatusBadge.classList.add("offline");
     statusText.textContent = "Backend Offline (Retrying...)";
   }
 }
 
-// 1. Load All Events
+// ==============================================================================
+// AUTHENTICATION & LOGIN MANAGEMENT
+// ==============================================================================
+function checkLoginState() {
+  const savedUser = sessionStorage.getItem("cinemapass_user");
+  if (savedUser) {
+    try {
+      const userObj = JSON.parse(savedUser);
+      setLoggedInUser(userObj.user_id, userObj.username, userObj.name, userObj.loyalty_points);
+      loginModalOverlay.classList.add("hidden");
+      return true;
+    } catch (e) {
+      sessionStorage.removeItem("cinemapass_user");
+    }
+  }
+
+  // Not logged in -> Show login modal
+  loginModalOverlay.classList.remove("hidden");
+  if (loginUsernameInput) loginUsernameInput.focus();
+  return false;
+}
+
+function setLoggedInUser(userId, username, name, loyaltyPoints = 0) {
+  currentUserId = parseInt(userId);
+  currentUsername = username;
+  currentUserName = name || `User #${userId}`;
+  currentUserLoyalty = loyaltyPoints;
+
+  headerUsername.textContent = username;
+  headerUserLoyalty.textContent = `Loyalty: ${loyaltyPoints} pts`;
+  displayUserName.textContent = `${username} (${currentUserName})`;
+
+  sessionStorage.setItem("cinemapass_user", JSON.stringify({
+    user_id: currentUserId,
+    username: currentUsername,
+    name: currentUserName,
+    loyalty_points: currentUserLoyalty
+  }));
+
+  // Re-render seats if already loaded to update 'My Bookings' highlights
+  if (currentEventSeats.length > 0) {
+    renderSeats(currentEventSeats);
+  }
+}
+
+function handleLoginSubmit(e) {
+  e.preventDefault();
+  const inputUser = (loginUsernameInput.value || "").trim().toLowerCase();
+  const inputPass = (loginPasswordInput.value || "").trim();
+
+  // Validate format user<id> (e.g. user1, user2, user42, user400)
+  const match = inputUser.match(/^user([1-9][0-9]*)$/);
+  if (!match) {
+    showToast("Invalid username! Must be formatted as user1, user2, ... user400.", "error");
+    return;
+  }
+
+  // Universal password check
+  if (inputPass !== "admin") {
+    showToast("Invalid password! Universal password is 'admin'.", "error");
+    return;
+  }
+
+  const parsedId = parseInt(match[1]);
+  if (parsedId < 1 || parsedId > 400) {
+    showToast("User ID must be between 1 and 400.", "error");
+    return;
+  }
+
+  const userMeta = allUsersCache.find(u => parseInt(u.user_id) === parsedId);
+  const realName = userMeta ? userMeta.name : `Customer ${parsedId}`;
+  const points = userMeta ? (userMeta.loyalty_points || 0) : 100;
+
+  setLoggedInUser(parsedId, inputUser, realName, points);
+  loginModalOverlay.classList.add("hidden");
+  showToast(`Welcome back, ${inputUser} (${realName})!`, "success");
+
+  // Load latest events and seats
+  loadEvents();
+}
+
+function handleLogout() {
+  sessionStorage.removeItem("cinemapass_user");
+  currentUserId = null;
+  currentUsername = null;
+  selectedSeat = null;
+  selectedSeatTicketId = null;
+  isSelectedSeatMyBooking = false;
+  updateActionPanel(false);
+
+  loginModalOverlay.classList.remove("hidden");
+  loginUsernameInput.value = "";
+  loginPasswordInput.value = "";
+  loginUsernameInput.focus();
+  showToast("Logged out successfully.", "warning");
+}
+
+// ==============================================================================
+// DATA LOADING & SEAT RENDERING
+// ==============================================================================
+
+// 1. Load All Cinema Users
+async function loadUsers() {
+  try {
+    const res = await fetch(`${API_BASE}/api/users`);
+    if (!res.ok) throw new Error("API error");
+    const data = await res.json();
+    allUsersCache = Array.isArray(data) ? data : (data.users || data.data || []);
+    
+    // Update active user metadata if logged in
+    if (currentUserId) {
+      const u = allUsersCache.find(x => parseInt(x.user_id) === parseInt(currentUserId));
+      if (u) {
+        setLoggedInUser(u.user_id, currentUsername || `user${u.user_id}`, u.name, u.loyalty_points);
+      }
+    }
+  } catch (err) {
+    console.warn("User list fetch delayed until backend responds.");
+  }
+}
+
+// 2. Load All Events
 async function loadEvents() {
   try {
     const res = await fetch(`${API_BASE}/api/events`);
-    if (!res.ok) throw new Error("API responded with error");
-    const events = await res.json();
+    if (!res.ok) throw new Error("API responded with error: " + res.status);
+    const data = await res.json();
+    
+    const events = Array.isArray(data) ? data : (data.events || data.data || []);
     allEventsCache = events;
     updateConnectionStatus(true);
+
+    if (events.length === 0) {
+      eventSelect.innerHTML = `<option value="">No events available</option>`;
+      return;
+    }
 
     const prevSelected = eventSelect.value;
     eventSelect.innerHTML = "";
     events.forEach(ev => {
       const opt = document.createElement("option");
       opt.value = ev.event_id;
-      opt.textContent = `#${ev.event_id} - ${ev.movie_title} (${ev.hall_name}) | ${ev.available_seats} seats remaining`;
+      const title = ev.movie_title || ev.title || "Movie";
+      const hall = ev.hall_name || "Hall";
+      const avail = ev.available_seats !== undefined ? ev.available_seats : (ev.total_seats ? ev.total_seats - (ev.booked_seats || 0) : 150);
+      opt.textContent = `#${ev.event_id} - ${title} (${hall}) | ${avail} seats remaining`;
       eventSelect.appendChild(opt);
     });
 
@@ -89,162 +241,145 @@ async function loadEvents() {
     }
 
     if (currentEventId) {
-      loadEventSeats(currentEventId);
+      await loadEventSeats(currentEventId);
     }
   } catch (err) {
+    console.warn("Could not connect to backend at", API_BASE, err);
     updateConnectionStatus(false);
-    showToast("Connecting to backend booking service...", "warning");
   }
 }
 
-// 2. Load Cinema Users
-async function loadUsers() {
-  try {
-    const res = await fetch(`${API_BASE}/api/users`);
-    if (!res.ok) throw new Error("API error");
-    const users = await res.json();
-
-    const prevUser = userSelect.value;
-    userSelect.innerHTML = "";
-    users.forEach(u => {
-      const opt = document.createElement("option");
-      opt.value = u.user_id;
-      opt.textContent = `User #${u.user_id}: ${u.name} (Loyalty: ${u.loyalty_points} pts)`;
-      userSelect.appendChild(opt);
-    });
-
-    if (prevUser && users.some(u => String(u.user_id) === String(prevUser))) {
-      userSelect.value = prevUser;
-      currentUserId = prevUser;
-    } else if (users.length > 0) {
-      currentUserId = users[0].user_id;
-      userSelect.value = currentUserId;
-    }
-  } catch (err) {
-    console.warn("User list fetch delayed until backend responds.");
-  }
-}
-
-// 3. Load Seating Grid & Real-time Metrics for Selected Event
+// 3. Load Seating Grid for an Event
 async function loadEventSeats(eventId) {
   if (!eventId) return;
   try {
     const res = await fetch(`${API_BASE}/api/events/${eventId}/seats`);
-    if (!res.ok) throw new Error("Could not load seats");
+    if (!res.ok) throw new Error("Could not load seats: " + res.status);
     const data = await res.json();
     updateConnectionStatus(true);
 
-    movieTitle.textContent = data.movie_title;
-    eventHall.textContent = `🏛️ ${data.hall_name}`;
-    eventTime.textContent = `🕒 ${data.screen_time}`;
-    eventAvail.textContent = `🎟️ Available: ${data.available_seats} seats`;
-
-    // Find genre & runtime from cache
+    movieTitle.textContent = data.movie_title || "Cinema Screening";
+    eventHall.textContent = `🏛️ ${data.hall_name || "Auditorium"}`;
+    eventTime.textContent = `🕒 ${data.screen_time || "Scheduled"}`;
+    
     const evMeta = allEventsCache.find(e => String(e.event_id) === String(eventId));
     if (evMeta) {
-      movieGenre.textContent = `Genre: ${evMeta.genre || "Drama"} | Runtime: ${evMeta.runtime_in_min || 120} min`;
+      movieGenre.textContent = `Genre: ${evMeta.genre || "Cinema"} | Runtime: ${evMeta.runtime_in_min || 120} min`;
     }
 
     currentEventSeats = data.seats || [];
     
-    // Calculate live occupancy stats
-    const totalSeats = currentEventSeats.length || 200;
-    const bookedCount = currentEventSeats.filter(s => s.status === "BOOKED").length;
-    const availCount = data.available_seats !== undefined ? data.available_seats : (totalSeats - bookedCount);
-    const occRate = totalSeats > 0 ? ((bookedCount / totalSeats) * 100).toFixed(1) : 0.0;
+    // Calculate TRUE live counts directly from the seat map
+    const totalSeats = currentEventSeats.length || 150;
+    const bookedSeatsCount = currentEventSeats.filter(s => {
+      const st = String(s.status || "").toLowerCase();
+      return st === "booked" || st === "unavailable";
+    }).length;
+    
+    const availableSeatsCount = Math.max(0, totalSeats - bookedSeatsCount);
+    const occRate = totalSeats > 0 ? ((bookedSeatsCount / totalSeats) * 100).toFixed(1) : 0.0;
 
-    eventBooked.textContent = `🔒 Booked: ${bookedCount} seats`;
+    // Update real counts on UI
+    eventAvail.textContent = `🎟️ Available: ${availableSeatsCount} seats`;
+    eventBooked.textContent = `🔒 Booked: ${bookedSeatsCount} seats`;
     occupancyPercent.textContent = `${occRate}%`;
 
     renderSeats(currentEventSeats);
   } catch (err) {
+    console.warn("Failed to load seats for event", eventId, err);
     updateConnectionStatus(false);
   }
 }
 
-// 4. Render Interactive Seat Grid
+// 4. Render Auditorium Seats (Handles Green Available, Purple My Booking, Red Booked)
 function renderSeats(seats) {
   seatGrid.innerHTML = "";
   
-  // Retain selection if seat still valid
-  let activeSelectedSeatFound = false;
+  let activeSelectedFound = false;
 
   seats.forEach(s => {
     const btn = document.createElement("button");
     btn.className = "seat-btn";
     btn.textContent = s.seat_number;
     btn.dataset.seat = s.seat_number;
-    btn.dataset.price = s.price;
+    btn.dataset.price = s.price || 15.0;
     btn.dataset.ticketId = s.ticket_id || "";
-    btn.dataset.bookedBy = s.booked_by_user_id || "";
 
-    const isBooked = s.status === "BOOKED";
-    const isMyBooking = isBooked && String(s.booked_by_user_id) === String(currentUserId);
+    const statusStr = String(s.status || "").toLowerCase();
+    const isBooked = (statusStr === "booked" || statusStr === "unavailable");
+    
+    const bookedUserId = (s.user_id !== undefined && s.user_id !== null) 
+      ? s.user_id 
+      : s.booked_by_user_id;
+
+    const isMyBooking = isBooked && currentUserId !== null && String(bookedUserId) === String(currentUserId);
     const isCurrentlySelected = selectedSeat === s.seat_number;
 
     if (isCurrentlySelected) {
-      activeSelectedSeatFound = true;
+      activeSelectedFound = true;
+      isSelectedSeatMyBooking = isMyBooking;
       btn.classList.add("selected");
     } else if (isMyBooking) {
       btn.classList.add("my-booking");
-      btn.title = `Booked by you (Ticket #${s.ticket_id}). Click to Cancel.`;
+      btn.title = `Your active reservation (Ticket #${s.ticket_id || s.seat_number}). Click to cancel.`;
     } else if (isBooked) {
       btn.classList.add("booked");
       btn.disabled = true;
-      btn.title = `Booked by User #${s.booked_by_user_id}`;
+      btn.title = `Booked by User #${bookedUserId || "N/A"}`;
     } else {
       btn.classList.add("available");
-      btn.title = `Available ($${Number(s.price).toFixed(2)})`;
+      btn.title = `Available ($${Number(s.price || 15).toFixed(2)})`;
     }
 
-    btn.addEventListener("click", () => handleSeatClick(s, btn));
+    btn.addEventListener("click", () => handleSeatClick(s, isMyBooking, isBooked));
     seatGrid.appendChild(btn);
   });
 
-  if (!activeSelectedSeatFound) {
+  if (!activeSelectedFound) {
     selectedSeat = null;
+    selectedSeatTicketId = null;
+    isSelectedSeatMyBooking = false;
     updateActionPanel(false);
+  } else {
+    updateActionPanel(true, isSelectedSeatMyBooking);
   }
 }
 
 // 5. Seat Click Handling
-function handleSeatClick(seatData, btnElement) {
-  const isBooked = seatData.status === "BOOKED";
-  const isMyBooking = isBooked && String(seatData.booked_by_user_id) === String(currentUserId);
-
-  // If already selected, toggle off
+function handleSeatClick(seatData, isMyBooking, isBooked) {
+  // If clicking same seat, deselect
   if (selectedSeat === seatData.seat_number) {
     selectedSeat = null;
+    selectedSeatTicketId = null;
     selectedSeatPrice = 0.0;
+    isSelectedSeatMyBooking = false;
     renderSeats(currentEventSeats);
     updateActionPanel(false);
     return;
   }
 
+  // Select new seat
   selectedSeat = seatData.seat_number;
+  selectedSeatTicketId = seatData.ticket_id || null;
   selectedSeatPrice = Number(seatData.price || 15.0);
+  isSelectedSeatMyBooking = isMyBooking;
 
-  // Re-render to clear other selections and highlight current
   renderSeats(currentEventSeats);
-
-  if (isMyBooking) {
-    updateActionPanel(true, true); // (hasSelection, isMyBooking)
-  } else if (!isBooked) {
-    updateActionPanel(true, false);
-  }
+  updateActionPanel(true, isMyBooking);
 }
 
 function updateActionPanel(hasSelection = false, isMyBooking = false) {
   if (hasSelection && selectedSeat) {
     selectedSeatLabel.textContent = selectedSeat;
     selectedSeatPriceLabel.textContent = `$${selectedSeatPrice.toFixed(2)}`;
+    
     if (isMyBooking) {
-      actionModeLabel.textContent = "Ready to Cancel Booking";
+      actionModeLabel.textContent = `Ready to Cancel Booking (${selectedSeat})`;
       actionModeLabel.style.color = "#f87171";
       bookBtn.disabled = true;
       cancelBtn.disabled = false;
     } else {
-      actionModeLabel.textContent = "Ready to Reserve Seat";
+      actionModeLabel.textContent = `Ready to Reserve Seat (${selectedSeat})`;
       actionModeLabel.style.color = "#34d399";
       bookBtn.disabled = false;
       cancelBtn.disabled = true;
@@ -259,12 +394,21 @@ function updateActionPanel(hasSelection = false, isMyBooking = false) {
   }
 }
 
+// ==============================================================================
+// ACTIONS: BOOK SEAT & CANCEL BOOKING
+// ==============================================================================
+
 // 6. Book Seat Action (POST /api/book)
 async function bookSeat() {
-  if (!currentEventId || !currentUserId || !selectedSeat) return;
+  if (!currentUserId) {
+    showToast("Please sign in before booking.", "error");
+    loginModalOverlay.classList.remove("hidden");
+    return;
+  }
+  if (!currentEventId || !selectedSeat) return;
 
   bookBtn.disabled = true;
-  bookBtn.textContent = "Processing...";
+  bookBtn.textContent = "Booking...";
 
   try {
     const res = await fetch(`${API_BASE}/api/book`, {
@@ -273,7 +417,8 @@ async function bookSeat() {
       body: JSON.stringify({
         event_id: parseInt(currentEventId),
         user_id: parseInt(currentUserId),
-        seat_number: selectedSeat
+        seat_number: selectedSeat,
+        price: selectedSeatPrice
       })
     });
 
@@ -302,10 +447,12 @@ async function bookSeat() {
 
 // 7. Cancel Booking Action (POST /api/cancel)
 async function cancelBooking() {
+  if (!currentUserId) {
+    showToast("Please sign in to manage bookings.", "error");
+    loginModalOverlay.classList.remove("hidden");
+    return;
+  }
   if (!currentEventId || !selectedSeat) return;
-
-  const seatObj = currentEventSeats.find(s => s.seat_number === selectedSeat);
-  const ticketId = seatObj ? seatObj.ticket_id : null;
 
   cancelBtn.disabled = true;
   cancelBtn.textContent = "Cancelling...";
@@ -315,7 +462,7 @@ async function cancelBooking() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        ticket_id: ticketId,
+        ticket_id: selectedSeatTicketId,
         user_id: parseInt(currentUserId),
         event_id: parseInt(currentEventId),
         seat_number: selectedSeat
@@ -327,6 +474,8 @@ async function cancelBooking() {
     if (res.status === 200) {
       showToast(data.message || "Booking cancelled.", "success");
       selectedSeat = null;
+      selectedSeatTicketId = null;
+      isSelectedSeatMyBooking = false;
       await loadEventSeats(currentEventId);
       await loadEvents();
     } else {
@@ -339,26 +488,31 @@ async function cancelBooking() {
   }
 }
 
-// Event Listeners
+// ==============================================================================
+// EVENT LISTENERS & INITIALIZATION
+// ==============================================================================
+loginForm.addEventListener("submit", handleLoginSubmit);
+logoutBtn.addEventListener("click", handleLogout);
+switchUserBtn.addEventListener("click", handleLogout);
+
 eventSelect.addEventListener("change", (e) => {
   currentEventId = e.target.value;
   selectedSeat = null;
+  selectedSeatTicketId = null;
+  isSelectedSeatMyBooking = false;
   loadEventSeats(currentEventId);
-});
-
-userSelect.addEventListener("change", (e) => {
-  currentUserId = e.target.value;
-  renderSeats(currentEventSeats);
 });
 
 bookBtn.addEventListener("click", bookSeat);
 cancelBtn.addEventListener("click", cancelBooking);
+
 refreshBtn.addEventListener("click", () => {
-  showToast("Refreshing seating layout...", "warning");
+  showToast("Refreshing seating status from cluster...", "warning");
   loadEventSeats(currentEventId);
+  loadEvents();
 });
 
-// Periodic background auto-refresh every 5s to sync peer bookings
+// Periodic background auto-refresh every 5s
 setInterval(() => {
   if (currentEventId && !selectedSeat) {
     loadEventSeats(currentEventId);
@@ -366,7 +520,8 @@ setInterval(() => {
 }, 5000);
 
 // Initialize on page load
-window.addEventListener("DOMContentLoaded", () => {
-  loadUsers();
-  loadEvents();
+window.addEventListener("DOMContentLoaded", async () => {
+  await loadUsers();
+  checkLoginState();
+  await loadEvents();
 });
