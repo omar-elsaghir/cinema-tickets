@@ -1,7 +1,7 @@
 """
 Flask REST API Server for Cinema Ticket Reservation System (Part 3 & 4).
 Exposes real-time endpoints for event queries, seat map availability,
-concurrent seat booking, and cancellation with CORS enabled.
+concurrent seat booking, cancellation, and serves the frontend dashboard with CORS enabled.
 """
 
 import os
@@ -11,7 +11,7 @@ import logging
 # Ensure project root is in sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 
 from src.backend.booking_service import booking_service
@@ -21,13 +21,36 @@ from src.backend.hdfs_sync import hdfs_sync_manager
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 logger = logging.getLogger("api_server")
 
-app = Flask(__name__)
-# Enable CORS for all routes to allow seamless communication with Person B's frontend
-CORS(app, resources={r"/api/*": {"origins": "*"}}, supports_credentials=True)
+FRONTEND_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend"))
+
+app = Flask(__name__, static_folder=FRONTEND_DIR, static_url_path="")
+# Enable full CORS for all routes (allows file://, localhost:5500, localhost:8000, etc.)
+CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+
+@app.after_request
+def add_cors_headers(response):
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type,Authorization"
+    response.headers["Access-Control-Allow-Methods"] = "GET,PUT,POST,DELETE,OPTIONS"
+    return response
 
 
 @app.route("/", methods=["GET"])
 def index():
+    """Serve the Person B interactive frontend UI or API overview."""
+    index_file = os.path.join(FRONTEND_DIR, "index.html")
+    if os.path.exists(index_file):
+        return send_from_directory(FRONTEND_DIR, "index.html")
+    return jsonify({
+        "status": "online",
+        "service": "Cinema Ticket Reservation System API (Part 3)",
+        "version": "1.0.0"
+    }), 200
+
+
+@app.route("/api", methods=["GET"])
+@app.route("/api/overview", methods=["GET"])
+def api_overview():
     """Health check and API overview."""
     return jsonify({
         "status": "online",

@@ -1,1 +1,5 @@
 my_analytics_results/
+__pycache__/
+*.pyc
+*:Zone.Identifier
+.hdfs_storage/

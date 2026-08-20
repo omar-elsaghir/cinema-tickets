@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-===============================================================================
-Cinema Ticket System - Comprehensive Batch Analytics Visualization
-===============================================================================
-"""
-
 import os
 import warnings
 import pandas as pd
@@ -13,14 +6,12 @@ import seaborn as sns
 
 warnings.filterwarnings("ignore")
 
-# Set visual style
 sns.set_theme(style="whitegrid")
 RESULTS_DIR = "./my_analytics_results"
 CHARTS_DIR = "./charts"
 os.makedirs(CHARTS_DIR, exist_ok=True)
 
 def plot_job1_distribution():
-    """Job 1: Distribution of Bookings Across All Events"""
     path = os.path.join(RESULTS_DIR, "total_bookings_per_event")
     if not os.path.exists(path): return
     df = pd.read_parquet(path)
@@ -34,10 +25,8 @@ def plot_job1_distribution():
     out_path = os.path.join(CHARTS_DIR, 'chart_job1_booking_distribution.png')
     plt.savefig(out_path, dpi=300)
     plt.close()
-    print(f"[SUCCESS] Saved Job 1 chart: '{out_path}'")
 
 def plot_job2_occupancy():
-    """Job 2: Top 10 Movies by Seat Occupancy Percentage"""
     path = os.path.join(RESULTS_DIR, "occupancy_percentage_per_event")
     if not os.path.exists(path): return
     df = pd.read_parquet(path)
@@ -52,10 +41,8 @@ def plot_job2_occupancy():
     out_path = os.path.join(CHARTS_DIR, 'chart_job2_occupancy_percentage.png')
     plt.savefig(out_path, dpi=300)
     plt.close()
-    print(f"[SUCCESS] Saved Job 2 chart: '{out_path}'")
 
 def plot_job3_revenue():
-    """Job 3: Top 10 Highest Grossing Movies"""
     path = os.path.join(RESULTS_DIR, "total_revenue_per_event")
     if not os.path.exists(path): return
     df = pd.read_parquet(path)
@@ -70,10 +57,8 @@ def plot_job3_revenue():
     out_path = os.path.join(CHARTS_DIR, 'chart_job3_top10_revenue.png')
     plt.savefig(out_path, dpi=300)
     plt.close()
-    print(f"[SUCCESS] Saved Job 3 chart: '{out_path}'")
 
 def plot_job4_available_seats():
-    """Job 4: Distribution of Available Seats Across Events"""
     path = os.path.join(RESULTS_DIR, "available_seats_per_event")
     if not os.path.exists(path): return
     df = pd.read_parquet(path)
@@ -87,10 +72,8 @@ def plot_job4_available_seats():
     out_path = os.path.join(CHARTS_DIR, 'chart_job4_available_seats.png')
     plt.savefig(out_path, dpi=300)
     plt.close()
-    print(f"[SUCCESS] Saved Job 4 chart: '{out_path}'")
 
 def plot_job5_top_events():
-    """Job 5: Top 5 Most-Booked Movies"""
     path = os.path.join(RESULTS_DIR, "top5_events")
     if not os.path.exists(path): return
     df = pd.read_parquet(path)
@@ -104,18 +87,12 @@ def plot_job5_top_events():
     out_path = os.path.join(CHARTS_DIR, 'chart_job5_top_events.png')
     plt.savefig(out_path, dpi=300)
     plt.close()
-    print(f"[SUCCESS] Saved Job 5 chart: '{out_path}'")
 
 def plot_job6_category():
-    """Job 6: Top 10 Event Categories / Genres by Total Bookings"""
     path = os.path.join(RESULTS_DIR, "bookings_by_category")
     if not os.path.exists(path): return
     df = pd.read_parquet(path)
-    
-    # Priority check for column name
     cat_col = 'category' if 'category' in df.columns else 'genre' if 'genre' in df.columns else df.columns[0]
-    
-    # Sort descending and take top 10 categories for clean readability
     top10_cat = df.sort_values('total_bookings', ascending=False).head(10)
     
     plt.figure(figsize=(12, 6))
@@ -127,10 +104,8 @@ def plot_job6_category():
     out_path = os.path.join(CHARTS_DIR, 'chart_job6_bookings_by_category.png')
     plt.savefig(out_path, dpi=300)
     plt.close()
-    print(f"[SUCCESS] Saved Job 6 chart: '{out_path}'")
 
 def plot_job7_revenue_by_date():
-    """Job 7: Daily Revenue Over Time"""
     path = os.path.join(RESULTS_DIR, "bookings_by_date")
     if not os.path.exists(path): return
     df = pd.read_parquet(path)
@@ -146,10 +121,8 @@ def plot_job7_revenue_by_date():
     out_path = os.path.join(CHARTS_DIR, 'chart_job7_revenue_by_date.png')
     plt.savefig(out_path, dpi=300)
     plt.close()
-    print(f"[SUCCESS] Saved Job 7 chart: '{out_path}'")
 
 def plot_job8_top_users():
-    """Job 8: Top 5 Users by Number of Bookings"""
     path = os.path.join(RESULTS_DIR, "top5_users")
     if not os.path.exists(path): return
     df = pd.read_parquet(path)
@@ -164,10 +137,8 @@ def plot_job8_top_users():
     out_path = os.path.join(CHARTS_DIR, 'chart_job8_top_users.png')
     plt.savefig(out_path, dpi=300)
     plt.close()
-    print(f"[SUCCESS] Saved Job 8 chart: '{out_path}'")
 
 if __name__ == "__main__":
-    print("[INFO] Generating visualizations for all 8 Batch Analytics Jobs...")
     plot_job1_distribution()
     plot_job2_occupancy()
     plot_job3_revenue()
@@ -176,4 +147,4 @@ if __name__ == "__main__":
     plot_job6_category()
     plot_job7_revenue_by_date()
     plot_job8_top_users()
-    print("[SUCCESS] All 8 charts successfully generated and saved in './charts/' directory!")
+    print("Charts generated in ./charts/")

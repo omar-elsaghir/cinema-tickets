@@ -1,0 +1,151 @@
+event_id,movie_title,screen_time,hall_name,available_seats,genre,runtime_in_min
+53,Bohemian Rhapsody,2026-05-26 11:00:00,Hall 2,88,"Biography, Drama, Music",134
+92,The Lion King,2026-05-26 11:30:00,IMAX Theatre,138,"Animation, Adventure, Drama",88
+74,Star Wars: Episode VI - Return of the Jedi,2026-05-26 11:30:00,Hall 4 (VIP),29,"Action, Adventure, Fantasy",131
+129,Big Hero 6,2026-05-26 11:30:00,Hall 4 (VIP),76,"Animation, Action, Adventure",102
+56,Star Wars: Episode VII - The Force Awakens,2026-05-26 13:00:00,Hall 2,4,"Action, Adventure, Sci-Fi",138
+137,Ratatouille,2026-05-26 14:30:00,Hall 1 (Dolby Atmos),65,"Animation, Adventure, Comedy",111
+91,Back to the Future,2026-05-26 16:00:00,Hall 3,146,"Adventure, Comedy, Sci-Fi",116
+70,Harry Potter and the Half-Blood Prince,2026-05-26 19:30:00,Hall 2,150,"Action, Adventure, Family",153
+90,The Exorcist,2026-05-26 20:00:00,Hall 2,27,Horror,122
+33,The Lion King,2026-05-26 20:30:00,Hall 3,0,"Animation, Adventure, Drama",88
+103,The Martian,2026-05-27 13:00:00,IMAX Theatre,59,"Adventure, Drama, Sci-Fi",144
+85,Zootopia,2026-05-27 13:30:00,Hall 4 (VIP),146,"Animation, Adventure, Comedy",108
+26,Toy Story 3,2026-05-27 14:00:00,Hall 1 (Dolby Atmos),103,"Animation, Adventure, Comedy",103
+116,Gladiator,2026-05-27 14:30:00,IMAX Theatre,120,"Action, Adventure, Drama",155
+52,Inception,2026-05-27 16:00:00,Hall 1 (Dolby Atmos),83,"Action, Adventure, Sci-Fi",148
+20,Ghostbusters,2026-05-27 17:00:00,Hall 1 (Dolby Atmos),44,"Action, Comedy, Fantasy",105
+7,Iron Man,2026-05-27 19:30:00,Hall 2,117,"Action, Adventure, Sci-Fi",126
+58,Shrek,2026-05-27 22:30:00,Hall 1 (Dolby Atmos),149,"Animation, Adventure, Comedy",90
+139,Ocean's Eleven,2026-05-28 11:00:00,Hall 2,137,"Crime, Thriller",116
+101,Coco,2026-05-28 13:00:00,IMAX Theatre,58,"Animation, Adventure, Family",105
+34,Zootopia,2026-05-28 17:30:00,Hall 4 (VIP),64,"Animation, Adventure, Comedy",108
+37,Thor: Ragnarok,2026-05-28 20:00:00,IMAX Theatre,11,"Action, Adventure, Comedy",130
+31,Big Hero 6,2026-05-28 22:00:00,IMAX Theatre,53,"Animation, Action, Adventure",102
+65,Star Trek Into Darkness,2026-05-28 22:30:00,Hall 3,103,"Action, Adventure, Sci-Fi",132
+112,X-Men: Days of Future Past,2026-05-28 22:30:00,Hall 4 (VIP),2,"Action, Adventure, Sci-Fi",132
+68,Inception,2026-05-29 11:00:00,Hall 4 (VIP),118,"Action, Adventure, Sci-Fi",148
+150,The Lego Movie,2026-05-29 11:00:00,Hall 3,103,"Animation, Action, Adventure",100
+54,The Lord of the Rings: The Return of the King,2026-05-29 14:30:00,Hall 4 (VIP),24,"Action, Adventure, Drama",201
+62,Mission: Impossible - Fallout,2026-05-29 16:00:00,IMAX Theatre,94,"Action, Adventure, Thriller",147
+3,Dunkirk,2026-05-29 16:00:00,Hall 3,30,"Action, Drama, History",106
+89,Guardians of the Galaxy,2026-05-29 16:00:00,Hall 2,103,"Action, Adventure, Comedy",121
+42,Skyfall,2026-05-29 16:00:00,Hall 2,2,"Action, Adventure, Thriller",143
+104,Incredibles 2,2026-05-29 17:00:00,Hall 2,86,"Animation, Action, Adventure",118
+17,Despicable Me,2026-05-29 19:30:00,Hall 4 (VIP),48,"Animation, Comedy, Crime",95
+24,Zootopia,2026-05-29 19:30:00,Hall 2,71,"Animation, Adventure, Comedy",108
+144,The Fugitive,2026-05-29 20:00:00,Hall 3,24,"Action, Crime, Drama",130
+32,Gladiator,2026-05-29 20:00:00,Hall 4 (VIP),109,"Action, Adventure, Drama",155
+121,Harry Potter and the Half-Blood Prince,2026-05-30 16:30:00,Hall 4 (VIP),12,"Action, Adventure, Family",153
+99,Aladdin,2026-05-30 20:00:00,Hall 4 (VIP),97,"Animation, Adventure, Comedy",90
+5,X-Men: Days of Future Past,2026-05-31 11:00:00,Hall 2,51,"Action, Adventure, Sci-Fi",132
+30,Aladdin,2026-05-31 13:30:00,Hall 4 (VIP),56,"Animation, Adventure, Comedy",90
+148,Star Trek,2026-05-31 14:00:00,Hall 2,138,"Action, Adventure, Sci-Fi",127
+97,Toy Story,2026-05-31 16:30:00,Hall 1 (Dolby Atmos),49,"Animation, Adventure, Comedy",81
+22,Toy Story 4,2026-05-31 17:00:00,Hall 3,62,"Animation, Adventure, Comedy",100
+145,Sherlock Holmes,2026-05-31 20:30:00,IMAX Theatre,133,"Action, Adventure, Mystery",128
+12,Incredibles 2,2026-05-31 20:30:00,Hall 1 (Dolby Atmos),121,"Animation, Action, Adventure",118
+72,Mission: Impossible - Fallout,2026-05-31 22:00:00,Hall 4 (VIP),139,"Action, Adventure, Thriller",147
+119,The Revenant,2026-06-01 13:30:00,Hall 3,61,"Action, Adventure, Drama",156
+79,Thor: Ragnarok,2026-06-01 14:00:00,Hall 4 (VIP),58,"Action, Adventure, Comedy",130
+149,Despicable Me,2026-06-01 14:30:00,IMAX Theatre,121,"Animation, Comedy, Crime",95
+10,Star Trek,2026-06-01 14:30:00,Hall 4 (VIP),25,"Action, Adventure, Sci-Fi",127
+47,Batman Begins,2026-06-01 16:00:00,Hall 2,104,"Action, Adventure",140
+73,Aladdin,2026-06-01 16:00:00,IMAX Theatre,80,"Animation, Adventure, Comedy",90
+87,Harry Potter and the Deathly Hallows: Part 2,2026-06-01 16:30:00,Hall 3,89,"Adventure, Drama, Fantasy",130
+2,Sherlock Holmes,2026-06-01 17:30:00,Hall 1 (Dolby Atmos),40,"Action, Adventure, Mystery",128
+107,Dances with Wolves,2026-06-01 20:00:00,Hall 3,47,"Adventure, Drama, Western",181
+18,Spider-Man: Into the Spider-Verse,2026-06-01 20:30:00,IMAX Theatre,104,"Animation, Action, Adventure",117
+96,Pirates of the Caribbean: The Curse of the Black Pearl,2026-06-01 22:00:00,Hall 1 (Dolby Atmos),139,"Action, Adventure, Fantasy",143
+126,Indiana Jones and the Last Crusade,2026-06-01 22:30:00,Hall 2,105,"Action, Adventure",127
+50,Gravity,2026-06-02 17:30:00,Hall 1 (Dolby Atmos),17,"Drama, Sci-Fi, Thriller",91
+105,Iron Man,2026-06-02 19:30:00,Hall 1 (Dolby Atmos),15,"Action, Adventure, Sci-Fi",126
+100,X-Men: Days of Future Past,2026-06-02 22:00:00,Hall 3,83,"Action, Adventure, Sci-Fi",132
+29,Inception,2026-06-03 11:00:00,Hall 4 (VIP),128,"Action, Adventure, Sci-Fi",148
+28,Terminator 2: Judgment Day,2026-06-03 11:00:00,Hall 4 (VIP),119,"Action, Sci-Fi",137
+141,The Exorcist,2026-06-03 13:00:00,IMAX Theatre,100,Horror,122
+143,Titanic,2026-06-03 13:00:00,Hall 1 (Dolby Atmos),111,"Drama, Romance",194
+48,Iron Man,2026-06-03 13:30:00,Hall 1 (Dolby Atmos),75,"Action, Adventure, Sci-Fi",126
+77,Star Wars: Episode VII - The Force Awakens,2026-06-03 14:30:00,Hall 1 (Dolby Atmos),93,"Action, Adventure, Sci-Fi",138
+98,Rain Man,2026-06-03 16:30:00,Hall 2,62,Drama,133
+83,The Lord of the Rings: The Return of the King,2026-06-03 16:30:00,Hall 2,87,"Action, Adventure, Drama",201
+124,Indiana Jones and the Last Crusade,2026-06-03 19:30:00,Hall 1 (Dolby Atmos),24,"Action, Adventure",127
+40,Coco,2026-06-03 19:30:00,Hall 4 (VIP),48,"Animation, Adventure, Family",105
+81,The Exorcist,2026-06-03 20:00:00,IMAX Theatre,40,Horror,122
+13,Wreck-It Ralph,2026-06-03 20:30:00,Hall 1 (Dolby Atmos),68,"Animation, Adventure, Comedy",101
+131,E.T. the Extra-Terrestrial,2026-06-04 11:00:00,Hall 2,43,"Family, Sci-Fi",115
+43,The Exorcist,2026-06-04 11:30:00,Hall 1 (Dolby Atmos),140,Horror,122
+130,The Lord of the Rings: The Return of the King,2026-06-04 13:00:00,Hall 2,11,"Action, Adventure, Drama",201
+49,The Lord of the Rings: The Two Towers,2026-06-04 13:00:00,Hall 2,91,"Action, Adventure, Drama",179
+123,Inception,2026-06-04 13:00:00,Hall 3,37,"Action, Adventure, Sci-Fi",148
+80,Interstellar,2026-06-04 13:00:00,Hall 3,17,"Adventure, Drama, Sci-Fi",169
+108,Iron Man,2026-06-04 13:30:00,Hall 1 (Dolby Atmos),5,"Action, Adventure, Sci-Fi",126
+147,Deadpool,2026-06-04 14:00:00,Hall 3,131,"Action, Adventure, Comedy",108
+86,Tangled,2026-06-04 14:30:00,Hall 4 (VIP),104,"Animation, Adventure, Comedy",100
+67,The Lord of the Rings: The Two Towers,2026-06-04 14:30:00,Hall 3,88,"Action, Adventure, Drama",179
+6,Home Alone,2026-06-04 14:30:00,Hall 2,71,"Comedy, Family",103
+110,Pirates of the Caribbean: The Curse of the Black Pearl,2026-06-04 16:00:00,Hall 2,33,"Action, Adventure, Fantasy",143
+64,Iron Man,2026-06-04 17:00:00,Hall 1 (Dolby Atmos),140,"Action, Adventure, Sci-Fi",126
+38,Batman Begins,2026-06-04 17:00:00,Hall 2,81,"Action, Adventure",140
+44,Shrek,2026-06-04 17:30:00,Hall 2,74,"Animation, Adventure, Comedy",90
+21,Sherlock Holmes,2026-06-04 17:30:00,Hall 2,119,"Action, Adventure, Mystery",128
+60,Harry Potter and the Prisoner of Azkaban,2026-06-04 19:30:00,Hall 2,85,"Adventure, Family, Fantasy",142
+75,Inception,2026-06-04 20:00:00,Hall 1 (Dolby Atmos),88,"Action, Adventure, Sci-Fi",148
+4,Terminator 2: Judgment Day,2026-06-04 22:00:00,Hall 3,131,"Action, Sci-Fi",137
+36,The Sixth Sense,2026-06-05 14:30:00,Hall 3,119,"Drama, Mystery, Thriller",107
+25,The Hangover,2026-06-05 14:30:00,Hall 1 (Dolby Atmos),31,Comedy,100
+122,Star Wars: Episode VII - The Force Awakens,2026-06-05 17:00:00,IMAX Theatre,24,"Action, Adventure, Sci-Fi",138
+109,The Exorcist,2026-06-05 19:00:00,Hall 2,5,Horror,122
+111,Pirates of the Caribbean: The Curse of the Black Pearl,2026-06-05 19:00:00,Hall 1 (Dolby Atmos),127,"Action, Adventure, Fantasy",143
+142,Gladiator,2026-06-05 19:00:00,Hall 3,145,"Action, Adventure, Drama",155
+93,Dances with Wolves,2026-06-05 19:30:00,Hall 2,70,"Adventure, Drama, Western",181
+51,Toy Story 2,2026-06-06 11:00:00,Hall 4 (VIP),69,"Animation, Adventure, Comedy",92
+102,Jurassic Park,2026-06-06 11:30:00,Hall 4 (VIP),15,"Action, Adventure, Sci-Fi",127
+125,The Fugitive,2026-06-06 13:00:00,Hall 3,78,"Action, Crime, Drama",130
+63,Ocean's Eleven,2026-06-06 13:00:00,Hall 2,86,"Crime, Thriller",116
+78,Moana,2026-06-06 13:00:00,Hall 2,10,"Animation, Adventure, Comedy",107
+133,Toy Story,2026-06-06 13:30:00,Hall 2,90,"Animation, Adventure, Comedy",81
+82,Moana,2026-06-06 14:00:00,Hall 4 (VIP),144,"Animation, Adventure, Comedy",107
+55,Captain America: Civil War,2026-06-06 14:30:00,Hall 3,102,"Action, Adventure, Sci-Fi",147
+134,Tangled,2026-06-06 16:00:00,IMAX Theatre,43,"Animation, Adventure, Comedy",100
+61,Inside Out,2026-06-06 19:00:00,Hall 3,5,"Animation, Adventure, Comedy",95
+114,Dawn of the Planet of the Apes,2026-06-06 19:00:00,Hall 1 (Dolby Atmos),75,"Action, Adventure, Drama",130
+146,Pirates of the Caribbean: The Curse of the Black Pearl,2026-06-06 19:00:00,Hall 1 (Dolby Atmos),9,"Action, Adventure, Fantasy",143
+8,A Star Is Born,2026-06-06 19:30:00,IMAX Theatre,2,"Drama, Music, Romance",136
+140,Toy Story 3,2026-06-06 19:30:00,IMAX Theatre,70,"Animation, Adventure, Comedy",103
+94,The Hobbit: An Unexpected Journey,2026-06-06 22:30:00,Hall 4 (VIP),54,"Adventure, Fantasy",169
+71,Titanic,2026-06-07 11:00:00,IMAX Theatre,147,"Drama, Romance",194
+35,Inception,2026-06-07 14:30:00,IMAX Theatre,28,"Action, Adventure, Sci-Fi",148
+106,Coco,2026-06-07 16:30:00,Hall 3,139,"Animation, Adventure, Family",105
+113,Shrek,2026-06-07 17:00:00,Hall 2,94,"Animation, Adventure, Comedy",90
+59,Beauty and the Beast,2026-06-07 19:00:00,Hall 2,62,"Animation, Family, Fantasy",84
+27,Captain America: Civil War,2026-06-07 19:30:00,Hall 1 (Dolby Atmos),33,"Action, Adventure, Sci-Fi",147
+39,Cast Away,2026-06-07 19:30:00,IMAX Theatre,77,"Adventure, Drama, Romance",143
+66,Star Wars: Episode VI - Return of the Jedi,2026-06-07 22:00:00,IMAX Theatre,143,"Action, Adventure, Fantasy",131
+11,Ocean's Eleven,2026-06-08 11:00:00,IMAX Theatre,38,"Crime, Thriller",116
+16,Toy Story,2026-06-08 11:30:00,Hall 1 (Dolby Atmos),60,"Animation, Adventure, Comedy",81
+136,Star Wars: Episode V - The Empire Strikes Back,2026-06-08 11:30:00,IMAX Theatre,127,"Action, Adventure, Fantasy",124
+41,Ocean's Eleven,2026-06-08 13:00:00,Hall 4 (VIP),66,"Crime, Thriller",116
+84,E.T. the Extra-Terrestrial,2026-06-08 13:30:00,Hall 4 (VIP),45,"Family, Sci-Fi",115
+115,Logan,2026-06-08 14:00:00,Hall 1 (Dolby Atmos),132,"Action, Drama, Sci-Fi",137
+118,X-Men: Days of Future Past,2026-06-08 14:00:00,Hall 4 (VIP),87,"Action, Adventure, Sci-Fi",132
+46,Harry Potter and the Half-Blood Prince,2026-06-08 14:30:00,Hall 3,89,"Action, Adventure, Family",153
+14,Thor: Ragnarok,2026-06-08 14:30:00,IMAX Theatre,21,"Action, Adventure, Comedy",130
+76,Beauty and the Beast,2026-06-08 16:00:00,Hall 3,141,"Animation, Family, Fantasy",84
+132,The Hangover,2026-06-08 16:00:00,IMAX Theatre,122,Comedy,100
+117,Joker,2026-06-08 17:00:00,Hall 2,113,"Crime, Drama, Thriller",122
+19,The Hobbit: The Desolation of Smaug,2026-06-08 19:00:00,Hall 3,84,"Adventure, Fantasy",161
+1,Star Trek Into Darkness,2026-06-08 19:30:00,IMAX Theatre,72,"Action, Adventure, Sci-Fi",132
+95,Harry Potter and the Prisoner of Azkaban,2026-06-08 20:00:00,Hall 1 (Dolby Atmos),122,"Adventure, Family, Fantasy",142
+88,Gladiator,2026-06-08 20:30:00,Hall 3,55,"Action, Adventure, Drama",155
+9,The Lion King,2026-06-09 11:00:00,IMAX Theatre,54,"Animation, Adventure, Drama",88
+138,How to Train Your Dragon,2026-06-09 13:00:00,Hall 1 (Dolby Atmos),137,"Animation, Action, Adventure",98
+127,The Lord of the Rings: The Two Towers,2026-06-09 14:00:00,Hall 3,105,"Action, Adventure, Drama",179
+15,Saving Private Ryan,2026-06-09 16:00:00,Hall 1 (Dolby Atmos),130,"Drama, War",169
+69,The Dark Knight Rises,2026-06-09 17:00:00,Hall 1 (Dolby Atmos),64,"Action, Adventure",164
+128,The Avengers,2026-06-09 17:30:00,Hall 2,88,"Action, Adventure, Sci-Fi",143
+45,The Lion King,2026-06-09 19:00:00,IMAX Theatre,23,"Animation, Adventure, Drama",88
+23,Star Trek,2026-06-09 19:30:00,IMAX Theatre,26,"Action, Adventure, Sci-Fi",127
+57,Skyfall,2026-06-09 20:30:00,Hall 1 (Dolby Atmos),97,"Action, Adventure, Thriller",143
+120,Dawn of the Planet of the Apes,2026-06-09 20:30:00,Hall 1 (Dolby Atmos),29,"Action, Adventure, Drama",130
+135,Back to the Future,2026-06-09 22:30:00,IMAX Theatre,25,"Adventure, Comedy, Sci-Fi",116

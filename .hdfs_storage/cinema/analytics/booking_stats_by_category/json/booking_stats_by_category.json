@@ -1,0 +1,130 @@
+[
+  {
+    "genre": "Adventure",
+    "total_bookings": 190,
+    "total_revenue": 2967.0,
+    "avg_ticket_price": 15.62,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Action",
+    "total_bookings": 136,
+    "total_revenue": 2158.5,
+    "avg_ticket_price": 15.87,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Comedy",
+    "total_bookings": 71,
+    "total_revenue": 1062.5,
+    "avg_ticket_price": 14.96,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Animation",
+    "total_bookings": 69,
+    "total_revenue": 1038.5,
+    "avg_ticket_price": 15.05,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Sci-Fi",
+    "total_bookings": 65,
+    "total_revenue": 1018.0,
+    "avg_ticket_price": 15.66,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Drama",
+    "total_bookings": 54,
+    "total_revenue": 835.5,
+    "avg_ticket_price": 15.47,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Fantasy",
+    "total_bookings": 23,
+    "total_revenue": 370.0,
+    "avg_ticket_price": 16.09,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Thriller",
+    "total_bookings": 20,
+    "total_revenue": 321.5,
+    "avg_ticket_price": 16.07,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Crime",
+    "total_bookings": 18,
+    "total_revenue": 274.5,
+    "avg_ticket_price": 15.25,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Horror",
+    "total_bookings": 12,
+    "total_revenue": 182.0,
+    "avg_ticket_price": 15.17,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Family",
+    "total_bookings": 12,
+    "total_revenue": 174.5,
+    "avg_ticket_price": 14.54,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Mystery",
+    "total_bookings": 4,
+    "total_revenue": 70.5,
+    "avg_ticket_price": 17.62,
+    "min_ticket_price": 15.0,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Romance",
+    "total_bookings": 3,
+    "total_revenue": 46.0,
+    "avg_ticket_price": 15.33,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Western",
+    "total_bookings": 3,
+    "total_revenue": 43.5,
+    "avg_ticket_price": 14.5,
+    "min_ticket_price": 12.5,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "History",
+    "total_bookings": 2,
+    "total_revenue": 33.5,
+    "avg_ticket_price": 16.75,
+    "min_ticket_price": 15.0,
+    "max_ticket_price": 18.5
+  },
+  {
+    "genre": "Music",
+    "total_bookings": 1,
+    "total_revenue": 18.5,
+    "avg_ticket_price": 18.5,
+    "min_ticket_price": 18.5,
+    "max_ticket_price": 18.5
+  }
+]

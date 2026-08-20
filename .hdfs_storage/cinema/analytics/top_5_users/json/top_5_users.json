@@ -1,0 +1,52 @@
+[
+  {
+    "rank": 1,
+    "user_id": "22",
+    "name": "Ethan Martinez",
+    "phone_number": "+1-555-410-8990",
+    "loyalty_points": 115,
+    "total_bookings": 9,
+    "total_spent": 134.5,
+    "avg_spend_per_ticket": 14.94
+  },
+  {
+    "rank": 2,
+    "user_id": "16",
+    "name": "Bob Davis",
+    "phone_number": "+1-555-780-4859",
+    "loyalty_points": 100,
+    "total_bookings": 6,
+    "total_spent": 101.5,
+    "avg_spend_per_ticket": 16.92
+  },
+  {
+    "rank": 3,
+    "user_id": "53",
+    "name": "George Brown",
+    "phone_number": "+1-555-881-8001",
+    "loyalty_points": 109,
+    "total_bookings": 6,
+    "total_spent": 94.5,
+    "avg_spend_per_ticket": 15.75
+  },
+  {
+    "rank": 4,
+    "user_id": "64",
+    "name": "Julia Martinez",
+    "phone_number": "+1-555-732-9907",
+    "loyalty_points": 189,
+    "total_bookings": 6,
+    "total_spent": 88.5,
+    "avg_spend_per_ticket": 14.75
+  },
+  {
+    "rank": 5,
+    "user_id": "96",
+    "name": "Julia Jones",
+    "phone_number": "+1-555-953-1859",
+    "loyalty_points": 489,
+    "total_bookings": 6,
+    "total_spent": 87.0,
+    "avg_spend_per_ticket": 14.5
+  }
+]

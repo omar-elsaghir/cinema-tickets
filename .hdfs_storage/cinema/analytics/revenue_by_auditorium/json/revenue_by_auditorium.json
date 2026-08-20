@@ -1,0 +1,37 @@
+[
+  {
+    "hall_name": "Hall 1 (Dolby Atmos)",
+    "total_screenings": 33,
+    "total_tickets_sold": 56,
+    "total_revenue": 874.0,
+    "avg_revenue_per_screening": 26.48
+  },
+  {
+    "hall_name": "Hall 2",
+    "total_screenings": 34,
+    "total_tickets_sold": 55,
+    "total_revenue": 852.5,
+    "avg_revenue_per_screening": 25.07
+  },
+  {
+    "hall_name": "Hall 3",
+    "total_screenings": 27,
+    "total_tickets_sold": 43,
+    "total_revenue": 659.0,
+    "avg_revenue_per_screening": 24.41
+  },
+  {
+    "hall_name": "Hall 4 (VIP)",
+    "total_screenings": 26,
+    "total_tickets_sold": 50,
+    "total_revenue": 775.5,
+    "avg_revenue_per_screening": 29.83
+  },
+  {
+    "hall_name": "IMAX Theatre",
+    "total_screenings": 30,
+    "total_tickets_sold": 46,
+    "total_revenue": 711.0,
+    "avg_revenue_per_screening": 23.7
+  }
+]

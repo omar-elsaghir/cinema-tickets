@@ -1,0 +1,151 @@
+event_id,movie_title,screen_time,hall_name,available_seats,availability_status
+53,Bohemian Rhapsody,2026-05-26 11:00:00,Hall 2,88,AVAILABLE
+92,The Lion King,2026-05-26 11:30:00,IMAX Theatre,138,AVAILABLE
+74,Star Wars: Episode VI - Return of the Jedi,2026-05-26 11:30:00,Hall 4 (VIP),29,AVAILABLE
+129,Big Hero 6,2026-05-26 11:30:00,Hall 4 (VIP),76,AVAILABLE
+56,Star Wars: Episode VII - The Force Awakens,2026-05-26 13:00:00,Hall 2,4,LIMITED AVAILABILITY
+137,Ratatouille,2026-05-26 14:30:00,Hall 1 (Dolby Atmos),65,AVAILABLE
+91,Back to the Future,2026-05-26 16:00:00,Hall 3,146,AVAILABLE
+70,Harry Potter and the Half-Blood Prince,2026-05-26 19:30:00,Hall 2,150,AVAILABLE
+90,The Exorcist,2026-05-26 20:00:00,Hall 2,27,AVAILABLE
+33,The Lion King,2026-05-26 20:30:00,Hall 3,0,SOLD OUT
+103,The Martian,2026-05-27 13:00:00,IMAX Theatre,59,AVAILABLE
+85,Zootopia,2026-05-27 13:30:00,Hall 4 (VIP),146,AVAILABLE
+26,Toy Story 3,2026-05-27 14:00:00,Hall 1 (Dolby Atmos),103,AVAILABLE
+116,Gladiator,2026-05-27 14:30:00,IMAX Theatre,120,AVAILABLE
+52,Inception,2026-05-27 16:00:00,Hall 1 (Dolby Atmos),83,AVAILABLE
+20,Ghostbusters,2026-05-27 17:00:00,Hall 1 (Dolby Atmos),44,AVAILABLE
+7,Iron Man,2026-05-27 19:30:00,Hall 2,117,AVAILABLE
+58,Shrek,2026-05-27 22:30:00,Hall 1 (Dolby Atmos),149,AVAILABLE
+139,Ocean's Eleven,2026-05-28 11:00:00,Hall 2,137,AVAILABLE
+101,Coco,2026-05-28 13:00:00,IMAX Theatre,58,AVAILABLE
+34,Zootopia,2026-05-28 17:30:00,Hall 4 (VIP),64,AVAILABLE
+37,Thor: Ragnarok,2026-05-28 20:00:00,IMAX Theatre,11,LIMITED AVAILABILITY
+31,Big Hero 6,2026-05-28 22:00:00,IMAX Theatre,53,AVAILABLE
+65,Star Trek Into Darkness,2026-05-28 22:30:00,Hall 3,103,AVAILABLE
+112,X-Men: Days of Future Past,2026-05-28 22:30:00,Hall 4 (VIP),2,LIMITED AVAILABILITY
+68,Inception,2026-05-29 11:00:00,Hall 4 (VIP),118,AVAILABLE
+150,The Lego Movie,2026-05-29 11:00:00,Hall 3,103,AVAILABLE
+54,The Lord of the Rings: The Return of the King,2026-05-29 14:30:00,Hall 4 (VIP),24,AVAILABLE
+62,Mission: Impossible - Fallout,2026-05-29 16:00:00,IMAX Theatre,94,AVAILABLE
+3,Dunkirk,2026-05-29 16:00:00,Hall 3,30,AVAILABLE
+89,Guardians of the Galaxy,2026-05-29 16:00:00,Hall 2,103,AVAILABLE
+42,Skyfall,2026-05-29 16:00:00,Hall 2,2,LIMITED AVAILABILITY
+104,Incredibles 2,2026-05-29 17:00:00,Hall 2,86,AVAILABLE
+17,Despicable Me,2026-05-29 19:30:00,Hall 4 (VIP),48,AVAILABLE
+24,Zootopia,2026-05-29 19:30:00,Hall 2,71,AVAILABLE
+144,The Fugitive,2026-05-29 20:00:00,Hall 3,24,AVAILABLE
+32,Gladiator,2026-05-29 20:00:00,Hall 4 (VIP),109,AVAILABLE
+121,Harry Potter and the Half-Blood Prince,2026-05-30 16:30:00,Hall 4 (VIP),12,LIMITED AVAILABILITY
+99,Aladdin,2026-05-30 20:00:00,Hall 4 (VIP),97,AVAILABLE
+5,X-Men: Days of Future Past,2026-05-31 11:00:00,Hall 2,51,AVAILABLE
+30,Aladdin,2026-05-31 13:30:00,Hall 4 (VIP),56,AVAILABLE
+148,Star Trek,2026-05-31 14:00:00,Hall 2,138,AVAILABLE
+97,Toy Story,2026-05-31 16:30:00,Hall 1 (Dolby Atmos),49,AVAILABLE
+22,Toy Story 4,2026-05-31 17:00:00,Hall 3,62,AVAILABLE
+145,Sherlock Holmes,2026-05-31 20:30:00,IMAX Theatre,133,AVAILABLE
+12,Incredibles 2,2026-05-31 20:30:00,Hall 1 (Dolby Atmos),121,AVAILABLE
+72,Mission: Impossible - Fallout,2026-05-31 22:00:00,Hall 4 (VIP),139,AVAILABLE
+119,The Revenant,2026-06-01 13:30:00,Hall 3,61,AVAILABLE
+79,Thor: Ragnarok,2026-06-01 14:00:00,Hall 4 (VIP),58,AVAILABLE
+149,Despicable Me,2026-06-01 14:30:00,IMAX Theatre,121,AVAILABLE
+10,Star Trek,2026-06-01 14:30:00,Hall 4 (VIP),25,AVAILABLE
+47,Batman Begins,2026-06-01 16:00:00,Hall 2,104,AVAILABLE
+73,Aladdin,2026-06-01 16:00:00,IMAX Theatre,80,AVAILABLE
+87,Harry Potter and the Deathly Hallows: Part 2,2026-06-01 16:30:00,Hall 3,89,AVAILABLE
+2,Sherlock Holmes,2026-06-01 17:30:00,Hall 1 (Dolby Atmos),40,AVAILABLE
+107,Dances with Wolves,2026-06-01 20:00:00,Hall 3,47,AVAILABLE
+18,Spider-Man: Into the Spider-Verse,2026-06-01 20:30:00,IMAX Theatre,104,AVAILABLE
+96,Pirates of the Caribbean: The Curse of the Black Pearl,2026-06-01 22:00:00,Hall 1 (Dolby Atmos),139,AVAILABLE
+126,Indiana Jones and the Last Crusade,2026-06-01 22:30:00,Hall 2,105,AVAILABLE
+50,Gravity,2026-06-02 17:30:00,Hall 1 (Dolby Atmos),17,AVAILABLE
+105,Iron Man,2026-06-02 19:30:00,Hall 1 (Dolby Atmos),15,LIMITED AVAILABILITY
+100,X-Men: Days of Future Past,2026-06-02 22:00:00,Hall 3,83,AVAILABLE
+29,Inception,2026-06-03 11:00:00,Hall 4 (VIP),128,AVAILABLE
+28,Terminator 2: Judgment Day,2026-06-03 11:00:00,Hall 4 (VIP),119,AVAILABLE
+141,The Exorcist,2026-06-03 13:00:00,IMAX Theatre,100,AVAILABLE
+143,Titanic,2026-06-03 13:00:00,Hall 1 (Dolby Atmos),111,AVAILABLE
+48,Iron Man,2026-06-03 13:30:00,Hall 1 (Dolby Atmos),75,AVAILABLE
+77,Star Wars: Episode VII - The Force Awakens,2026-06-03 14:30:00,Hall 1 (Dolby Atmos),93,AVAILABLE
+98,Rain Man,2026-06-03 16:30:00,Hall 2,62,AVAILABLE
+83,The Lord of the Rings: The Return of the King,2026-06-03 16:30:00,Hall 2,87,AVAILABLE
+124,Indiana Jones and the Last Crusade,2026-06-03 19:30:00,Hall 1 (Dolby Atmos),24,AVAILABLE
+40,Coco,2026-06-03 19:30:00,Hall 4 (VIP),48,AVAILABLE
+81,The Exorcist,2026-06-03 20:00:00,IMAX Theatre,40,AVAILABLE
+13,Wreck-It Ralph,2026-06-03 20:30:00,Hall 1 (Dolby Atmos),68,AVAILABLE
+131,E.T. the Extra-Terrestrial,2026-06-04 11:00:00,Hall 2,43,AVAILABLE
+43,The Exorcist,2026-06-04 11:30:00,Hall 1 (Dolby Atmos),140,AVAILABLE
+130,The Lord of the Rings: The Return of the King,2026-06-04 13:00:00,Hall 2,11,LIMITED AVAILABILITY
+49,The Lord of the Rings: The Two Towers,2026-06-04 13:00:00,Hall 2,91,AVAILABLE
+123,Inception,2026-06-04 13:00:00,Hall 3,37,AVAILABLE
+80,Interstellar,2026-06-04 13:00:00,Hall 3,17,AVAILABLE
+108,Iron Man,2026-06-04 13:30:00,Hall 1 (Dolby Atmos),5,LIMITED AVAILABILITY
+147,Deadpool,2026-06-04 14:00:00,Hall 3,131,AVAILABLE
+86,Tangled,2026-06-04 14:30:00,Hall 4 (VIP),104,AVAILABLE
+67,The Lord of the Rings: The Two Towers,2026-06-04 14:30:00,Hall 3,88,AVAILABLE
+6,Home Alone,2026-06-04 14:30:00,Hall 2,71,AVAILABLE
+110,Pirates of the Caribbean: The Curse of the Black Pearl,2026-06-04 16:00:00,Hall 2,33,AVAILABLE
+64,Iron Man,2026-06-04 17:00:00,Hall 1 (Dolby Atmos),140,AVAILABLE
+38,Batman Begins,2026-06-04 17:00:00,Hall 2,81,AVAILABLE
+44,Shrek,2026-06-04 17:30:00,Hall 2,74,AVAILABLE
+21,Sherlock Holmes,2026-06-04 17:30:00,Hall 2,119,AVAILABLE
+60,Harry Potter and the Prisoner of Azkaban,2026-06-04 19:30:00,Hall 2,85,AVAILABLE
+75,Inception,2026-06-04 20:00:00,Hall 1 (Dolby Atmos),88,AVAILABLE
+4,Terminator 2: Judgment Day,2026-06-04 22:00:00,Hall 3,131,AVAILABLE
+36,The Sixth Sense,2026-06-05 14:30:00,Hall 3,119,AVAILABLE
+25,The Hangover,2026-06-05 14:30:00,Hall 1 (Dolby Atmos),31,AVAILABLE
+122,Star Wars: Episode VII - The Force Awakens,2026-06-05 17:00:00,IMAX Theatre,24,AVAILABLE
+109,The Exorcist,2026-06-05 19:00:00,Hall 2,5,LIMITED AVAILABILITY
+111,Pirates of the Caribbean: The Curse of the Black Pearl,2026-06-05 19:00:00,Hall 1 (Dolby Atmos),127,AVAILABLE
+142,Gladiator,2026-06-05 19:00:00,Hall 3,145,AVAILABLE
+93,Dances with Wolves,2026-06-05 19:30:00,Hall 2,70,AVAILABLE
+51,Toy Story 2,2026-06-06 11:00:00,Hall 4 (VIP),69,AVAILABLE
+102,Jurassic Park,2026-06-06 11:30:00,Hall 4 (VIP),15,LIMITED AVAILABILITY
+125,The Fugitive,2026-06-06 13:00:00,Hall 3,78,AVAILABLE
+63,Ocean's Eleven,2026-06-06 13:00:00,Hall 2,86,AVAILABLE
+78,Moana,2026-06-06 13:00:00,Hall 2,10,LIMITED AVAILABILITY
+133,Toy Story,2026-06-06 13:30:00,Hall 2,90,AVAILABLE
+82,Moana,2026-06-06 14:00:00,Hall 4 (VIP),144,AVAILABLE
+55,Captain America: Civil War,2026-06-06 14:30:00,Hall 3,102,AVAILABLE
+134,Tangled,2026-06-06 16:00:00,IMAX Theatre,43,AVAILABLE
+61,Inside Out,2026-06-06 19:00:00,Hall 3,5,LIMITED AVAILABILITY
+114,Dawn of the Planet of the Apes,2026-06-06 19:00:00,Hall 1 (Dolby Atmos),75,AVAILABLE
+146,Pirates of the Caribbean: The Curse of the Black Pearl,2026-06-06 19:00:00,Hall 1 (Dolby Atmos),9,LIMITED AVAILABILITY
+8,A Star Is Born,2026-06-06 19:30:00,IMAX Theatre,2,LIMITED AVAILABILITY
+140,Toy Story 3,2026-06-06 19:30:00,IMAX Theatre,70,AVAILABLE
+94,The Hobbit: An Unexpected Journey,2026-06-06 22:30:00,Hall 4 (VIP),54,AVAILABLE
+71,Titanic,2026-06-07 11:00:00,IMAX Theatre,147,AVAILABLE
+35,Inception,2026-06-07 14:30:00,IMAX Theatre,28,AVAILABLE
+106,Coco,2026-06-07 16:30:00,Hall 3,139,AVAILABLE
+113,Shrek,2026-06-07 17:00:00,Hall 2,94,AVAILABLE
+59,Beauty and the Beast,2026-06-07 19:00:00,Hall 2,62,AVAILABLE
+27,Captain America: Civil War,2026-06-07 19:30:00,Hall 1 (Dolby Atmos),33,AVAILABLE
+39,Cast Away,2026-06-07 19:30:00,IMAX Theatre,77,AVAILABLE
+66,Star Wars: Episode VI - Return of the Jedi,2026-06-07 22:00:00,IMAX Theatre,143,AVAILABLE
+11,Ocean's Eleven,2026-06-08 11:00:00,IMAX Theatre,38,AVAILABLE
+16,Toy Story,2026-06-08 11:30:00,Hall 1 (Dolby Atmos),60,AVAILABLE
+136,Star Wars: Episode V - The Empire Strikes Back,2026-06-08 11:30:00,IMAX Theatre,127,AVAILABLE
+41,Ocean's Eleven,2026-06-08 13:00:00,Hall 4 (VIP),66,AVAILABLE
+84,E.T. the Extra-Terrestrial,2026-06-08 13:30:00,Hall 4 (VIP),45,AVAILABLE
+115,Logan,2026-06-08 14:00:00,Hall 1 (Dolby Atmos),132,AVAILABLE
+118,X-Men: Days of Future Past,2026-06-08 14:00:00,Hall 4 (VIP),87,AVAILABLE
+46,Harry Potter and the Half-Blood Prince,2026-06-08 14:30:00,Hall 3,89,AVAILABLE
+14,Thor: Ragnarok,2026-06-08 14:30:00,IMAX Theatre,21,AVAILABLE
+76,Beauty and the Beast,2026-06-08 16:00:00,Hall 3,141,AVAILABLE
+132,The Hangover,2026-06-08 16:00:00,IMAX Theatre,122,AVAILABLE
+117,Joker,2026-06-08 17:00:00,Hall 2,113,AVAILABLE
+19,The Hobbit: The Desolation of Smaug,2026-06-08 19:00:00,Hall 3,84,AVAILABLE
+1,Star Trek Into Darkness,2026-06-08 19:30:00,IMAX Theatre,72,AVAILABLE
+95,Harry Potter and the Prisoner of Azkaban,2026-06-08 20:00:00,Hall 1 (Dolby Atmos),122,AVAILABLE
+88,Gladiator,2026-06-08 20:30:00,Hall 3,55,AVAILABLE
+9,The Lion King,2026-06-09 11:00:00,IMAX Theatre,54,AVAILABLE
+138,How to Train Your Dragon,2026-06-09 13:00:00,Hall 1 (Dolby Atmos),137,AVAILABLE
+127,The Lord of the Rings: The Two Towers,2026-06-09 14:00:00,Hall 3,105,AVAILABLE
+15,Saving Private Ryan,2026-06-09 16:00:00,Hall 1 (Dolby Atmos),130,AVAILABLE
+69,The Dark Knight Rises,2026-06-09 17:00:00,Hall 1 (Dolby Atmos),64,AVAILABLE
+128,The Avengers,2026-06-09 17:30:00,Hall 2,88,AVAILABLE
+45,The Lion King,2026-06-09 19:00:00,IMAX Theatre,23,AVAILABLE
+23,Star Trek,2026-06-09 19:30:00,IMAX Theatre,26,AVAILABLE
+57,Skyfall,2026-06-09 20:30:00,Hall 1 (Dolby Atmos),97,AVAILABLE
+120,Dawn of the Planet of the Apes,2026-06-09 20:30:00,Hall 1 (Dolby Atmos),29,AVAILABLE
+135,Back to the Future,2026-06-09 22:30:00,IMAX Theatre,25,AVAILABLE

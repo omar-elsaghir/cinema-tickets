@@ -1,0 +1,34 @@
+[
+  {
+    "loyalty_tier": "Platinum (400+ pts)",
+    "total_users_in_tier": 79,
+    "total_bookings": 49,
+    "total_revenue": 746.0,
+    "avg_spend_per_user": 9.44,
+    "avg_ticket_price": 15.22
+  },
+  {
+    "loyalty_tier": "Gold (250-399 pts)",
+    "total_users_in_tier": 112,
+    "total_bookings": 45,
+    "total_revenue": 716.5,
+    "avg_spend_per_user": 6.4,
+    "avg_ticket_price": 15.92
+  },
+  {
+    "loyalty_tier": "Silver (100-249 pts)",
+    "total_users_in_tier": 128,
+    "total_bookings": 98,
+    "total_revenue": 1497.5,
+    "avg_spend_per_user": 11.7,
+    "avg_ticket_price": 15.28
+  },
+  {
+    "loyalty_tier": "Bronze (<100 pts)",
+    "total_users_in_tier": 81,
+    "total_bookings": 58,
+    "total_revenue": 912.0,
+    "avg_spend_per_user": 11.26,
+    "avg_ticket_price": 15.72
+  }
+]

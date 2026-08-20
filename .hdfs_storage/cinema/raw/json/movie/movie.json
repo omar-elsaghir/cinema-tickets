@@ -1,0 +1,1902 @@
+[
+  {
+    "movie_id": "1",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Star Wars: Episode VII - The Force Awakens",
+    "released_year": "2015",
+    "runtime_in_min": "138",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search for the one hope of restoring peace.",
+    "revenue": "936662225.0",
+    "credits": {
+      "director": "J.J. Abrams",
+      "cast": [
+        "Daisy Ridley",
+        "John Boyega",
+        "Oscar Isaac",
+        "Domhnall Gleeson"
+      ]
+    }
+  },
+  {
+    "movie_id": "2",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Avengers: Endgame",
+    "released_year": "2019",
+    "runtime_in_min": "181",
+    "genre": "Action, Adventure, Drama",
+    "overview": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+    "revenue": "858373000.0",
+    "credits": {
+      "director": "Anthony Russo",
+      "cast": [
+        "Joe Russo",
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo"
+      ]
+    }
+  },
+  {
+    "movie_id": "3",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Avatar",
+    "released_year": "2009",
+    "runtime_in_min": "162",
+    "genre": "Action, Adventure, Fantasy",
+    "overview": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "revenue": "760507625.0",
+    "credits": {
+      "director": "James Cameron",
+      "cast": [
+        "Sam Worthington",
+        "Zoe Saldana",
+        "Sigourney Weaver",
+        "Michelle Rodriguez"
+      ]
+    }
+  },
+  {
+    "movie_id": "4",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Avengers: Infinity War",
+    "released_year": "2018",
+    "runtime_in_min": "149",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+    "revenue": "678815482.0",
+    "credits": {
+      "director": "Anthony Russo",
+      "cast": [
+        "Joe Russo",
+        "Robert Downey Jr.",
+        "Chris Hemsworth",
+        "Mark Ruffalo"
+      ]
+    }
+  },
+  {
+    "movie_id": "5",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Titanic",
+    "released_year": "1997",
+    "runtime_in_min": "194",
+    "genre": "Drama, Romance",
+    "overview": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+    "revenue": "659325379.0",
+    "credits": {
+      "director": "James Cameron",
+      "cast": [
+        "Leonardo DiCaprio",
+        "Kate Winslet",
+        "Billy Zane",
+        "Kathy Bates"
+      ]
+    }
+  },
+  {
+    "movie_id": "6",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Avengers",
+    "released_year": "2012",
+    "runtime_in_min": "143",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+    "revenue": "623279547.0",
+    "credits": {
+      "director": "Joss Whedon",
+      "cast": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Scarlett Johansson",
+        "Jeremy Renner"
+      ]
+    }
+  },
+  {
+    "movie_id": "7",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTEzNzY0OTg0NTdeQTJeQWpwZ15BbWU4MDU3OTg3MjUz._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Incredibles 2",
+    "released_year": "2018",
+    "runtime_in_min": "118",
+    "genre": "Animation, Action, Adventure",
+    "overview": "The Incredibles family takes on a new mission which involves a change in family roles: Bob Parr (Mr. Incredible) must manage the house while his wife Helen (Elastigirl) goes out to save the world.",
+    "revenue": "608581744.0",
+    "credits": {
+      "director": "Brad Bird",
+      "cast": [
+        "Craig T. Nelson",
+        "Holly Hunter",
+        "Sarah Vowell",
+        "Huck Milner"
+      ]
+    }
+  },
+  {
+    "movie_id": "8",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Dark Knight",
+    "released_year": "2008",
+    "runtime_in_min": "152",
+    "genre": "Action, Crime, Drama",
+    "overview": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    "revenue": "534858444.0",
+    "credits": {
+      "director": "Christopher Nolan",
+      "cast": [
+        "Christian Bale",
+        "Heath Ledger",
+        "Aaron Eckhart",
+        "Michael Caine"
+      ]
+    }
+  },
+  {
+    "movie_id": "9",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Rogue One",
+    "released_year": "2016",
+    "runtime_in_min": "133",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the plans for the Death Star.",
+    "revenue": "532177324.0",
+    "credits": {
+      "director": "Gareth Edwards",
+      "cast": [
+        "Felicity Jones",
+        "Diego Luna",
+        "Alan Tudyk",
+        "Donnie Yen"
+      ]
+    }
+  },
+  {
+    "movie_id": "10",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Dark Knight Rises",
+    "released_year": "2012",
+    "runtime_in_min": "164",
+    "genre": "Action, Adventure",
+    "overview": "Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.",
+    "revenue": "448139099.0",
+    "credits": {
+      "director": "Christopher Nolan",
+      "cast": [
+        "Christian Bale",
+        "Tom Hardy",
+        "Anne Hathaway",
+        "Gary Oldman"
+      ]
+    }
+  },
+  {
+    "movie_id": "11",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTQ2ODFlMDAtNzdhOC00ZDYzLWE3YTMtNDU4ZGFmZmJmYTczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "E.T. the Extra-Terrestrial",
+    "released_year": "1982",
+    "runtime_in_min": "115",
+    "genre": "Family, Sci-Fi",
+    "overview": "A troubled child summons the courage to help a friendly alien escape Earth and return to his home world.",
+    "revenue": "435110554.0",
+    "credits": {
+      "director": "Steven Spielberg",
+      "cast": [
+        "Henry Thomas",
+        "Drew Barrymore",
+        "Peter Coyote",
+        "Dee Wallace"
+      ]
+    }
+  },
+  {
+    "movie_id": "12",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Toy Story 4",
+    "released_year": "2019",
+    "runtime_in_min": "100",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "When a new toy called \"Forky\" joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.",
+    "revenue": "434038008.0",
+    "credits": {
+      "director": "Josh Cooley",
+      "cast": [
+        "Tom Hanks",
+        "Tim Allen",
+        "Annie Potts",
+        "Tony Hale"
+      ]
+    }
+  },
+  {
+    "movie_id": "13",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Lion King",
+    "released_year": "1994",
+    "runtime_in_min": "88",
+    "genre": "Animation, Adventure, Drama",
+    "overview": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+    "revenue": "422783777.0",
+    "credits": {
+      "director": "Roger Allers",
+      "cast": [
+        "Rob Minkoff",
+        "Matthew Broderick",
+        "Jeremy Irons",
+        "James Earl Jones"
+      ]
+    }
+  },
+  {
+    "movie_id": "14",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_UY98_CR1,0,67,98_AL_.jpg",
+    "series_title": "Toy Story 3",
+    "released_year": "2010",
+    "runtime_in_min": "103",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "The toys are mistakenly delivered to a day-care center instead of the attic right before Andy leaves for college, and it's up to Woody to convince the other toys that they weren't abandoned and to return home.",
+    "revenue": "415004880.0",
+    "credits": {
+      "director": "Lee Unkrich",
+      "cast": [
+        "Tom Hanks",
+        "Tim Allen",
+        "Joan Cusack",
+        "Ned Beatty"
+      ]
+    }
+  },
+  {
+    "movie_id": "15",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Captain America: Civil War",
+    "released_year": "2016",
+    "runtime_in_min": "147",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "Political involvement in the Avengers' affairs causes a rift between Captain America and Iron Man.",
+    "revenue": "408084349.0",
+    "credits": {
+      "director": "Anthony Russo",
+      "cast": [
+        "Joe Russo",
+        "Chris Evans",
+        "Robert Downey Jr.",
+        "Scarlett Johansson"
+      ]
+    }
+  },
+  {
+    "movie_id": "16",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Jurassic Park",
+    "released_year": "1993",
+    "runtime_in_min": "127",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
+    "revenue": "402453882.0",
+    "credits": {
+      "director": "Steven Spielberg",
+      "cast": [
+        "Sam Neill",
+        "Laura Dern",
+        "Jeff Goldblum",
+        "Richard Attenborough"
+      ]
+    }
+  },
+  {
+    "movie_id": "17",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Guardians of the Galaxy Vol. 2",
+    "released_year": "2017",
+    "runtime_in_min": "136",
+    "genre": "Action, Adventure, Comedy",
+    "overview": "The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego.",
+    "revenue": "389813101.0",
+    "credits": {
+      "director": "James Gunn",
+      "cast": [
+        "Chris Pratt",
+        "Zoe Saldana",
+        "Dave Bautista",
+        "Vin Diesel"
+      ]
+    }
+  },
+  {
+    "movie_id": "18",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Harry Potter and the Deathly Hallows: Part 2",
+    "released_year": "2011",
+    "runtime_in_min": "130",
+    "genre": "Adventure, Drama, Fantasy",
+    "overview": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
+    "revenue": "381011219.0",
+    "credits": {
+      "director": "David Yates",
+      "cast": [
+        "Daniel Radcliffe",
+        "Emma Watson",
+        "Rupert Grint",
+        "Michael Gambon"
+      ]
+    }
+  },
+  {
+    "movie_id": "19",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BZTAzNWZlNmUtZDEzYi00ZjA5LWIwYjEtZGM1NWE1MjE4YWRhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Finding Nemo",
+    "released_year": "2003",
+    "runtime_in_min": "100",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+    "revenue": "380843261.0",
+    "credits": {
+      "director": "Andrew Stanton",
+      "cast": [
+        "Lee Unkrich",
+        "Albert Brooks",
+        "Ellen DeGeneres",
+        "Alexander Gould"
+      ]
+    }
+  },
+  {
+    "movie_id": "20",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Lord of the Rings: The Return of the King",
+    "released_year": "2003",
+    "runtime_in_min": "201",
+    "genre": "Action, Adventure, Drama",
+    "overview": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+    "revenue": "377845905.0",
+    "credits": {
+      "director": "Peter Jackson",
+      "cast": [
+        "Elijah Wood",
+        "Viggo Mortensen",
+        "Ian McKellen",
+        "Orlando Bloom"
+      ]
+    }
+  },
+  {
+    "movie_id": "21",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BYzE5MjY1ZDgtMTkyNC00MTMyLThhMjAtZGI5OTE1NzFlZGJjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Deadpool",
+    "released_year": "2016",
+    "runtime_in_min": "108",
+    "genre": "Action, Adventure, Comedy",
+    "overview": "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.",
+    "revenue": "363070709.0",
+    "credits": {
+      "director": "Tim Miller",
+      "cast": [
+        "Ryan Reynolds",
+        "Morena Baccarin",
+        "T.J. Miller",
+        "Ed Skrein"
+      ]
+    }
+  },
+  {
+    "movie_id": "22",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BOTgxMDQwMDk0OF5BMl5BanBnXkFtZTgwNjU5OTg2NDE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Inside Out",
+    "released_year": "2015",
+    "runtime_in_min": "95",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school.",
+    "revenue": "356461711.0",
+    "credits": {
+      "director": "Pete Docter",
+      "cast": [
+        "Ronnie Del Carmen",
+        "Amy Poehler",
+        "Bill Hader",
+        "Lewis Black"
+      ]
+    }
+  },
+  {
+    "movie_id": "23",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BZGMxZTdjZmYtMmE2Ni00ZTdkLWI5NTgtNjlmMjBiNzU2MmI5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Lord of the Rings: The Two Towers",
+    "released_year": "2002",
+    "runtime_in_min": "179",
+    "genre": "Action, Adventure, Drama",
+    "overview": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+    "revenue": "342551365.0",
+    "credits": {
+      "director": "Peter Jackson",
+      "cast": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen",
+        "Orlando Bloom"
+      ]
+    }
+  },
+  {
+    "movie_id": "24",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BOTMyMjEyNzIzMV5BMl5BanBnXkFtZTgwNzIyNjU0NzE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Zootopia",
+    "released_year": "2016",
+    "runtime_in_min": "108",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.",
+    "revenue": "341268248.0",
+    "credits": {
+      "director": "Byron Howard",
+      "cast": [
+        "Rich Moore",
+        "Jared Bush",
+        "Ginnifer Goodwin",
+        "Jason Bateman"
+      ]
+    }
+  },
+  {
+    "movie_id": "25",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Joker",
+    "released_year": "2019",
+    "runtime_in_min": "122",
+    "genre": "Crime, Drama, Thriller",
+    "overview": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
+    "revenue": "335451311.0",
+    "credits": {
+      "director": "Todd Phillips",
+      "cast": [
+        "Joaquin Phoenix",
+        "Robert De Niro",
+        "Zazie Beetz",
+        "Frances Conroy"
+      ]
+    }
+  },
+  {
+    "movie_id": "26",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTAwMjU5OTgxNjZeQTJeQWpwZ15BbWU4MDUxNDYxODEx._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Guardians of the Galaxy",
+    "released_year": "2014",
+    "runtime_in_min": "121",
+    "genre": "Action, Adventure, Comedy",
+    "overview": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
+    "revenue": "333176600.0",
+    "credits": {
+      "director": "James Gunn",
+      "cast": [
+        "Chris Pratt",
+        "Vin Diesel",
+        "Bradley Cooper",
+        "Zoe Saldana"
+      ]
+    }
+  },
+  {
+    "movie_id": "27",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY98_CR0,0,67,98_AL_.jpg",
+    "series_title": "Forrest Gump",
+    "released_year": "1994",
+    "runtime_in_min": "142",
+    "genre": "Drama, Romance",
+    "overview": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+    "revenue": "330252182.0",
+    "credits": {
+      "director": "Robert Zemeckis",
+      "cast": [
+        "Tom Hanks",
+        "Robin Wright",
+        "Gary Sinise",
+        "Sally Field"
+      ]
+    }
+  },
+  {
+    "movie_id": "28",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNjk1Njk3YjctMmMyYS00Y2I4LThhMzktN2U0MTMyZTFlYWQ5XkEyXkFqcGdeQXVyODM2ODEzMDA@._V1_UY98_CR15,0,67,98_AL_.jpg",
+    "series_title": "Deadpool 2",
+    "released_year": "2018",
+    "runtime_in_min": "119",
+    "genre": "Action, Adventure, Comedy",
+    "overview": "Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool), brings together a team of fellow mutant rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg Cable.",
+    "revenue": "324591735.0",
+    "credits": {
+      "director": "David Leitch",
+      "cast": [
+        "Ryan Reynolds",
+        "Josh Brolin",
+        "Morena Baccarin",
+        "Julian Dennison"
+      ]
+    }
+  },
+  {
+    "movie_id": "29",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Star Wars",
+    "released_year": "1977",
+    "runtime_in_min": "121",
+    "genre": "Action, Adventure, Fantasy",
+    "overview": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.",
+    "revenue": "322740140.0",
+    "credits": {
+      "director": "George Lucas",
+      "cast": [
+        "Mark Hamill",
+        "Harrison Ford",
+        "Carrie Fisher",
+        "Alec Guinness"
+      ]
+    }
+  },
+  {
+    "movie_id": "30",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Iron Man",
+    "released_year": "2008",
+    "runtime_in_min": "126",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+    "revenue": "318412101.0",
+    "credits": {
+      "director": "Jon Favreau",
+      "cast": [
+        "Robert Downey Jr.",
+        "Gwyneth Paltrow",
+        "Terrence Howard",
+        "Jeff Bridges"
+      ]
+    }
+  },
+  {
+    "movie_id": "31",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNjQ3NWNlNmQtMTE5ZS00MDdmLTlkZjUtZTBlM2UxMGFiMTU3XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Harry Potter and the Sorcerer's Stone",
+    "released_year": "2001",
+    "runtime_in_min": "152",
+    "genre": "Adventure, Family, Fantasy",
+    "overview": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
+    "revenue": "317575550.0",
+    "credits": {
+      "director": "Chris Columbus",
+      "cast": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Richard Harris",
+        "Maggie Smith"
+      ]
+    }
+  },
+  {
+    "movie_id": "32",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Lord of the Rings: The Fellowship of the Ring",
+    "released_year": "2001",
+    "runtime_in_min": "178",
+    "genre": "Action, Adventure, Drama",
+    "overview": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+    "revenue": "315544750.0",
+    "credits": {
+      "director": "Peter Jackson",
+      "cast": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Orlando Bloom",
+        "Sean Bean"
+      ]
+    }
+  },
+  {
+    "movie_id": "33",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Thor: Ragnarok",
+    "released_year": "2017",
+    "runtime_in_min": "130",
+    "genre": "Action, Adventure, Comedy",
+    "overview": "Imprisoned on the planet Sakaar, Thor must race against time to return to Asgard and stop Ragnar\u00f6k, the destruction of his world, at the hands of the powerful and ruthless villain Hela.",
+    "revenue": "315058289.0",
+    "credits": {
+      "director": "Taika Waititi",
+      "cast": [
+        "Chris Hemsworth",
+        "Tom Hiddleston",
+        "Cate Blanchett",
+        "Mark Ruffalo"
+      ]
+    }
+  },
+  {
+    "movie_id": "34",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Star Wars: Episode VI - Return of the Jedi",
+    "released_year": "1983",
+    "runtime_in_min": "131",
+    "genre": "Action, Adventure, Fantasy",
+    "overview": "After a daring mission to rescue Han Solo from Jabba the Hutt, the Rebels dispatch to Endor to destroy the second Death Star. Meanwhile, Luke struggles to help Darth Vader back from the dark side without falling into the Emperor's trap.",
+    "revenue": "309125409.0",
+    "credits": {
+      "director": "Richard Marquand",
+      "cast": [
+        "Mark Hamill",
+        "Harrison Ford",
+        "Carrie Fisher",
+        "Billy Dee Williams"
+      ]
+    }
+  },
+  {
+    "movie_id": "35",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNGYyZGM5MGMtYTY2Ni00M2Y1LWIzNjQtYWUzM2VlNGVhMDNhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "released_year": "2003",
+    "runtime_in_min": "143",
+    "genre": "Action, Adventure, Fantasy",
+    "overview": "Blacksmith Will Turner teams up with eccentric pirate \"Captain\" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.",
+    "revenue": "305413918.0",
+    "credits": {
+      "director": "Gore Verbinski",
+      "cast": [
+        "Johnny Depp",
+        "Geoffrey Rush",
+        "Orlando Bloom",
+        "Keira Knightley"
+      ]
+    }
+  },
+  {
+    "movie_id": "36",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMWZiNjE2OWItMTkwNy00ZWQzLWI0NTgtMWE0NjNiYTljN2Q1XkEyXkFqcGdeQXVyNzAwMjYxMzA@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Skyfall",
+    "released_year": "2012",
+    "runtime_in_min": "143",
+    "genre": "Action, Adventure, Thriller",
+    "overview": "James Bond's loyalty to M is tested when her past comes back to haunt her. When MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.",
+    "revenue": "304360277.0",
+    "credits": {
+      "director": "Sam Mendes",
+      "cast": [
+        "Daniel Craig",
+        "Javier Bardem",
+        "Naomie Harris",
+        "Judi Dench"
+      ]
+    }
+  },
+  {
+    "movie_id": "37",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Hobbit: An Unexpected Journey",
+    "released_year": "2012",
+    "runtime_in_min": "169",
+    "genre": "Adventure, Fantasy",
+    "overview": "A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home, and the gold within it from the dragon Smaug.",
+    "revenue": "303003568.0",
+    "credits": {
+      "director": "Peter Jackson",
+      "cast": [
+        "Martin Freeman",
+        "Ian McKellen",
+        "Richard Armitage",
+        "Andy Serkis"
+      ]
+    }
+  },
+  {
+    "movie_id": "38",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Harry Potter and the Half-Blood Prince",
+    "released_year": "2009",
+    "runtime_in_min": "153",
+    "genre": "Action, Adventure, Family",
+    "overview": "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as \"the property of the Half-Blood Prince\" and begins to learn more about Lord Voldemort's dark past.",
+    "revenue": "301959197.0",
+    "credits": {
+      "director": "David Yates",
+      "cast": [
+        "Daniel Radcliffe",
+        "Emma Watson",
+        "Rupert Grint",
+        "Michael Gambon"
+      ]
+    }
+  },
+  {
+    "movie_id": "39",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Harry Potter and the Deathly Hallows: Part 1",
+    "released_year": "2010",
+    "runtime_in_min": "146",
+    "genre": "Adventure, Family, Fantasy",
+    "overview": "As Harry, Ron, and Hermione race against time and evil to destroy the Horcruxes, they uncover the existence of the three most powerful objects in the wizarding world: the Deathly Hallows.",
+    "revenue": "295983305.0",
+    "credits": {
+      "director": "David Yates",
+      "cast": [
+        "Daniel Radcliffe",
+        "Emma Watson",
+        "Rupert Grint",
+        "Bill Nighy"
+      ]
+    }
+  },
+  {
+    "movie_id": "40",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMWM4NTFhYjctNzUyNi00NGMwLTk3NTYtMDIyNTZmMzRlYmQyXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Sixth Sense",
+    "released_year": "1999",
+    "runtime_in_min": "107",
+    "genre": "Drama, Mystery, Thriller",
+    "overview": "A boy who communicates with spirits seeks the help of a disheartened child psychologist.",
+    "revenue": "293506292.0",
+    "credits": {
+      "director": "M. Night Shyamalan",
+      "cast": [
+        "Bruce Willis",
+        "Haley Joel Osment",
+        "Toni Collette",
+        "Olivia Williams"
+      ]
+    }
+  },
+  {
+    "movie_id": "41",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTk3NDE2NzI4NF5BMl5BanBnXkFtZTgwNzE1MzEyMTE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Up",
+    "released_year": "2009",
+    "runtime_in_min": "96",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "78-year-old Carl Fredricksen travels to Paradise Falls in his house equipped with balloons, inadvertently taking a young stowaway.",
+    "revenue": "293004164.0",
+    "credits": {
+      "director": "Pete Docter",
+      "cast": [
+        "Bob Peterson",
+        "Edward Asner",
+        "Jordan Nagai",
+        "John Ratzenberger"
+      ]
+    }
+  },
+  {
+    "movie_id": "42",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Inception",
+    "released_year": "2010",
+    "runtime_in_min": "148",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+    "revenue": "292576195.0",
+    "credits": {
+      "director": "Christopher Nolan",
+      "cast": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Elliot Page",
+        "Ken Watanabe"
+      ]
+    }
+  },
+  {
+    "movie_id": "43",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Star Wars: Episode V - The Empire Strikes Back",
+    "released_year": "1980",
+    "runtime_in_min": "124",
+    "genre": "Action, Adventure, Fantasy",
+    "overview": "After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader and a bounty hunter named Boba Fett all over the galaxy.",
+    "revenue": "290475067.0",
+    "credits": {
+      "director": "Irvin Kershner",
+      "cast": [
+        "Mark Hamill",
+        "Harrison Ford",
+        "Carrie Fisher",
+        "Billy Dee Williams"
+      ]
+    }
+  },
+  {
+    "movie_id": "44",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Harry Potter and the Goblet of Fire",
+    "released_year": "2005",
+    "runtime_in_min": "157",
+    "genre": "Adventure, Family, Fantasy",
+    "overview": "Harry Potter finds himself competing in a hazardous tournament between rival schools of magic, but he is distracted by recurring nightmares.",
+    "revenue": "290013036.0",
+    "credits": {
+      "director": "Mike Newell",
+      "cast": [
+        "Daniel Radcliffe",
+        "Emma Watson",
+        "Rupert Grint",
+        "Eric Sykes"
+      ]
+    }
+  },
+  {
+    "movie_id": "45",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTY1NTI0ODUyOF5BMl5BanBnXkFtZTgwNTEyNjQ0MDE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Monsters, Inc.",
+    "released_year": "2001",
+    "runtime_in_min": "92",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "In order to power the city, monsters have to scare children so that they scream. However, the children are toxic to the monsters, and after a child gets through, 2 monsters realize things may not be what they think.",
+    "revenue": "289916256.0",
+    "credits": {
+      "director": "Pete Docter",
+      "cast": [
+        "David Silverman",
+        "Lee Unkrich",
+        "Billy Crystal",
+        "John Goodman"
+      ]
+    }
+  },
+  {
+    "movie_id": "46",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Home Alone",
+    "released_year": "1990",
+    "runtime_in_min": "103",
+    "genre": "Comedy, Family",
+    "overview": "An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.",
+    "revenue": "285761243.0",
+    "credits": {
+      "director": "Chris Columbus",
+      "cast": [
+        "Macaulay Culkin",
+        "Joe Pesci",
+        "Daniel Stern",
+        "John Heard"
+      ]
+    }
+  },
+  {
+    "movie_id": "47",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNGQwZjg5YmYtY2VkNC00NzliLTljYTctNzI5NmU3MjE2ODQzXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Hangover",
+    "released_year": "2009",
+    "runtime_in_min": "100",
+    "genre": "Comedy",
+    "overview": "Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.",
+    "revenue": "277322503.0",
+    "credits": {
+      "director": "Todd Phillips",
+      "cast": [
+        "Zach Galifianakis",
+        "Bradley Cooper",
+        "Justin Bartha",
+        "Ed Helms"
+      ]
+    }
+  },
+  {
+    "movie_id": "48",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Gravity",
+    "released_year": "2013",
+    "runtime_in_min": "91",
+    "genre": "Drama, Sci-Fi, Thriller",
+    "overview": "Two astronauts work together to survive after an accident leaves them stranded in space.",
+    "revenue": "274092705.0",
+    "credits": {
+      "director": "Alfonso Cuar\u00f3n",
+      "cast": [
+        "Sandra Bullock",
+        "George Clooney",
+        "Ed Harris",
+        "Orto Ignatiussen"
+      ]
+    }
+  },
+  {
+    "movie_id": "49",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Shrek",
+    "released_year": "2001",
+    "runtime_in_min": "90",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
+    "revenue": "267665011.0",
+    "credits": {
+      "director": "Andrew Adamson",
+      "cast": [
+        "Vicky Jenson",
+        "Mike Myers",
+        "Eddie Murphy",
+        "Cameron Diaz"
+      ]
+    }
+  },
+  {
+    "movie_id": "50",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Incredibles",
+    "released_year": "2004",
+    "runtime_in_min": "115",
+    "genre": "Animation, Action, Adventure",
+    "overview": "A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.",
+    "revenue": "261441092.0",
+    "credits": {
+      "director": "Brad Bird",
+      "cast": [
+        "Craig T. Nelson",
+        "Samuel L. Jackson",
+        "Holly Hunter",
+        "Jason Lee"
+      ]
+    }
+  },
+  {
+    "movie_id": "51",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Jaws",
+    "released_year": "1975",
+    "runtime_in_min": "124",
+    "genre": "Adventure, Thriller",
+    "overview": "When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.",
+    "revenue": "260000000.0",
+    "credits": {
+      "director": "Steven Spielberg",
+      "cast": [
+        "Roy Scheider",
+        "Robert Shaw",
+        "Richard Dreyfuss",
+        "Lorraine Gary"
+      ]
+    }
+  },
+  {
+    "movie_id": "52",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMzA2NDkwODAwM15BMl5BanBnXkFtZTgwODk5MTgzMTE@._V1_UY98_CR0,0,67,98_AL_.jpg",
+    "series_title": "Captain America: The Winter Soldier",
+    "released_year": "2014",
+    "runtime_in_min": "136",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
+    "revenue": "259766572.0",
+    "credits": {
+      "director": "Anthony Russo",
+      "cast": [
+        "Joe Russo",
+        "Chris Evans",
+        "Samuel L. Jackson",
+        "Scarlett Johansson"
+      ]
+    }
+  },
+  {
+    "movie_id": "53",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Hobbit: The Desolation of Smaug",
+    "released_year": "2013",
+    "runtime_in_min": "161",
+    "genre": "Adventure, Fantasy",
+    "overview": "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring.",
+    "revenue": "258366855.0",
+    "credits": {
+      "director": "Peter Jackson",
+      "cast": [
+        "Ian McKellen",
+        "Martin Freeman",
+        "Richard Armitage",
+        "Ken Stott"
+      ]
+    }
+  },
+  {
+    "movie_id": "54",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTg4MDk1ODExN15BMl5BanBnXkFtZTgwNzIyNjg3MDE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Lego Movie",
+    "released_year": "2014",
+    "runtime_in_min": "100",
+    "genre": "Animation, Action, Adventure",
+    "overview": "An ordinary LEGO construction worker, thought to be the prophesied as \"special\", is recruited to join a quest to stop an evil tyrant from gluing the LEGO universe into eternal stasis.",
+    "revenue": "257760692.0",
+    "credits": {
+      "director": "Christopher Miller",
+      "cast": [
+        "Phil Lord",
+        "Chris Pratt",
+        "Will Ferrell",
+        "Elizabeth Banks"
+      ]
+    }
+  },
+  {
+    "movie_id": "55",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjE5NDQ5OTE4Ml5BMl5BanBnXkFtZTcwOTE3NDIzMw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Star Trek",
+    "released_year": "2009",
+    "runtime_in_min": "127",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time.",
+    "revenue": "257730019.0",
+    "credits": {
+      "director": "J.J. Abrams",
+      "cast": [
+        "Chris Pine",
+        "Zachary Quinto",
+        "Simon Pegg",
+        "Leonard Nimoy"
+      ]
+    }
+  },
+  {
+    "movie_id": "56",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjEzOTE3ODM3OF5BMl5BanBnXkFtZTcwMzYyODI4Mg@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Blind Side",
+    "released_year": "2009",
+    "runtime_in_min": "129",
+    "genre": "Biography, Drama, Sport",
+    "overview": "The story of Michael Oher, a homeless and traumatized boy who became an All-American football player and first-round NFL draft pick with the help of a caring woman and her family.",
+    "revenue": "255959475.0",
+    "credits": {
+      "director": "John Lee Hancock",
+      "cast": [
+        "Quinton Aaron",
+        "Sandra Bullock",
+        "Tim McGraw",
+        "Jae Head"
+      ]
+    }
+  },
+  {
+    "movie_id": "57",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTY3NjY0MTQ0Nl5BMl5BanBnXkFtZTcwMzQ2MTc0Mw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Despicable Me",
+    "released_year": "2010",
+    "runtime_in_min": "95",
+    "genre": "Animation, Comedy, Crime",
+    "overview": "When a criminal mastermind uses a trio of orphan girls as pawns for a grand scheme, he finds their love is profoundly changing him for the better.",
+    "revenue": "251513985.0",
+    "credits": {
+      "director": "Pierre Coffin",
+      "cast": [
+        "Chris Renaud",
+        "Steve Carell",
+        "Jason Segel",
+        "Russell Brand"
+      ]
+    }
+  },
+  {
+    "movie_id": "58",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Harry Potter and the Prisoner of Azkaban",
+    "released_year": "2004",
+    "runtime_in_min": "142",
+    "genre": "Adventure, Family, Fantasy",
+    "overview": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
+    "revenue": "249358727.0",
+    "credits": {
+      "director": "Alfonso Cuar\u00f3n",
+      "cast": [
+        "Daniel Radcliffe",
+        "Emma Watson",
+        "Rupert Grint",
+        "Richard Griffiths"
+      ]
+    }
+  },
+  {
+    "movie_id": "59",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Moana",
+    "released_year": "2016",
+    "runtime_in_min": "107",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.",
+    "revenue": "248757044.0",
+    "credits": {
+      "director": "Ron Clements",
+      "cast": [
+        "John Musker",
+        "Don Hall",
+        "Chris Williams",
+        "Auli'i Cravalho"
+      ]
+    }
+  },
+  {
+    "movie_id": "60",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjA0ODEzMTc1Nl5BMl5BanBnXkFtZTcwODM2MjAxNA@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Raiders of the Lost Ark",
+    "released_year": "1981",
+    "runtime_in_min": "115",
+    "genre": "Action, Adventure",
+    "overview": "In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before Adolf Hitler's Nazis can obtain its awesome powers.",
+    "revenue": "248159971.0",
+    "credits": {
+      "director": "Steven Spielberg",
+      "cast": [
+        "Harrison Ford",
+        "Karen Allen",
+        "Paul Freeman",
+        "John Rhys-Davies"
+      ]
+    }
+  },
+  {
+    "movie_id": "61",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMWM5ZDcxMTYtNTEyNS00MDRkLWI3YTItNThmMGExMWY4NDIwXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Toy Story 2",
+    "released_year": "1999",
+    "runtime_in_min": "92",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "When Woody is stolen by a toy collector, Buzz and his friends set out on a rescue mission to save Woody before he becomes a museum toy property with his roundup gang Jessie, Prospector, and Bullseye.",
+    "revenue": "245852179.0",
+    "credits": {
+      "director": "John Lasseter",
+      "cast": [
+        "Ash Brannon",
+        "Lee Unkrich",
+        "Tom Hanks",
+        "Tim Allen"
+      ]
+    }
+  },
+  {
+    "movie_id": "62",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTkxMjYyNzgwMl5BMl5BanBnXkFtZTgwMTE3MjYyMTE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Ghostbusters",
+    "released_year": "1984",
+    "runtime_in_min": "105",
+    "genre": "Action, Comedy, Fantasy",
+    "overview": "Three former parapsychology professors set up shop as a unique ghost removal service.",
+    "revenue": "238632124.0",
+    "credits": {
+      "director": "Ivan Reitman",
+      "cast": [
+        "Bill Murray",
+        "Dan Aykroyd",
+        "Sigourney Weaver",
+        "Harold Ramis"
+      ]
+    }
+  },
+  {
+    "movie_id": "63",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BZGIzNWYzN2YtMjcwYS00YjQ3LWI2NjMtOTNiYTUyYjE2MGNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "X-Men: Days of Future Past",
+    "released_year": "2014",
+    "runtime_in_min": "132",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.",
+    "revenue": "233921534.0",
+    "credits": {
+      "director": "Bryan Singer",
+      "cast": [
+        "Patrick Stewart",
+        "Ian McKellen",
+        "Hugh Jackman",
+        "James McAvoy"
+      ]
+    }
+  },
+  {
+    "movie_id": "64",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BN2Y5ZTU4YjctMDRmMC00MTg4LWE1M2MtMjk4MzVmOTE4YjkzXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Cast Away",
+    "released_year": "2000",
+    "runtime_in_min": "143",
+    "genre": "Adventure, Drama, Romance",
+    "overview": "A FedEx executive undergoes a physical and emotional transformation after crash landing on a deserted island.",
+    "revenue": "233632142.0",
+    "credits": {
+      "director": "Robert Zemeckis",
+      "cast": [
+        "Tom Hanks",
+        "Helen Hunt",
+        "Paul Sanchez",
+        "Lari White"
+      ]
+    }
+  },
+  {
+    "movie_id": "65",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BYjhmMGMxZDYtMTkyNy00YWVmLTgyYmUtYTU3ZjcwNTBjN2I1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Exorcist",
+    "released_year": "1973",
+    "runtime_in_min": "122",
+    "genre": "Horror",
+    "overview": "When a 12-year-old girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her.",
+    "revenue": "232906145.0",
+    "credits": {
+      "director": "William Friedkin",
+      "cast": [
+        "Ellen Burstyn",
+        "Max von Sydow",
+        "Linda Blair",
+        "Lee J. Cobb"
+      ]
+    }
+  },
+  {
+    "movie_id": "66",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTk2NzczOTgxNF5BMl5BanBnXkFtZTcwODQ5ODczOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Star Trek Into Darkness",
+    "released_year": "2013",
+    "runtime_in_min": "132",
+    "genre": "Action, Adventure, Sci-Fi",
+    "overview": "After the crew of the Enterprise find an unstoppable force of terror from within their own organization, Captain Kirk leads a manhunt to a war-zone world to capture a one-man weapon of mass destruction.",
+    "revenue": "228778661.0",
+    "credits": {
+      "director": "J.J. Abrams",
+      "cast": [
+        "Chris Pine",
+        "Zachary Quinto",
+        "Zoe Saldana",
+        "Benedict Cumberbatch"
+      ]
+    }
+  },
+  {
+    "movie_id": "67",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Martian",
+    "released_year": "2015",
+    "runtime_in_min": "144",
+    "genre": "Adventure, Drama, Sci-Fi",
+    "overview": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
+    "revenue": "228433663.0",
+    "credits": {
+      "director": "Ridley Scott",
+      "cast": [
+        "Matt Damon",
+        "Jessica Chastain",
+        "Kristen Wiig",
+        "Kate Mara"
+      ]
+    }
+  },
+  {
+    "movie_id": "68",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNGNiNmU2YTMtZmU4OS00MjM0LTlmYWUtMjVlYjAzYjE2N2RjXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Bourne Ultimatum",
+    "released_year": "2007",
+    "runtime_in_min": "115",
+    "genre": "Action, Mystery, Thriller",
+    "overview": "Jason Bourne dodges a ruthless C.I.A. official and his Agents from a new assassination program while searching for the origins of his life as a trained killer.",
+    "revenue": "227471070.0",
+    "credits": {
+      "director": "Paul Greengrass",
+      "cast": [
+        "Matt Damon",
+        "Edgar Ram\u00edrez",
+        "Joan Allen",
+        "Julia Stiles"
+      ]
+    }
+  },
+  {
+    "movie_id": "69",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BYzc5MTU4N2EtYTkyMi00NjdhLTg3NWEtMTY4OTEyMzJhZTAzXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Logan",
+    "released_year": "2017",
+    "runtime_in_min": "137",
+    "genre": "Action, Drama, Sci-Fi",
+    "overview": "In a future where mutants are nearly extinct, an elderly and weary Logan leads a quiet life. But when Laura, a mutant child pursued by scientists, comes to him for help, he must get her to safety.",
+    "revenue": "226277068.0",
+    "credits": {
+      "director": "James Mangold",
+      "cast": [
+        "Hugh Jackman",
+        "Patrick Stewart",
+        "Dafne Keen",
+        "Boyd Holbrook"
+      ]
+    }
+  },
+  {
+    "movie_id": "70",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "WALL\u00b7E",
+    "released_year": "2008",
+    "runtime_in_min": "98",
+    "genre": "Animation, Adventure, Family",
+    "overview": "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
+    "revenue": "223808164.0",
+    "credits": {
+      "director": "Andrew Stanton",
+      "cast": [
+        "Ben Burtt",
+        "Elissa Knight",
+        "Jeff Garlin",
+        "Fred Willard"
+      ]
+    }
+  },
+  {
+    "movie_id": "71",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMDliOTIzNmUtOTllOC00NDU3LWFiNjYtMGM0NDc1YTMxNjYxXkEyXkFqcGdeQXVyNTM3NzExMDQ@._V1_UY98_CR1,0,67,98_AL_.jpg",
+    "series_title": "Big Hero 6",
+    "released_year": "2014",
+    "runtime_in_min": "102",
+    "genre": "Animation, Action, Adventure",
+    "overview": "A special bond develops between plus-sized inflatable robot Baymax and prodigy Hiro Hamada, who together team up with a group of friends to form a band of high-tech heroes.",
+    "revenue": "222527828.0",
+    "credits": {
+      "director": "Don Hall",
+      "cast": [
+        "Chris Williams",
+        "Ryan Potter",
+        "Scott Adsit",
+        "Jamie Chung"
+      ]
+    }
+  },
+  {
+    "movie_id": "72",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNjRlZmM0ODktY2RjNS00ZDdjLWJhZGYtNDljNWZkMGM5MTg0XkEyXkFqcGdeQXVyNjAwMjI5MDk@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Mission: Impossible - Fallout",
+    "released_year": "2018",
+    "runtime_in_min": "147",
+    "genre": "Action, Adventure, Thriller",
+    "overview": "Ethan Hunt and his IMF team, along with some familiar allies, race against time after a mission gone wrong.",
+    "revenue": "220159104.0",
+    "credits": {
+      "director": "Christopher McQuarrie",
+      "cast": [
+        "Tom Cruise",
+        "Henry Cavill",
+        "Ving Rhames",
+        "Simon Pegg"
+      ]
+    }
+  },
+  {
+    "movie_id": "73",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMzE5MDM1NDktY2I0OC00YWI5LTk2NzUtYjczNDczOWQxYjM0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Beauty and the Beast",
+    "released_year": "1991",
+    "runtime_in_min": "84",
+    "genre": "Animation, Family, Fantasy",
+    "overview": "A prince cursed to spend his days as a hideous monster sets out to regain his humanity by earning a young woman's love.",
+    "revenue": "218967620.0",
+    "credits": {
+      "director": "Gary Trousdale",
+      "cast": [
+        "Kirk Wise",
+        "Paige O'Hara",
+        "Robby Benson",
+        "Jesse Corti"
+      ]
+    }
+  },
+  {
+    "movie_id": "74",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "How to Train Your Dragon",
+    "released_year": "2010",
+    "runtime_in_min": "98",
+    "genre": "Animation, Action, Adventure",
+    "overview": "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.",
+    "revenue": "217581231.0",
+    "credits": {
+      "director": "Dean DeBlois",
+      "cast": [
+        "Chris Sanders",
+        "Jay Baruchel",
+        "Gerard Butler",
+        "Christopher Mintz-Plasse"
+      ]
+    }
+  },
+  {
+    "movie_id": "75",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BY2Q2NDI1MjUtM2Q5ZS00MTFlLWJiYWEtNTZmNjQ3OGJkZDgxXkEyXkFqcGdeQXVyNTI4MjkwNjA@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Aladdin",
+    "released_year": "1992",
+    "runtime_in_min": "90",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "A kindhearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.",
+    "revenue": "217350219.0",
+    "credits": {
+      "director": "Ron Clements",
+      "cast": [
+        "John Musker",
+        "Scott Weinger",
+        "Robin Williams",
+        "Linda Larkin"
+      ]
+    }
+  },
+  {
+    "movie_id": "76",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Saving Private Ryan",
+    "released_year": "1998",
+    "runtime_in_min": "169",
+    "genre": "Drama, War",
+    "overview": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+    "revenue": "216540909.0",
+    "credits": {
+      "director": "Steven Spielberg",
+      "cast": [
+        "Tom Hanks",
+        "Matt Damon",
+        "Tom Sizemore",
+        "Edward Burns"
+      ]
+    }
+  },
+  {
+    "movie_id": "77",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTA2NDc3Njg5NDVeQTJeQWpwZ15BbWU4MDc1NDcxNTUz._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Bohemian Rhapsody",
+    "released_year": "2018",
+    "runtime_in_min": "134",
+    "genre": "Biography, Drama, Music",
+    "overview": "The story of the legendary British rock band Queen and lead singer Freddie Mercury, leading up to their famous performance at Live Aid (1985).",
+    "revenue": "216428042.0",
+    "credits": {
+      "director": "Bryan Singer",
+      "cast": [
+        "Rami Malek",
+        "Lucy Boynton",
+        "Gwilym Lee",
+        "Ben Hardy"
+      ]
+    }
+  },
+  {
+    "movie_id": "78",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNmE5ZmE3OGItNTdlNC00YmMxLWEzNjctYzAwOGQ5ODg0OTI0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "A Star Is Born",
+    "released_year": "2018",
+    "runtime_in_min": "136",
+    "genre": "Drama, Music, Romance",
+    "overview": "A musician helps a young singer find fame as age and alcoholism send his own career into a downward spiral.",
+    "revenue": "215288866.0",
+    "credits": {
+      "director": "Bradley Cooper",
+      "cast": [
+        "Lady Gaga",
+        "Bradley Cooper",
+        "Sam Elliott",
+        "Greg Grunberg"
+      ]
+    }
+  },
+  {
+    "movie_id": "79",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNWMxYTZlOTUtZDExMi00YzZmLTkwYTMtZmM2MmRjZmQ3OGY4XkEyXkFqcGdeQXVyMTAwMzUyMzUy._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "300",
+    "released_year": "2006",
+    "runtime_in_min": "117",
+    "genre": "Action, Drama",
+    "overview": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
+    "revenue": "210614939.0",
+    "credits": {
+      "director": "Zack Snyder",
+      "cast": [
+        "Gerard Butler",
+        "Lena Headey",
+        "David Wenham",
+        "Dominic West"
+      ]
+    }
+  },
+  {
+    "movie_id": "80",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Back to the Future",
+    "released_year": "1985",
+    "runtime_in_min": "116",
+    "genre": "Adventure, Comedy, Sci-Fi",
+    "overview": "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown.",
+    "revenue": "210609762.0",
+    "credits": {
+      "director": "Robert Zemeckis",
+      "cast": [
+        "Michael J. Fox",
+        "Christopher Lloyd",
+        "Lea Thompson",
+        "Crispin Glover"
+      ]
+    }
+  },
+  {
+    "movie_id": "81",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_UY98_CR1,0,67,98_AL_.jpg",
+    "series_title": "Coco",
+    "released_year": "2017",
+    "runtime_in_min": "105",
+    "genre": "Animation, Adventure, Family",
+    "overview": "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
+    "revenue": "209726015.0",
+    "credits": {
+      "director": "Lee Unkrich",
+      "cast": [
+        "Adrian Molina",
+        "Anthony Gonzalez",
+        "Gael Garc\u00eda Bernal",
+        "Benjamin Bratt"
+      ]
+    }
+  },
+  {
+    "movie_id": "82",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTg0NjEwNjUxM15BMl5BanBnXkFtZTcwMzk0MjQ5Mg@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Sherlock Holmes",
+    "released_year": "2009",
+    "runtime_in_min": "128",
+    "genre": "Action, Adventure, Mystery",
+    "overview": "Detective Sherlock Holmes and his stalwart partner Watson engage in a battle of wits and brawn with a nemesis whose plot is a threat to all of England.",
+    "revenue": "209028679.0",
+    "credits": {
+      "director": "Guy Ritchie",
+      "cast": [
+        "Robert Downey Jr.",
+        "Jude Law",
+        "Rachel McAdams",
+        "Mark Strong"
+      ]
+    }
+  },
+  {
+    "movie_id": "83",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTgwODk3NDc1N15BMl5BanBnXkFtZTgwNTc1NjQwMjE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Dawn of the Planet of the Apes",
+    "released_year": "2014",
+    "runtime_in_min": "130",
+    "genre": "Action, Adventure, Drama",
+    "overview": "A growing nation of genetically evolved apes led by Caesar is threatened by a band of human survivors of the devastating virus unleashed a decade earlier.",
+    "revenue": "208545589.0",
+    "credits": {
+      "director": "Matt Reeves",
+      "cast": [
+        "Gary Oldman",
+        "Keri Russell",
+        "Andy Serkis",
+        "Kodi Smit-McPhee"
+      ]
+    }
+  },
+  {
+    "movie_id": "84",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Batman Begins",
+    "released_year": "2005",
+    "runtime_in_min": "140",
+    "genre": "Action, Adventure",
+    "overview": "After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from corruption.",
+    "revenue": "206852432.0",
+    "credits": {
+      "director": "Christopher Nolan",
+      "cast": [
+        "Christian Bale",
+        "Michael Caine",
+        "Ken Watanabe",
+        "Liam Neeson"
+      ]
+    }
+  },
+  {
+    "movie_id": "85",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Ratatouille",
+    "released_year": "2007",
+    "runtime_in_min": "111",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.",
+    "revenue": "206445654.0",
+    "credits": {
+      "director": "Brad Bird",
+      "cast": [
+        "Jan Pinkava",
+        "Brad Garrett",
+        "Lou Romano",
+        "Patton Oswalt"
+      ]
+    }
+  },
+  {
+    "movie_id": "86",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Terminator 2: Judgment Day",
+    "released_year": "1991",
+    "runtime_in_min": "137",
+    "genre": "Action, Sci-Fi",
+    "overview": "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her teenage son, John Connor, from a more advanced and powerful cyborg.",
+    "revenue": "204843350.0",
+    "credits": {
+      "director": "James Cameron",
+      "cast": [
+        "Arnold Schwarzenegger",
+        "Linda Hamilton",
+        "Edward Furlong",
+        "Robert Patrick"
+      ]
+    }
+  },
+  {
+    "movie_id": "87",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTAxNDYxMjg0MjNeQTJeQWpwZ15BbWU3MDcyNTk2OTM@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Tangled",
+    "released_year": "2010",
+    "runtime_in_min": "100",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "The magically long-haired Rapunzel has spent her entire life in a tower, but now that a runaway thief has stumbled upon her, she is about to discover the world for the first time, and who she really is.",
+    "revenue": "200821936.0",
+    "credits": {
+      "director": "Nathan Greno",
+      "cast": [
+        "Byron Howard",
+        "Mandy Moore",
+        "Zachary Levi",
+        "Donna Murphy"
+      ]
+    }
+  },
+  {
+    "movie_id": "88",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BYjUyZWZkM2UtMzYxYy00ZmQ3LWFmZTQtOGE2YjBkNjA3YWZlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Gone with the Wind",
+    "released_year": "1939",
+    "runtime_in_min": "238",
+    "genre": "Drama, History, Romance",
+    "overview": "A manipulative woman and a roguish man conduct a turbulent romance during the American Civil War and Reconstruction periods.",
+    "revenue": "198676459.0",
+    "credits": {
+      "director": "Victor Fleming",
+      "cast": [
+        "George Cukor",
+        "Sam Wood",
+        "Clark Gable",
+        "Vivien Leigh"
+      ]
+    }
+  },
+  {
+    "movie_id": "89",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjNkMzc2N2QtNjVlNS00ZTk5LTg0MTgtODY2MDAwNTMwZjBjXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Indiana Jones and the Last Crusade",
+    "released_year": "1989",
+    "runtime_in_min": "127",
+    "genre": "Action, Adventure",
+    "overview": "In 1938, after his father Professor Henry Jones, Sr. goes missing while pursuing the Holy Grail, Professor Henry \"Indiana\" Jones, Jr. finds himself up against Adolf Hitler's Nazis again to stop them from obtaining its powers.",
+    "revenue": "197171806.0",
+    "credits": {
+      "director": "Steven Spielberg",
+      "cast": [
+        "Harrison Ford",
+        "Sean Connery",
+        "Alison Doody",
+        "Denholm Elliott"
+      ]
+    }
+  },
+  {
+    "movie_id": "90",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Toy Story",
+    "released_year": "1995",
+    "runtime_in_min": "81",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
+    "revenue": "191796233.0",
+    "credits": {
+      "director": "John Lasseter",
+      "cast": [
+        "Tom Hanks",
+        "Tim Allen",
+        "Don Rickles",
+        "Jim Varney"
+      ]
+    }
+  },
+  {
+    "movie_id": "91",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Spider-Man: Into the Spider-Verse",
+    "released_year": "2018",
+    "runtime_in_min": "117",
+    "genre": "Animation, Action, Adventure",
+    "overview": "Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.",
+    "revenue": "190241310.0",
+    "credits": {
+      "director": "Bob Persichetti",
+      "cast": [
+        "Peter Ramsey",
+        "Rodney Rothman",
+        "Shameik Moore",
+        "Jake Johnson"
+      ]
+    }
+  },
+  {
+    "movie_id": "92",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BNzMxNTExOTkyMF5BMl5BanBnXkFtZTcwMzEyNDc0OA@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Wreck-It Ralph",
+    "released_year": "2012",
+    "runtime_in_min": "101",
+    "genre": "Animation, Adventure, Comedy",
+    "overview": "A video game villain wants to be a hero and sets out to fulfill his dream, but his quest brings havoc to the whole arcade where he lives.",
+    "revenue": "189422889.0",
+    "credits": {
+      "director": "Rich Moore",
+      "cast": [
+        "John C. Reilly",
+        "Jack McBrayer",
+        "Jane Lynch",
+        "Sarah Silverman"
+      ]
+    }
+  },
+  {
+    "movie_id": "93",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BN2YyZjQ0NTEtNzU5MS00NGZkLTg0MTEtYzJmMWY3MWRhZjM2XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Dunkirk",
+    "released_year": "2017",
+    "runtime_in_min": "106",
+    "genre": "Action, Drama, History",
+    "overview": "Allied soldiers from Belgium, the British Empire, and France are surrounded by the German Army and evacuated during a fierce battle in World War II.",
+    "revenue": "188373161.0",
+    "credits": {
+      "director": "Christopher Nolan",
+      "cast": [
+        "Fionn Whitehead",
+        "Barry Keoghan",
+        "Mark Rylance",
+        "Tom Hardy"
+      ]
+    }
+  },
+  {
+    "movie_id": "94",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Interstellar",
+    "released_year": "2014",
+    "runtime_in_min": "169",
+    "genre": "Adventure, Drama, Sci-Fi",
+    "overview": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "revenue": "188020017.0",
+    "credits": {
+      "director": "Christopher Nolan",
+      "cast": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain",
+        "Mackenzie Foy"
+      ]
+    }
+  },
+  {
+    "movie_id": "95",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Gladiator",
+    "released_year": "2000",
+    "runtime_in_min": "155",
+    "genre": "Action, Adventure, Drama",
+    "overview": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+    "revenue": "187705427.0",
+    "credits": {
+      "director": "Ridley Scott",
+      "cast": [
+        "Russell Crowe",
+        "Joaquin Phoenix",
+        "Connie Nielsen",
+        "Oliver Reed"
+      ]
+    }
+  },
+  {
+    "movie_id": "96",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMTY3OTI5NDczN15BMl5BanBnXkFtZTcwNDA0NDY3Mw@@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Dances with Wolves",
+    "released_year": "1990",
+    "runtime_in_min": "181",
+    "genre": "Adventure, Drama, Western",
+    "overview": "Lieutenant John Dunbar, assigned to a remote western Civil War outpost, befriends wolves and Indians, making him an intolerable aberration in the military.",
+    "revenue": "184208848.0",
+    "credits": {
+      "director": "Kevin Costner",
+      "cast": [
+        "Kevin Costner",
+        "Mary McDonnell",
+        "Graham Greene",
+        "Rodney A. Grant"
+      ]
+    }
+  },
+  {
+    "movie_id": "97",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BYmFmOGZjYTItYjY1ZS00OWRiLTk0NDgtMjQ5MzBkYWE2YWE0XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Fugitive",
+    "released_year": "1993",
+    "runtime_in_min": "130",
+    "genre": "Action, Crime, Drama",
+    "overview": "Dr. Richard Kimble, unjustly accused of murdering his wife, must find the real killer while being the target of a nationwide manhunt led by a seasoned U.S. Marshal.",
+    "revenue": "183875760.0",
+    "credits": {
+      "director": "Andrew Davis",
+      "cast": [
+        "Harrison Ford",
+        "Tommy Lee Jones",
+        "Sela Ward",
+        "Julianne Moore"
+      ]
+    }
+  },
+  {
+    "movie_id": "98",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMDE5OWMzM2QtOTU2ZS00NzAyLWI2MDEtOTRlYjIxZGM0OWRjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "The Revenant",
+    "released_year": "2015",
+    "runtime_in_min": "156",
+    "genre": "Action, Adventure, Drama",
+    "overview": "A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own hunting team.",
+    "revenue": "183637894.0",
+    "credits": {
+      "director": "Alejandro G. I\u00f1\u00e1rritu",
+      "cast": [
+        "Leonardo DiCaprio",
+        "Tom Hardy",
+        "Will Poulter",
+        "Domhnall Gleeson"
+      ]
+    }
+  },
+  {
+    "movie_id": "99",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BYzVmYzVkMmUtOGRhMi00MTNmLThlMmUtZTljYjlkMjNkMjJkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Ocean's Eleven",
+    "released_year": "2001",
+    "runtime_in_min": "116",
+    "genre": "Crime, Thriller",
+    "overview": "Danny Ocean and his ten accomplices plan to rob three Las Vegas casinos simultaneously.",
+    "revenue": "183417150.0",
+    "credits": {
+      "director": "Steven Soderbergh",
+      "cast": [
+        "George Clooney",
+        "Brad Pitt",
+        "Julia Roberts",
+        "Matt Damon"
+      ]
+    }
+  },
+  {
+    "movie_id": "100",
+    "poster_link": "https://m.media-amazon.com/images/M/MV5BMzVjNzI4NzYtMjE4NS00M2IzLWFkOWMtOTYwMWUzN2ZlNGVjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg",
+    "series_title": "Rain Man",
+    "released_year": "1988",
+    "runtime_in_min": "133",
+    "genre": "Drama",
+    "overview": "Selfish yuppie Charlie Babbitt's father left a fortune to his savant brother Raymond and a pittance to Charlie; they travel cross-country.",
+    "revenue": "178800000.0",
+    "credits": {
+      "director": "Barry Levinson",
+      "cast": [
+        "Dustin Hoffman",
+        "Tom Cruise",
+        "Valeria Golino",
+        "Gerald R. Molen"
+      ]
+    }
+  }
+]
